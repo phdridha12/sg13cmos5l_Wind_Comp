@@ -1,0 +1,61 @@
+# SPDX-FileCopyrightText: 2026 Tim Edwards and Simon Dorrer
+# SPDX-License-Identifier: Apache-2.0 WITH SHL-2.1
+#
+# This is the configuration file for your submission.
+# Please edit the fields below to match your project.
+
+project-name: Chipalooza Analog Project
+
+# Must be a unique name and must match TOP in the Makefile, the file names in
+# layout/, schematic/xschem/ and testbenches/xschem/, and the top cell inside
+# the GDS. See "To rename the project" in README.md.
+top-cell: "sg13cmos5l_chipalooza_analog_project"
+
+team-members:
+- Firstname Lastname
+- Firstname Lastname
+
+# small (500um x 200um), tiny (200um x 200um) or large (500um x 415um).
+# Must match the floorplan template this layout was started from.
+slot-size: tiny
+
+# Number of analog pins actually used, 0-3. This example wires all three
+# (analog_0, analog_1, analog_2), see final/vh/sg13cmos5l_chipalooza_analog_project.vh.
+analog-pins: 3
+
+short-description: Hand-drawn analog-on-top macro built from the inverter sub-macro.
+
+# Please add the documentation about your project here.
+# Why did you choose to create it? How does it work? How can it be tested, etc.?
+# If your project requires additional external hardware, e.g. a USB port,
+# please mention this so it can be considered when designing the PCB.
+long-description: |
+  An analog-on-top example macro for the ihp-sg13cmos5l Open-PDK.
+
+  The top level is drawn **by hand** in KLayout on top of the `tiny` floorplan
+  template and instantiates four `inverter` unit cells from the `inverter`
+  sub-macro in `macros/inverter/`.
+
+  The macro is signed off with the full analog flow:
+
+  * Xschem schematic and transient testbench, simulated with ngspice
+  * KLayout and Magic DRC
+  * KLayout and Magic + Netgen LVS
+  * Magic parasitic extraction, followed by a post-layout simulation
+  * CACE characterization of the inverter unit cell
+
+  Testing: drive `uio_in[0]` and observe the inverter outputs on `analog_1`
+  and `analog_2`; `analog_0` is the analog input. `VPWR`/`VGND` supply the
+  digital rails and `VAPWR` the analog rail. Reproduce the committed results
+  with `make all` inside the IIC-OSIC-TOOLS container. No additional external
+  hardware is required.
+
+# These paths are used to verify your
+# submission during the precheck.
+# Wildcards are allowed, but there
+# should only be a single match.
+# This repository *is* the submission macro, so the paths are relative to the
+# repository root rather than to a folder under macros/.
+gds-path: final/gds/*.gds
+lef-path: final/lef/*.lef
+header-path: final/vh/*.vh
