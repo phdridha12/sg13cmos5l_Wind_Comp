@@ -1,4 +1,4 @@
-readme_content = """# Window Comparator (WINCOMP)
+"""# Window Comparator (WINCOMP)
 
 A high-precision, open-loop 5-transistor (5T) differential window comparator designed in the **IHP SG13CMOS5L (130 nm CMOS)** technology for the **Chipalooza Challenge #2** run.
 
