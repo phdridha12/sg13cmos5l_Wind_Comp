@@ -30,14 +30,14 @@ N 620 -170 620 -150 {lab=ibias}
 N 620 -200 620 -170 {lab=ibias}
 N 620 -120 620 -40 {lab=vss}
 N 500 70 620 70 {lab=vout}
-C {/foss/designs/ic_design/chipaloza/schema/comparator/comparator.sym} 180 0 0 0 {name=x1}
+C {comparator/comparator.sym} 180 0 0 0 {name=x1}
 C {iopin.sym} 180 -90 0 1 {name=p1 lab=vdd}
 C {iopin.sym} 620 70 0 0 {name=p2 lab=vout}
 C {iopin.sym} 60 240 0 1 {name=p3 lab=vl}
 C {iopin.sym} 60 -30 0 1 {name=p4 lab=vh}
 C {lab_pin.sym} 200 80 0 1 {name=p5 lab=ibias}
 C {lab_pin.sym} 180 90 0 1 {name=p6 lab=vss}
-C {/foss/designs/ic_design/chipaloza/schema/comparator/comparator.sym} 180 210 0 0 {name=x2}
+C {comparator/comparator.sym} 180 210 0 0 {name=x2}
 C {iopin.sym} 200 290 0 1 {name=p7 lab=ibias}
 C {iopin.sym} 180 300 0 1 {name=p8 lab=vss}
 C {lab_pin.sym} 180 120 0 1 {name=p9 lab=vdd}

@@ -199,14 +199,14 @@ plot vout
 .endc
 "
 }
-C {/foss/designs/ic_design/chipaloza/schema/comparator/comparator.sym} 180 0 0 0 {name=x1}
+C {comparator/comparator.sym} 180 0 0 0 {name=x1}
 C {lab_pin.sym} 180 -90 0 1 {name=p1 lab=vdd}
 C {lab_pin.sym} 320 -10 0 1 {name=p2 lab=vop}
 C {lab_pin.sym} 60 30 0 0 {name=p3 lab=vn}
 C {lab_pin.sym} 60 -30 0 0 {name=p4 lab=vp}
 C {lab_pin.sym} 200 80 0 1 {name=p5 lab=ibias}
 C {lab_pin.sym} 180 90 0 1 {name=p6 lab=vss}
-C {/foss/designs/ic_design/chipaloza/schema/ac_probe/ac_probe.sym} 130 -220 0 0 {name=xprobe1 vcm=\{vcm\} vac=1
+C {ac_probe/ac_probe.sym} 130 -220 0 0 {name=xprobe1 vcm=\{vcm\} vac=1
 spice_ignore=true}
 C {lab_pin.sym} 180 -200 0 1 {name=p7 lab=vop}
 C {lab_pin.sym} 70 -200 0 0 {name=p8 lab=vn}
@@ -220,7 +220,7 @@ value="
 
 "
 place=header}
-C {/foss/designs/ic_design/chipaloza/schema/final_stage_ota/final_stage_ota.sym} 910 10 0 0 {name=x2}
+C {final_stage_ota/final_stage_ota.sym} 910 10 0 0 {name=x2}
 C {lab_pin.sym} 620 -90 0 0 {name=p10 lab=vdd}
 C {lab_pin.sym} 490 -20 0 0 {name=p12 lab=vop}
 C {lab_pin.sym} 490 40 0 0 {name=p13 lab=vom}

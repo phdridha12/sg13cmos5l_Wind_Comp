@@ -164,7 +164,7 @@ value="
 .lib cornerDIO.lib dio_tt
 "
       spice_ignore=true}
-C {/foss/designs/ic_design/chipaloza/schema/wind_comp/wind_comp.sym} -70 0 0 0 {name=x1}
+C {wind_comp/wind_comp.sym} -70 0 0 0 {name=x1}
 C {lab_pin.sym} -80 -130 2 1 {name=p1 lab=vdd}
 C {lab_pin.sym} -220 -30 2 1 {name=p2 lab=vh}
 C {lab_pin.sym} 150 0 2 0 {name=p3 lab=vout}

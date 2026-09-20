@@ -202,7 +202,7 @@ C {lab_pin.sym} -70 30 0 0 {name=p3 lab=vn}
 C {lab_pin.sym} -70 -30 0 0 {name=p4 lab=vp}
 C {lab_pin.sym} -120 140 0 1 {name=p5 lab=ibias}
 C {lab_pin.sym} 50 90 0 1 {name=p6 lab=vss}
-C {/foss/designs/ic_design/chipaloza/schema/ac_probe/ac_probe.sym} 0 -220 0 0 {name=xprobe1 vcm=\{vcm\} vac=1
+C {ac_probe/ac_probe.sym} 0 -220 0 0 {name=xprobe1 vcm=\{vcm\} vac=1
 }
 C {lab_pin.sym} -60 -200 0 0 {name=p8 lab=vn}
 C {lab_pin.sym} 190 0 0 1 {name=p9 lab=vout}
@@ -215,7 +215,7 @@ value="
 
 "
 place=header}
-C {/foss/designs/ic_design/chipaloza/schema/final_stage_ota/final_stage_ota.sym} 340 0 0 0 {name=x1}
+C {final_stage_ota/final_stage_ota.sym} 340 0 0 0 {name=x1}
 C {lab_pin.sym} 50 -200 0 1 {name=p2 lab=vout}
 C {lab_pin.sym} 70 80 0 1 {name=p10 lab=ibias}
 C {sg13g2_pr/sg13_lv_nmos.sym} -100 220 0 1 {name=M12

@@ -113,7 +113,7 @@ plot vout
 .endc
 "
 spice_ignore=true}
-C {/foss/designs/ic_design/chipaloza/schema/comparator/comparator.sym} 180 0 0 0 {name=x1}
+C {comparator/comparator.sym} 180 0 0 0 {name=x1}
 C {lab_pin.sym} 180 -90 0 1 {name=p1 lab=vdd}
 C {lab_pin.sym} 320 0 0 1 {name=p2 lab=vout}
 C {lab_pin.sym} 60 30 0 0 {name=p3 lab=vn}

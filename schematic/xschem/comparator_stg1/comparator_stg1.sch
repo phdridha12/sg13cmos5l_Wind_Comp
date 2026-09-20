@@ -120,12 +120,12 @@ C {iopin.sym} -200 -80 0 1 {name=p7 lab=v+
 C {iopin.sym} 480 -380 0 0 {name=p9 lab=vom
 }
 C {iopin.sym} -310 20 0 0 {name=p11 sig_type=std_logic lab=iout}
-C {/foss/designs/ic_design/chipaloza/schema/decision_circuit/decision_circuit.sym} 560 -190 0 0 {name=x1}
+C {decision_circuit/decision_circuit.sym} 560 -190 0 0 {name=x1}
 C {lab_pin.sym} 560 -290 0 1 {name=p2 lab=vdd}
 C {lab_pin.sym} -400 -210 0 1 {name=p3 lab=votap}
 C {lab_pin.sym} 670 -190 0 1 {name=p6 lab=vom}
 C {lab_pin.sym} 540 -90 0 0 {name=p10 lab=vss}
-C {/foss/designs/ic_design/chipaloza/schema/decision_circuit/decision_circuit.sym} -500 -190 0 1 {name=x2}
+C {decision_circuit/decision_circuit.sym} -500 -190 0 1 {name=x2}
 C {lab_pin.sym} -500 -290 0 0 {name=p12 lab=vdd}
 C {lab_pin.sym} -610 -190 0 0 {name=p14 lab=vop}
 C {lab_pin.sym} 460 -210 0 0 {name=p15 lab=votan}
