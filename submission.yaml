@@ -4,16 +4,15 @@
 # This is the configuration file for your submission.
 # Please edit the fields below to match your project.
 
-project-name: Chipalooza Analog Project
+project-name: Window Comparator
 
 # Must be a unique name and must match TOP in the Makefile, the file names in
 # layout/, schematic/xschem/ and testbenches/xschem/, and the top cell inside
 # the GDS. See "To rename the project" in README.md.
-top-cell: "sg13cmos5l_chipalooza_analog_project"
+top-cell: "wincomp"
 
 team-members:
-- Firstname Lastname
-- Firstname Lastname
+- Ridha FARAH
 
 # small (500um x 200um), tiny (200um x 200um) or large (500um x 415um).
 # Must match the floorplan template this layout was started from.
@@ -23,7 +22,7 @@ slot-size: tiny
 # (analog_0, analog_1, analog_2), see final/vh/sg13cmos5l_chipalooza_analog_project.vh.
 analog-pins: 3
 
-short-description: Hand-drawn analog-on-top macro built from the inverter sub-macro.
+short-description: Window comparator macro built from the inverter sub-macro.
 
 # Please add the documentation about your project here.
 # Why did you choose to create it? How does it work? How can it be tested, etc.?
