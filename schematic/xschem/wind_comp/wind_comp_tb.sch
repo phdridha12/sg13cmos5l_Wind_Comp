@@ -5,9 +5,8 @@ V {}
 S {}
 F {}
 E {}
-B 4 -1130 150 -70 560 {fill=0}
 T {SPICE SIMULATION} -1070 -650 0 0 0.4 0.4 {}
-T {MONTE CARLO PYTHON} -1120 180 0 0 0.4 0.4 {}
+T {MONTE CARLO PYTHON} 140 -770 0 0 0.4 0.4 {}
 N -60 50 -60 80 {lab=ibias}
 N -80 60 -80 90 {lab=vss}
 N 20 0 150 0 {lab=vout}
@@ -44,7 +43,7 @@ value="
 .lib cornerDIO.lib dio_tt
 "
       }
-C {devices/launcher.sym} -1450 400 0 0 {name=h2
+C {devices/launcher.sym} -690 230 0 0 {name=h2
 descr="OP annotate" 
 tclcommand="xschem annotate_op"
 }
@@ -68,10 +67,10 @@ C {code_shown.sym} -1280 -350 0 0 {name=TRAN_SIM only_toplevel=false value="
 Vh vh vss \{vcm+0.3\}
 Vl vl vss \{vcm-0.3\}
 vin vin n0 \{vcm\}
-vin1 n0 n1 pulse(0 0.305 100u 1n 1n 10u 500u)
-vin2 n1 vss pulse(0 -0.305 300u 1n 1n 10u 500u)
+vin1 n0 n1 pulse(0 0.305 100u 1n 1n 1u 500u)
+vin2 n1 vss pulse(0 -0.305 300u 1n 1n 1u 500u)
 .control
-tran 10n 1m
+tran 100n 1m
 plot vout vh vl vin
 meas tran fall_time find time when vin=vh fall=1
 meas tran delay find time when vout=\{vcm\} fall=1
@@ -81,8 +80,8 @@ print fall_error
 echo results_save_end
 .endc
 "
-}
-C {launcher.sym} -1450 320 0 0 {name=h4
+spice_ignore=true}
+C {launcher.sym} -690 150 0 0 {name=h4
 descr=SimulateNGSPICE
 tclcommand="
 # Setup the default simulation commands if not already set up
@@ -115,7 +114,7 @@ value="
 
 "
 place=header}
-C {code_shown.sym} -1120 250 0 0 {name=MC_SETTINGS
+C {code_shown.sym} 140 -700 0 0 {name=MC_SETTINGS
 only_toplevel=false
 value="
 **nr_workers=1
@@ -126,7 +125,7 @@ value="
 **results_plot_end
 "
 }
-C {launcher.sym} -1050 525 0 0 {name=h1
+C {launcher.sym} 210 -425 0 0 {name=h1
 descr=SimulatePARALLEL
 tclcommand="
 # Setup the default simulation commands if not already set up
@@ -151,7 +150,7 @@ xschem netlist
 exec python3 $\{PDK_ROOT\}/$\{PDK\}/libs.tech/xschem/sg13g2_tests/ngspice_parallel_mc.py [file tail [xschem get current_name]]
 "
 spice_ignore=true}
-C {simulator_commands_shown.sym} -830 220 0 0 {
+C {simulator_commands_shown.sym} 430 -730 0 0 {
 name=Libs_Ngspice1
 simulator=ngspice
 only_toplevel=false
@@ -164,7 +163,7 @@ value="
 .lib cornerDIO.lib dio_tt
 "
       spice_ignore=true}
-C {wind_comp/wind_comp.sym} -70 0 0 0 {name=x1}
+C {/foss/designs/ic_design/chipaloza/sg13cmos5l_Wind_Comp/schematic/xschem/wind_comp/wind_comp.sym} -70 0 0 0 {name=x1}
 C {lab_pin.sym} -80 -130 2 1 {name=p1 lab=vdd}
 C {lab_pin.sym} -220 -30 2 1 {name=p2 lab=vh}
 C {lab_pin.sym} 150 0 2 0 {name=p3 lab=vout}
@@ -172,3 +171,44 @@ C {lab_pin.sym} -200 0 2 1 {name=p4 lab=vin}
 C {lab_pin.sym} -220 30 2 1 {name=p5 lab=vl}
 C {lab_pin.sym} -60 80 2 0 {name=p6 lab=ibias}
 C {lab_pin.sym} -80 90 2 1 {name=p7 lab=vss}
+C {code_shown.sym} -2230 -360 0 0 {name=AC_SIM only_toplevel=false value="
+.control
+ac dec 50 100 100G
+let op_mag=db(vout)
+let op_ph = 180*cph(vout)/pi
+plot op_mag op_ph
+.endc
+"
+spice_ignore=true}
+C {code_shown.sym} -1430 40 0 0 {name=TRAN_SIM1 only_toplevel=false value="
+Vh vh vss \{vcm+0.3\}
+Vl vl vss \{vcm-0.3\}
+vin vin vss sin(\{vcm\} 0.35 1000)
+.control
+tran 100n 1m
+plot vout vh vl vin
+meas tran fall_time find time when vin=vh fall=1
+meas tran delay find time when vout=\{vcm\} fall=1
+let fall_error = delay-fall_time
+echo results_save_begin
+print fall_error
+echo results_save_end
+.endc
+"
+spice_ignore=true}
+C {code_shown.sym} -1780 -350 0 0 {name=TRAN_SIM2 only_toplevel=false value="
+Vh vh vss \{vcm+0.3\}
+Vl vl vss \{vcm-0.3\}
+vin vin vss sin(\{vcm\} 0.4 1000)
+.control
+tran 100n 1m
+plot vout vh vl vin
+meas tran fall_time find time when vin=vh fall=1
+meas tran delay find time when vout=\{vcm\} fall=1
+let fall_error = delay-fall_time
+echo results_save_begin
+print fall_error
+echo results_save_end
+.endc
+"
+}

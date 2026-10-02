@@ -5,12 +5,12 @@ V {}
 S {}
 F {}
 E {}
-N -160 180 -160 220 {lab=#net1}
+N -160 180 -160 220 {lab=n_mrr}
 N 170 180 170 220 {lab=vout}
 N 0 20 170 20 {lab=vt}
 N 0 -20 0 20 {lab=vt}
 N 20 340 170 340 {lab=vss}
-N -20 250 130 250 {lab=#net1}
+N -20 250 130 250 {lab=n_mrr}
 N 20 340 20 380 {lab=vss}
 N -160 340 20 340 {lab=vss}
 N 170 250 170 340 {lab=vss}
@@ -26,10 +26,10 @@ N -140 -80 -140 -50 {lab=ibp}
 N -160 20 -160 60 {lab=vt}
 N 170 20 170 60 {lab=vt}
 N -160 90 170 90 {lab=vdd}
-N -20 180 -20 250 {lab=#net1}
-N -120 250 -20 250 {lab=#net1}
-N -160 180 -20 180 {lab=#net1}
-N -160 120 -160 180 {lab=#net1}
+N -20 180 -20 250 {lab=n_mrr}
+N -120 250 -20 250 {lab=n_mrr}
+N -160 180 -20 180 {lab=n_mrr}
+N -160 120 -160 180 {lab=n_mrr}
 N -760 -40 -760 10 {lab=iout}
 N -830 -40 -760 -40 {lab=iout}
 N -830 -70 -830 -40 {lab=iout}
@@ -41,6 +41,18 @@ N -580 -140 -580 -80 {lab=ibp}
 N -660 -80 -580 -80 {lab=ibp}
 N -660 -110 -660 -80 {lab=ibp}
 N -660 -190 -660 -140 {lab=vdd}
+N 160 -370 160 -330 {lab=n_mrr
+spice_ignore=true}
+N 160 -270 160 -240 {lab=vss
+spice_ignore=true}
+N 90 -300 120 -300 {lab=en_n
+spice_ignore=true}
+N 430 -370 430 -330 {lab=ibp
+spice_ignore=true}
+N 430 -270 430 -240 {lab=vss
+spice_ignore=true}
+N 360 -300 390 -300 {lab=en_n
+spice_ignore=true}
 C {sg13cmos5l_pr/sg13_lv_pmos.sym} -20 -50 2 1 {name=M1
 l=3u
 w=1u
@@ -123,3 +135,34 @@ spiceprefix=X
 C {lab_pin.sym} -660 -190 1 0 {name=p12 lab=vdd}
 C {lab_pin.sym} -580 -140 2 0 {name=p6 lab=ibp}
 C {lab_pin.sym} -140 -80 2 1 {name=p13 lab=ibp}
+C {sg13g2_pr/sg13_lv_nmos.sym} 140 -300 2 1 {name=MB3
+l=0.5u
+w=0.5u
+ng=1
+m=1
+model=sg13_lv_pmos
+spiceprefix=X
+annot_side=1
+spice_ignore=true}
+C {lab_pin.sym} 90 -300 2 1 {name=p43 sig_type=std_logic lab=en_n
+spice_ignore=true}
+C {lab_pin.sym} 160 -240 2 1 {name=p44 sig_type=std_logic lab=vss
+spice_ignore=true}
+C {lab_pin.sym} 160 -370 0 1 {name=p45 lab=n_mrr
+spice_ignore=true}
+C {sg13g2_pr/sg13_lv_nmos.sym} 410 -300 2 1 {name=MB4
+l=0.5u
+w=0.5u
+ng=1
+m=1
+model=sg13_lv_pmos
+spiceprefix=X
+annot_side=1
+spice_ignore=true}
+C {lab_pin.sym} 360 -300 2 1 {name=p41 sig_type=std_logic lab=en_n
+spice_ignore=true}
+C {lab_pin.sym} 430 -240 2 1 {name=p46 sig_type=std_logic lab=vss
+spice_ignore=true}
+C {lab_pin.sym} 430 -370 0 1 {name=p47 lab=ibp
+spice_ignore=true}
+C {lab_pin.sym} -20 180 0 1 {name=p9 lab=n_mrr}

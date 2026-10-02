@@ -22,8 +22,9 @@ B 5 -2.5 -62.5 2.5 -57.5 {name=vdd sig_type=std_logic dir=inout}
 B 5 97.5 -2.5 102.5 2.5 {name=vout dir=inout}
 B 5 -82.5 -32.5 -77.5 -27.5 {name=v- dir=inout}
 B 5 -82.5 27.5 -77.5 32.5 {name=v+ dir=inout}
-B 5 17.5 47.5 22.5 52.5 {name=iout sig_type=std_logic dir=inout}
+B 5 17.5 47.5 22.5 52.5 {name=ibias sig_type=std_logic dir=inout}
 B 5 -2.5 57.5 2.5 62.5 {name=vss sig_type=std_logic dir=inout}
+B 5 17.5 -52.5 22.5 -47.5 {name=en sig_type=std_logic dir=inout}
 T {@name} -55 -82 0 0 0.2 0.2 {}
 T {VDD} -15 -34 0 0 0.2 0.2 {}
 T {V+} -45 -34 0 0 0.2 0.2 {}

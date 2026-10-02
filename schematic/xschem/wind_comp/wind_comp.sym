@@ -31,6 +31,7 @@ B 5 -72.5 -2.5 -67.5 2.5 {name=vin dir=inout}
 B 5 -92.5 27.5 -87.5 32.5 {name=vl dir=inout}
 B 5 7.5 47.5 12.5 52.5 {name=ibias dir=inout}
 B 5 -12.5 57.5 -7.5 62.5 {name=vss dir=inout}
+B 5 7.5 -52.5 12.5 -47.5 {name=en dir=inout}
 T {@name} -65 -82 0 0 0.2 0.2 {}
 T {VDD} -25 -34 0 0 0.2 0.2 {}
 T {VH} -55 -34 0 0 0.2 0.2 {}
