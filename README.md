@@ -36,7 +36,7 @@ A window comparator is a dual-threshold voltage detector. It compares a single i
 | **VH** | Input | Analog | Upper threshold reference (external) |
 | **VDD** | Power | Supply | 1.2 V core supply |
 | **VSS** | Power | Ground | 0 V |
-| **OUT** | Output | Digital | High when `VL` < `VIN` < `VH`; low otherwise |
+| **OUT** | Output | Digital | Low when `VL` < `VIN` < `VH`; High otherwise |
 
 ---
 
