@@ -38,7 +38,14 @@ C {/foss/designs/ic_design/chipaloza/sg13cmos5l_Wind_Comp/schematic/xschem/compa
 C {iopin.sym} 200 290 0 1 {name=p7 lab=ibias}
 C {iopin.sym} 180 300 0 1 {name=p8 lab=vss}
 C {lab_pin.sym} 180 120 0 1 {name=p9 lab=vdd}
-C {sg13cmos5l_stdcells/sg13cmos5l_and2_1.sym} 440 70 0 0 {name=x3 VDD=VDD VSS=VSS prefix=sg13g2_ }
+C {sg13cmos5l_stdcells/sg13cmos5l_and2_2.sym} 440 70 0 0 {name=x3 VDD=VDD VSS=VSS prefix=sg13g2_ }
 C {iopin.sym} 10 110 0 1 {name=p10 lab=vin}
 C {lab_pin.sym} 200 -80 0 1 {name=p11 lab=en}
 C {lab_pin.sym} 200 140 0 1 {name=p12 lab=en}
+C {devices/code_shown.sym} -220 -160 0 0 {name=MODEL
+only_toplevel=true
+format="tcleval( @value )"
+value="
+.include \\"$::PDK_ROOT/ihp-sg13g2/libs.ref/sg13g2_stdcell/cdl/sg13g2_stdcell.cdl\\"
+"
+place=header}

@@ -1,0 +1,169 @@
+v {xschem version=3.4.BRC file_version=1.4}
+S {}
+E {}
+K{type=primitive
+format="@name @pinlist @symname"
+template="name=X1"
+}
+L 4 -20 10 0 10 {}
+T {s4_an[0]} 5 5 0 0 0.2 0.2 {}
+L 4 -20 30 0 30 {}
+T {s4_an_0_esd} 5 25 0 0 0.2 0.2 {}
+L 4 -20 50 0 50 {}
+T {vbias} 5 45 0 0 0.2 0.2 {}
+L 4 -20 70 0 70 {}
+T {dig_in[23]} 5 65 0 0 0.2 0.2 {}
+L 4 -20 90 0 90 {}
+T {dig_in[22]} 5 85 0 0 0.2 0.2 {}
+L 4 -20 110 0 110 {}
+T {dig_in[21]} 5 105 0 0 0.2 0.2 {}
+L 4 -20 130 0 130 {}
+T {dig_in[20]} 5 125 0 0 0.2 0.2 {}
+L 4 -20 150 0 150 {}
+T {dig_in[19]} 5 145 0 0 0.2 0.2 {}
+L 4 -20 170 0 170 {}
+T {dig_in[18]} 5 165 0 0 0.2 0.2 {}
+L 4 -20 190 0 190 {}
+T {dig_in[17]} 5 185 0 0 0.2 0.2 {}
+L 4 -20 210 0 210 {}
+T {dig_in[16]} 5 205 0 0 0.2 0.2 {}
+L 4 -20 230 0 230 {}
+T {dig_in[15]} 5 225 0 0 0.2 0.2 {}
+L 4 -20 250 0 250 {}
+T {dig_in[14]} 5 245 0 0 0.2 0.2 {}
+L 4 -20 270 0 270 {}
+T {dig_in[13]} 5 265 0 0 0.2 0.2 {}
+L 4 -20 290 0 290 {}
+T {dig_in[12]} 5 285 0 0 0.2 0.2 {}
+L 4 -20 310 0 310 {}
+T {dig_in[11]} 5 305 0 0 0.2 0.2 {}
+L 4 -20 330 0 330 {}
+T {dig_in[10]} 5 325 0 0 0.2 0.2 {}
+L 4 -20 350 0 350 {}
+T {dig_in[9]} 5 345 0 0 0.2 0.2 {}
+L 4 -20 370 0 370 {}
+T {dig_in[8]} 5 365 0 0 0.2 0.2 {}
+L 4 -20 390 0 390 {}
+T {dig_in[7]} 5 385 0 0 0.2 0.2 {}
+L 4 -20 410 0 410 {}
+T {dig_in[6]} 5 405 0 0 0.2 0.2 {}
+L 4 -20 430 0 430 {}
+T {dig_in[5]} 5 425 0 0 0.2 0.2 {}
+L 4 -20 450 0 450 {}
+T {dig_in[4]} 5 445 0 0 0.2 0.2 {}
+L 4 -20 470 0 470 {}
+T {dig_in[3]} 5 465 0 0 0.2 0.2 {}
+L 4 -20 490 0 490 {}
+T {dig_in[2]} 5 485 0 0 0.2 0.2 {}
+L 4 -20 510 0 510 {}
+T {dig_in[1]} 5 505 0 0 0.2 0.2 {}
+L 4 -20 530 0 530 {}
+T {dig_in[0]} 5 525 0 0 0.2 0.2 {}
+L 4 -20 550 0 550 {}
+T {dig_out[11]} 5 545 0 0 0.2 0.2 {}
+L 4 -20 570 0 570 {}
+T {dig_out[10]} 5 565 0 0 0.2 0.2 {}
+L 4 -20 590 0 590 {}
+T {dig_out[9]} 5 585 0 0 0.2 0.2 {}
+L 4 -20 610 0 610 {}
+T {dig_out[8]} 5 605 0 0 0.2 0.2 {}
+L 4 -20 630 0 630 {}
+T {dig_out[7]} 5 625 0 0 0.2 0.2 {}
+L 4 -20 650 0 650 {}
+T {dig_out[6]} 5 645 0 0 0.2 0.2 {}
+L 4 -20 670 0 670 {}
+T {dig_out[5]} 5 665 0 0 0.2 0.2 {}
+L 4 -20 690 0 690 {}
+T {dig_out[4]} 5 685 0 0 0.2 0.2 {}
+L 4 -20 710 0 710 {}
+T {dig_out[3]} 5 705 0 0 0.2 0.2 {}
+L 4 -20 730 0 730 {}
+T {dig_out[2]} 5 725 0 0 0.2 0.2 {}
+L 4 -20 750 0 750 {}
+T {dig_out[1]} 5 745 0 0 0.2 0.2 {}
+L 4 -20 770 0 770 {}
+T {dig_out[0]} 5 765 0 0 0.2 0.2 {}
+L 4 -20 790 0 790 {}
+T {ibias0} 5 785 0 0 0.2 0.2 {}
+L 4 -20 810 0 810 {}
+T {ibias1} 5 805 0 0 0.2 0.2 {}
+L 4 -20 830 0 830 {}
+T {analog_bus3} 5 825 0 0 0.2 0.2 {}
+L 4 -20 850 0 850 {}
+T {analog_bus2} 5 845 0 0 0.2 0.2 {}
+L 4 -20 870 0 870 {}
+T {analog_bus1} 5 865 0 0 0.2 0.2 {}
+L 4 -20 890 0 890 {}
+T {enable} 5 885 0 0 0.2 0.2 {}
+L 4 -20 910 0 910 {}
+T {clk} 5 905 0 0 0.2 0.2 {}
+L 4 -20 930 0 930 {}
+T {reset} 5 925 0 0 0.2 0.2 {}
+L 4 -20 950 0 950 {}
+T {analog_bus0} 5 945 0 0 0.2 0.2 {}
+L 4 -20 970 0 970 {}
+T {vss_1v2} 5 965 0 0 0.2 0.2 {}
+L 4 -20 990 0 990 {}
+T {vdd_1v2} 5 985 0 0 0.2 0.2 {}
+L 4 -20 1010 0 1010 {}
+T {vss_3v3} 5 1005 0 0 0.2 0.2 {}
+L 4 -20 1030 0 1030 {}
+T {vdd_3v3} 5 1025 0 0 0.2 0.2 {}
+L 4 -20 1050 0 1050 {}
+T {vss_1v2_uq0} 5 1045 0 0 0.2 0.2 {}
+B 5 -22.5 8 -17.5 12 {name=s4_an[0] dir=inout}
+B 5 -22.5 28 -17.5 32 {name=s4_an_0_esd dir=inout}
+B 5 -22.5 48 -17.5 52 {name=vbias dir=inout}
+B 5 -22.5 68 -17.5 72 {name=dig_in[23] dir=inout}
+B 5 -22.5 88 -17.5 92 {name=dig_in[22] dir=inout}
+B 5 -22.5 108 -17.5 112 {name=dig_in[21] dir=inout}
+B 5 -22.5 128 -17.5 132 {name=dig_in[20] dir=inout}
+B 5 -22.5 148 -17.5 152 {name=dig_in[19] dir=inout}
+B 5 -22.5 168 -17.5 172 {name=dig_in[18] dir=inout}
+B 5 -22.5 188 -17.5 192 {name=dig_in[17] dir=inout}
+B 5 -22.5 208 -17.5 212 {name=dig_in[16] dir=inout}
+B 5 -22.5 228 -17.5 232 {name=dig_in[15] dir=inout}
+B 5 -22.5 248 -17.5 252 {name=dig_in[14] dir=inout}
+B 5 -22.5 268 -17.5 272 {name=dig_in[13] dir=inout}
+B 5 -22.5 288 -17.5 292 {name=dig_in[12] dir=inout}
+B 5 -22.5 308 -17.5 312 {name=dig_in[11] dir=inout}
+B 5 -22.5 328 -17.5 332 {name=dig_in[10] dir=inout}
+B 5 -22.5 348 -17.5 352 {name=dig_in[9] dir=inout}
+B 5 -22.5 368 -17.5 372 {name=dig_in[8] dir=inout}
+B 5 -22.5 388 -17.5 392 {name=dig_in[7] dir=inout}
+B 5 -22.5 408 -17.5 412 {name=dig_in[6] dir=inout}
+B 5 -22.5 428 -17.5 432 {name=dig_in[5] dir=inout}
+B 5 -22.5 448 -17.5 452 {name=dig_in[4] dir=inout}
+B 5 -22.5 468 -17.5 472 {name=dig_in[3] dir=inout}
+B 5 -22.5 488 -17.5 492 {name=dig_in[2] dir=inout}
+B 5 -22.5 508 -17.5 512 {name=dig_in[1] dir=inout}
+B 5 -22.5 528 -17.5 532 {name=dig_in[0] dir=inout}
+B 5 -22.5 548 -17.5 552 {name=dig_out[11] dir=inout}
+B 5 -22.5 568 -17.5 572 {name=dig_out[10] dir=inout}
+B 5 -22.5 588 -17.5 592 {name=dig_out[9] dir=inout}
+B 5 -22.5 608 -17.5 612 {name=dig_out[8] dir=inout}
+B 5 -22.5 628 -17.5 632 {name=dig_out[7] dir=inout}
+B 5 -22.5 648 -17.5 652 {name=dig_out[6] dir=inout}
+B 5 -22.5 668 -17.5 672 {name=dig_out[5] dir=inout}
+B 5 -22.5 688 -17.5 692 {name=dig_out[4] dir=inout}
+B 5 -22.5 708 -17.5 712 {name=dig_out[3] dir=inout}
+B 5 -22.5 728 -17.5 732 {name=dig_out[2] dir=inout}
+B 5 -22.5 748 -17.5 752 {name=dig_out[1] dir=inout}
+B 5 -22.5 768 -17.5 772 {name=dig_out[0] dir=inout}
+B 5 -22.5 788 -17.5 792 {name=ibias0 dir=inout}
+B 5 -22.5 808 -17.5 812 {name=ibias1 dir=inout}
+B 5 -22.5 828 -17.5 832 {name=analog_bus3 dir=inout}
+B 5 -22.5 848 -17.5 852 {name=analog_bus2 dir=inout}
+B 5 -22.5 868 -17.5 872 {name=analog_bus1 dir=inout}
+B 5 -22.5 888 -17.5 892 {name=enable dir=inout}
+B 5 -22.5 908 -17.5 912 {name=clk dir=inout}
+B 5 -22.5 928 -17.5 932 {name=reset dir=inout}
+B 5 -22.5 948 -17.5 952 {name=analog_bus0 dir=inout}
+B 5 -22.5 968 -17.5 972 {name=vss_1v2 dir=inout}
+B 5 -22.5 988 -17.5 992 {name=vdd_1v2 dir=inout}
+B 5 -22.5 1008 -17.5 1012 {name=vss_3v3 dir=inout}
+B 5 -22.5 1028 -17.5 1032 {name=vdd_3v3 dir=inout}
+B 5 -22.5 1048 -17.5 1052 {name=vss_1v2_uq0 dir=inout}
+P 4 5 225 0 0 0 0 1060 225 1060 225 0 {}
+T {@symname} 40 520 0 0 0.3 0.3 {} 
+T {@name} 0 -15 0 0 0.2 0.2 {}

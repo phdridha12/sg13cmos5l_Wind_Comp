@@ -1,0 +1,105 @@
+
+Magic 8.3 revision 684 - Compiled on Tue Sep 22 03:44:29 PM CEST 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+WARNING: RLIMIT_NOFILE is above 1024 and Tcl_Version<9 this may cause runtime issues [rlim_cur=1048576]
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology ihp-sg13g2 ...
+2 Magic internal units = 1 Lambda
+Input style sg13g2(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    pblock sealcont difffill nemitter hvnemitter hvisodiffres sealvia1 sealvia2 sealvia3 sealvia4 sealvia5 sealvia6 pillar solder seal glass thruvia inductor 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading ihp-sg13g2 Device Generator Menu ...
+Loading "output/slot4_wrapper__slot4_wrapper/magic_CC/slot4_wrapper_MAGIC_CC_Script.tcl" from command line.
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 6.0
+Library name: slot4_wrapper
+Reading "$$$CONTEXT_INFO$$$".
+Reading "nmos$2".
+Moving label "Gate" from pvaractor to polycont in cell nmos$2.
+Reading "sg13g2_inv_1".
+Reading "sg13cmos5l_inv_16".
+Reading "via_stack$6".
+Reading "via_stack$7".
+Reading "dynamic_pcell".
+CIF file read warning: CIF style sg13g2(): units rescaled by factor of 5 / 1
+Moving label "DRN_NET_IH" from metal3 to via2 in cell dynamic_pcell.
+Moving label "I_GATE" from metal3 to via2 in cell dynamic_pcell.
+Moving label "J_GATE" from metal3 to via2 in cell dynamic_pcell.
+Moving label "SRC_NET_IJ" from metal3 to via2 in cell dynamic_pcell.
+Moving label "DRN_NET_GJ_GATE_GH" from metal3 to via2 in cell dynamic_pcell.
+Moving label "J_GATE" from metal3 to via2 in cell dynamic_pcell.
+Moving label "I_GATE" from metal3 to via2 in cell dynamic_pcell.
+Moving label "SRC_NET_GH" from metal3 to via2 in cell dynamic_pcell.
+Moving label "DRN_NET_IH" from metal3 to via2 in cell dynamic_pcell.
+Reading "via_stack$9".
+Reading "name".
+Reading "via_stack".
+Reading "dynamic_pcell$7".
+Moving label "A_DRN" from metal3 to via2 in cell dynamic_pcell$7.
+Moving label "D_DRN" from metal3 to via2 in cell dynamic_pcell$7.
+Moving label "DRN_NET_BE_GATE_AB" from metal3 to via2 in cell dynamic_pcell$7.
+Moving label "SRC_NET_EF" from metal3 to via2 in cell dynamic_pcell$7.
+Moving label "DRN_NET_CF_GATE_CD" from metal3 to via2 in cell dynamic_pcell$7.
+Reading "dynamic_pcell$1".
+Reading "dynamic_pcell$2".
+Moving label "SRC_NET_MNO" from metal2 to via1 in cell dynamic_pcell$2.
+Moving label "SRC_NET_MNO" from metal2 to via1 in cell dynamic_pcell$2.
+Moving label "DRN_NET_N_GATE_MNO" from metal2 to via1 in cell dynamic_pcell$2.
+Moving label "SRC_NET_MNO" from metal2 to via1 in cell dynamic_pcell$2.
+Moving label "SRC_NET_MNO" from metal2 to via1 in cell dynamic_pcell$2.
+Moving label "SRC_NET_MNO" from metal2 to via1 in cell dynamic_pcell$2.
+Moving label "SRC_NET_MNO" from metal2 to via1 in cell dynamic_pcell$2.
+Moving label "DRN_NET_LM_GATE_KL" from metal2 to via1 in cell dynamic_pcell$2.
+Moving label "SRC_NET_KL" from metal2 to via2 in cell dynamic_pcell$2.
+Moving label "SRC_NET_KL" from metal3 to via2 in cell dynamic_pcell$2.
+Moving label "SRC_NET_KL" from metal3 to via2 in cell dynamic_pcell$2.
+Moving label "K_DRN" from metal3 to via2 in cell dynamic_pcell$2.
+Moving label "SRC_NET_MNO" from metal3 to via2 in cell dynamic_pcell$2.
+Moving label "DRN_NET_LM_GATE_KL" from metal3 to via2 in cell dynamic_pcell$2.
+Moving label "SRC_NET_MNO" from metal3 to via2 in cell dynamic_pcell$2.
+Moving label "DRN_NET_N_GATE_MNO" from metal3 to via2 in cell dynamic_pcell$2.
+Moving label "Gate" from pvaractor to poly in cell dynamic_pcell$2.
+Moving label "Gate" from pvaractor to poly in cell dynamic_pcell$2.
+Moving label "Gate" from pvaractor to poly in cell dynamic_pcell$2.
+Reading "pmos$3".
+Reading "nmos".
+Reading "pmos".
+Reading "via_stack$1".
+Reading "sg13g2_antennanp".
+Reading "guard_ring".
+Reading "via_stack$3".
+Reading "sg13g2_and2_2$1".
+Reading "comparator".
+Error while reading cell "comparator" (byte position 641184): Warning: cell "via_stack$9" placed on top of itself.  Ignoring the extra one.
+Reading "via_stack$21".
+Reading "via_stack$19".
+Reading "via_stack$18".
+Reading "via_stack$16".
+Reading "via_stack$17".
+Reading "via_stack$8".
+Reading "via_stack$14".
+Reading "via_stack$13".
+Reading "via_stack$12".
+Reading "via_stack$4".
+Reading "via_stack$11".
+Reading "via_stack$10".
+Reading "wind_comp".
+Reading "slot4_wrapper".
+Error while reading cell "slot4_wrapper" (byte position 1058156): Warning: cell "via_stack$8" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "slot4_wrapper" (byte position 1058228): Warning: cell "via_stack$8" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "slot4_wrapper" (byte position 1058300): Warning: cell "via_stack$8" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "slot4_wrapper" (byte position 1058372): Warning: cell "via_stack$8" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "slot4_wrapper" (byte position 1058444): Warning: cell "via_stack$8" placed on top of itself.  Ignoring the extra one.
+Error while reading cell "slot4_wrapper" (byte position 1058516): Warning: cell "via_stack$8" placed on top of itself.  Ignoring the extra one.
+Extracting slot4_wrapper into /foss/designs/ic_design/chipaloza/sg13cmos5l_Wind_Comp/layout/output/slot4_wrapper__slot4_wrapper/magic_CC/slot4_wrapper.ext:
+Processing slot4_wrapper
+slot4_wrapper: 88 warnings
+Total of 88 warnings.
+exttospice finished.

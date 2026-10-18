@@ -1,0 +1,3 @@
+.subckt slot4_wrapper VDD VSS
+.ends
+.end

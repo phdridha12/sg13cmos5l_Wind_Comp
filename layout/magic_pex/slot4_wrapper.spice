@@ -1,0 +1,493 @@
+* SPICE3 file created from slot4_wrapper.ext - technology: ihp-sg13g2
+
+.subckt slot4_wrapper s4_an_0_esd vbias dig_in[23] dig_in[22] dig_in[21] dig_in[20]
++ dig_in[19] dig_in[18] dig_in[17] dig_in[16] dig_in[15] dig_in[14] dig_in[13] dig_in[12]
++ dig_in[11] dig_in[10] dig_in[9] dig_in[8] dig_in[7] dig_in[6] dig_in[5] dig_in[4]
++ dig_in[3] dig_in[2] dig_in[1] dig_in[0] dig_out[11] dig_out[10] dig_out[9] dig_out[8]
++ dig_out[7] dig_out[6] dig_out[5] dig_out[4] dig_out[3] dig_out[2] dig_out[1] dig_out[0]
++ ibias0 ibias1 analog_bus3 analog_bus2 analog_bus1 enable clk reset analog_bus0 ibias
++ s4_an vss_1v2 vdd_1v2 vss_3v3 vdd_3v3 vss1v2 vdd1v2 vss_1v2_uq0
+X0 analog_bus1 wind_comp_0/sg13g2_and2_2$1_0/a_45_160# wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.1918p ps=1.5u w=1.12u l=0.13u
+X1 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/a_45_160# analog_bus1 wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0.4256p pd=3u as=0.2128p ps=1.5u w=1.12u l=0.13u
+X2 analog_bus1 wind_comp_0/sg13g2_and2_2$1_0/a_45_160# sub sub sg13_lv_nmos ad=0.1406p pd=1.12u as=0.1331p ps=1.12u w=0.74u l=0.13u
+X3 sub wind_comp_0/sg13g2_and2_2$1_0/a_45_160# analog_bus1 sub sg13_lv_nmos ad=0.2812p pd=2.24u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X4 wind_comp_0/sg13g2_and2_2$1_0/a_45_160# wind_comp_0/sg13g2_and2_2$1_0/A wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0.1596p pd=1.22u as=0.2856p ps=2.36u w=0.84u l=0.13u
+X5 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/B wind_comp_0/sg13g2_and2_2$1_0/a_45_160# wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0.1918p pd=1.5u as=0.1596p ps=1.22u w=0.84u l=0.13u
+X6 wind_comp_0/sg13g2_and2_2$1_0/a_139_160# wind_comp_0/sg13g2_and2_2$1_0/A wind_comp_0/sg13g2_and2_2$1_0/a_45_160# sub sg13_lv_nmos ad=0.1216p pd=1.02u as=0.2176p ps=1.96u w=0.64u l=0.13u
+X7 sub wind_comp_0/sg13g2_and2_2$1_0/B wind_comp_0/sg13g2_and2_2$1_0/a_139_160# sub sg13_lv_nmos ad=0.1331p pd=1.12u as=0.1216p ps=1.02u w=0.64u l=0.13u
+X8 wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/A wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0.5928p pd=3.5u as=0.5928p ps=3.5u w=3.12u l=0.5u
+X9 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0.5928p pd=3.5u as=0.67222n ps=1.23516m w=3.12u l=0.5u
+X10 wind_comp_0/comparator_0/dynamic_pcell_0/DRN_NET_GJ_GATE_GH wind_comp_0/comparator_0/dynamic_pcell_0/DRN_NET_GJ_GATE_GH sub sub sg13_lv_nmos ad=55.5f pd=0.74u as=55.5f ps=0.74u w=0.15u l=3u
+X11 sub wind_comp_0/comparator_0/dynamic_pcell_0/DRN_NET_GJ_GATE_GH wind_comp_0/comparator_0/dynamic_pcell_0/DRN_NET_GJ_GATE_GH sub sg13_lv_nmos ad=55.5f pd=0.74u as=55.5f ps=0.74u w=0.15u l=3u
+X12 wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/A sub sub sub sg13_lv_nmos ad=55.5f pd=0.74u as=55.5f ps=0.74u w=0.15u l=0.5u
+X13 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0.5928p pd=3.5u as=0 ps=0 w=3.12u l=0.5u
+X14 sub sub sub sub sg13_lv_nmos ad=55.5f pd=0.74u as=1.83859n ps=2.65854m w=0.15u l=0.5u
+X15 sub sub sub sub sg13_lv_nmos ad=0.1005p pd=1.34u as=0 ps=0 w=0.15u l=0.5u
+X16 sub sub wind_comp_0/comparator_0/dynamic_pcell_0/DRN_NET_GJ_GATE_GH sub sg13_lv_nmos ad=55.5f pd=0.74u as=55.5f ps=0.74u w=0.15u l=0.5u
+X17 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/A wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0.5928p pd=3.5u as=0.5928p ps=3.5u w=3.12u l=0.5u
+X18 wind_comp_0/comparator_0/dynamic_pcell_0/DRN_NET_GJ_GATE_GH wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0.5928p pd=3.5u as=0.5928p ps=3.5u w=3.12u l=0.5u
+X19 wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/A wind_comp_0/comparator_0/dynamic_pcell_0/I_GATE wind_comp_0/comparator_0/dynamic_pcell$2_0/K_DRN wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0.5928p pd=3.5u as=0.5928p ps=3.5u w=3.12u l=1u
+X20 wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/A wind_comp_0/comparator_0/dynamic_pcell_0/DRN_NET_GJ_GATE_GH sub sub sg13_lv_nmos ad=55.5f pd=0.74u as=55.5f ps=0.74u w=0.15u l=3u
+X21 wind_comp_0/comparator_0/dynamic_pcell_0/DRN_NET_GJ_GATE_GH sub sub sub sg13_lv_nmos ad=55.5f pd=0.74u as=55.5f ps=0.74u w=0.15u l=0.5u
+X22 wind_comp_0/comparator_0/dynamic_pcell$2_0/K_DRN wind_comp_0/comparator_0/dynamic_pcell_0/J_GATE wind_comp_0/comparator_0/dynamic_pcell_0/DRN_NET_GJ_GATE_GH wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0.5928p pd=3.5u as=0.5928p ps=3.5u w=3.12u l=1u
+X23 sub sub wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/A sub sg13_lv_nmos ad=55.5f pd=0.74u as=55.5f ps=0.74u w=0.15u l=0.5u
+X24 wind_comp_0/comparator_0/dynamic_pcell$2_0/K_DRN wind_comp_0/comparator_0/dynamic_pcell_0/I_GATE wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/A wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0.5928p pd=3.5u as=0.5928p ps=3.5u w=3.12u l=1u
+X25 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=1.0608p pd=6.92u as=0 ps=0 w=3.12u l=0.5u
+X26 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_0/dynamic_pcell_0/DRN_NET_GJ_GATE_GH wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0.5928p pd=3.5u as=0.5928p ps=3.5u w=3.12u l=0.5u
+X27 sub wind_comp_0/comparator_0/dynamic_pcell_0/DRN_NET_GJ_GATE_GH wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/A sub sg13_lv_nmos ad=55.5f pd=0.74u as=55.5f ps=0.74u w=0.15u l=3u
+X28 sub sub sub sub sg13_lv_nmos ad=55.5f pd=0.74u as=0 ps=0 w=0.15u l=0.5u
+X29 sub sub sub sub sg13_lv_nmos ad=0.1005p pd=1.34u as=0 ps=0 w=0.15u l=0.5u
+X30 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=1.0608p pd=6.92u as=0 ps=0 w=3.12u l=0.5u
+X31 wind_comp_0/comparator_0/dynamic_pcell_0/DRN_NET_GJ_GATE_GH wind_comp_0/comparator_0/dynamic_pcell_0/J_GATE wind_comp_0/comparator_0/dynamic_pcell$2_0/K_DRN wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0.5928p pd=3.5u as=0.5928p ps=3.5u w=3.12u l=1u
+X32 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_0/dynamic_pcell$2_0/DRN_NET_LM_GATE_KL wind_comp_0/comparator_0/dynamic_pcell$2_0/K_DRN wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=95f pd=0.88u as=95f ps=0.88u w=0.5u l=3u
+X33 wind_comp_0/comparator_0/dynamic_pcell$2_0/DRN_NET_LM_GATE_KL wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=95f pd=0.88u as=95f ps=0.88u w=0.5u l=0.5u
+X34 sub sub sub sub sg13_lv_nmos ad=0.95p pd=5.38u as=0 ps=0 w=5u l=0.5u
+X35 sub sub sub sub sg13_lv_nmos ad=0.95p pd=5.38u as=0 ps=0 w=5u l=0.5u
+X36 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=95f pd=0.88u as=95f ps=0.88u w=0.5u l=0.5u
+X37 sub wind_comp_0/comparator_0/nmos$2_0/Drain wind_comp_0/comparator_0/dynamic_pcell$2_0/O_DRN sub sg13_lv_nmos ad=0.95p pd=5.38u as=0.95p ps=5.38u w=5u l=3u
+X38 wind_comp_0/comparator_0/dynamic_pcell$2_0/DRN_NET_LM_GATE_KL wind_comp_0/comparator_0/nmos$2_0/Drain sub sub sg13_lv_nmos ad=0.95p pd=5.38u as=0.95p ps=5.38u w=5u l=3u
+X39 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=95f pd=0.88u as=0 ps=0 w=0.5u l=0.5u
+X40 sub sub sub sub sg13_lv_nmos ad=0.95p pd=5.38u as=0.95p ps=5.38u w=5u l=0.5u
+X41 sub sub sub sub sg13_lv_nmos ad=1.7p pd=10.68u as=0 ps=0 w=5u l=0.5u
+X42 sub sub wind_comp_0/comparator_0/dynamic_pcell$2_0/DRN_NET_LM_GATE_KL sub sg13_lv_nmos ad=0.95p pd=5.38u as=0.95p ps=5.38u w=5u l=0.5u
+X43 wind_comp_0/comparator_0/dynamic_pcell$2_0/K_DRN wind_comp_0/comparator_0/dynamic_pcell$2_0/DRN_NET_LM_GATE_KL wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=95f pd=0.88u as=95f ps=0.88u w=0.5u l=3u
+X44 sub sub sub sub sg13_lv_nmos ad=1.7p pd=10.68u as=0 ps=0 w=5u l=0.5u
+X45 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_0/dynamic_pcell$2_0/DRN_NET_LM_GATE_KL wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=95f pd=0.88u as=95f ps=0.88u w=0.5u l=0.5u
+X46 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0.17p pd=1.68u as=0 ps=0 w=0.5u l=0.5u
+X47 wind_comp_0/comparator_0/dynamic_pcell$2_0/DRN_NET_LM_GATE_KL sub sub sub sg13_lv_nmos ad=0.95p pd=5.38u as=0.95p ps=5.38u w=5u l=0.5u
+X48 wind_comp_0/comparator_0/dynamic_pcell$2_0/K_DRN wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=95f pd=0.88u as=95f ps=0.88u w=0.5u l=0.5u
+X49 wind_comp_0/comparator_0/dynamic_pcell$2_0/DRN_NET_LM_GATE_KL wind_comp_0/comparator_0/dynamic_pcell$2_0/DRN_NET_LM_GATE_KL wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=95f pd=0.88u as=95f ps=0.88u w=0.5u l=3u
+X50 wind_comp_0/comparator_0/dynamic_pcell$2_0/K_DRN wind_comp_0/comparator_0/dynamic_pcell$2_0/DRN_NET_LM_GATE_KL wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=95f pd=0.88u as=95f ps=0.88u w=0.5u l=3u
+X51 wind_comp_0/comparator_0/dynamic_pcell$2_0/O_DRN wind_comp_0/comparator_0/nmos$2_0/Drain sub sub sg13_lv_nmos ad=0.95p pd=5.38u as=0.95p ps=5.38u w=5u l=3u
+X52 sub sub sub sub sg13_lv_nmos ad=0.95p pd=5.38u as=0 ps=0 w=5u l=0.5u
+X53 sub sub sub sub sg13_lv_nmos ad=0.95p pd=5.38u as=0.95p ps=5.38u w=5u l=0.5u
+X54 sub wind_comp_0/comparator_0/nmos$2_0/Drain wind_comp_0/comparator_0/nmos$2_0/Drain sub sg13_lv_nmos ad=0.95p pd=5.38u as=0.95p ps=5.38u w=5u l=3u
+X55 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=95f pd=0.88u as=0 ps=0 w=0.5u l=0.5u
+X56 sub sub sub sub sg13_lv_nmos ad=0.95p pd=5.38u as=0 ps=0 w=5u l=0.5u
+X57 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_0/dynamic_pcell$2_0/DRN_NET_LM_GATE_KL wind_comp_0/comparator_0/dynamic_pcell$2_0/K_DRN wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=95f pd=0.88u as=95f ps=0.88u w=0.5u l=3u
+X58 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=95f pd=0.88u as=95f ps=0.88u w=0.5u l=0.5u
+X59 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_0/dynamic_pcell$2_0/DRN_NET_LM_GATE_KL wind_comp_0/comparator_0/dynamic_pcell$2_0/DRN_NET_LM_GATE_KL wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=95f pd=0.88u as=95f ps=0.88u w=0.5u l=3u
+X60 wind_comp_0/comparator_0/nmos$2_0/Drain wind_comp_0/comparator_0/nmos$2_0/Drain sub sub sg13_lv_nmos ad=0.95p pd=5.38u as=0.95p ps=5.38u w=5u l=3u
+X61 sub sub wind_comp_0/comparator_0/nmos$2_0/Drain sub sg13_lv_nmos ad=0.95p pd=5.38u as=0.95p ps=5.38u w=5u l=0.5u
+X62 sub wind_comp_0/comparator_0/nmos$2_0/Drain wind_comp_0/comparator_0/dynamic_pcell$2_0/O_DRN sub sg13_lv_nmos ad=0.95p pd=5.38u as=0.95p ps=5.38u w=5u l=3u
+X63 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0.17p pd=1.68u as=0 ps=0 w=0.5u l=0.5u
+X64 sub sub sub sub sg13_lv_nmos ad=0.95p pd=5.38u as=0.95p ps=5.38u w=5u l=0.5u
+X65 sub sub sub sub sg13_lv_nmos ad=1.7p pd=10.68u as=0 ps=0 w=5u l=0.5u
+X66 sub sub sub sub sg13_lv_nmos ad=1.7p pd=10.68u as=0 ps=0 w=5u l=0.5u
+X67 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_0/dynamic_pcell$2_0/K_DRN wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=95f pd=0.88u as=95f ps=0.88u w=0.5u l=0.5u
+X68 sub wind_comp_0/comparator_0/nmos$2_0/Drain wind_comp_0/comparator_0/dynamic_pcell$2_0/DRN_NET_LM_GATE_KL sub sg13_lv_nmos ad=0.95p pd=5.38u as=0.95p ps=5.38u w=5u l=3u
+X69 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=95f pd=0.88u as=0 ps=0 w=0.5u l=0.5u
+X70 sub sub sub sub sg13_lv_nmos ad=0.95p pd=5.38u as=0.95p ps=5.38u w=5u l=0.5u
+X71 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0.17p pd=1.68u as=0 ps=0 w=0.5u l=0.5u
+X72 wind_comp_0/comparator_0/dynamic_pcell$2_0/O_DRN wind_comp_0/comparator_0/nmos$2_0/Drain sub sub sg13_lv_nmos ad=0.95p pd=5.38u as=0.95p ps=5.38u w=5u l=3u
+X73 wind_comp_0/comparator_0/nmos$2_0/Drain sub sub sub sg13_lv_nmos ad=0.95p pd=5.38u as=0.95p ps=5.38u w=5u l=0.5u
+X74 sub wind_comp_0/comparator_0/nmos_0/Gate wind_comp_0/comparator_0/dynamic_pcell_0/DRN_NET_GJ_GATE_GH sub sg13_lv_nmos ad=55.5f pd=0.74u as=0.1005p ps=1.34u w=0.15u l=0.13u
+X75 wind_comp_0/comparator_0/nmos$2_0/Drain wind_comp_0/comparator_0/nmos_0/Gate sub sub sg13_lv_nmos ad=0.1005p pd=1.34u as=55.5f ps=0.74u w=0.15u l=0.13u
+X76 wind_comp_0/comparator_0/dynamic_pcell_0/I_GATE wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=66.49999f pd=0.73u as=66.49999f ps=0.73u w=0.35u l=0.5u
+X77 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_0/dynamic_pcell$7_0/DRN_NET_BE_GATE_AB wind_comp_0/comparator_0/dynamic_pcell$7_0/DRN_NET_BE_GATE_AB wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=66.49999f pd=0.73u as=0.119p ps=1.38u w=0.35u l=1u
+X78 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=66.49999f pd=0.73u as=0 ps=0 w=0.35u l=0.5u
+X79 sub sub wind_comp_0/comparator_0/dynamic_pcell$7_0/DRN_NET_BE_GATE_AB sub sg13_lv_nmos ad=63.19999f pd=0.74u as=63.19999f ps=0.74u w=0.26u l=0.5u
+X80 wind_comp_0/comparator_0/dynamic_pcell$2_0/O_DRN s4_an wind_comp_0/comparator_0/dynamic_pcell$7_0/DRN_NET_BE_GATE_AB sub sg13_lv_nmos ad=63.19999f pd=0.74u as=63.19999f ps=0.74u w=0.26u l=3u
+X81 sub sub sub sub sg13_lv_nmos ad=63.19999f pd=0.74u as=0 ps=0 w=0.26u l=0.5u
+X82 sub sub sub sub sg13_lv_nmos ad=0.1082p pd=1.34u as=0 ps=0 w=0.26u l=0.5u
+X83 wind_comp_0/comparator_0/dynamic_pcell$7_0/DRN_NET_CF_GATE_CD wind_comp_0/comparator_0/dynamic_pcell$7_0/DRN_NET_CF_GATE_CD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0.119p pd=1.38u as=66.49999f ps=0.73u w=0.35u l=1u
+X84 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=66.49999f pd=0.73u as=0 ps=0 w=0.35u l=0.5u
+X85 wind_comp_0/comparator_0/dynamic_pcell_0/J_GATE wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=66.49999f pd=0.73u as=66.49999f ps=0.73u w=0.35u l=0.5u
+X86 wind_comp_0/comparator_0/dynamic_pcell$7_0/DRN_NET_CF_GATE_CD analog_bus2 wind_comp_0/comparator_0/dynamic_pcell$2_0/O_DRN sub sg13_lv_nmos ad=63.19999f pd=0.74u as=63.19999f ps=0.74u w=0.26u l=3u
+X87 wind_comp_0/comparator_0/dynamic_pcell$7_0/DRN_NET_BE_GATE_AB sub sub sub sg13_lv_nmos ad=63.19999f pd=0.74u as=63.19999f ps=0.74u w=0.26u l=0.5u
+X88 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0.119p pd=1.38u as=0 ps=0 w=0.35u l=0.5u
+X89 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_0/dynamic_pcell$7_0/DRN_NET_CF_GATE_CD wind_comp_0/comparator_0/dynamic_pcell_0/J_GATE wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=66.49999f pd=0.73u as=66.49999f ps=0.73u w=0.35u l=1u
+X90 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_0/dynamic_pcell_0/J_GATE wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=66.49999f pd=0.73u as=66.49999f ps=0.73u w=0.35u l=0.5u
+X91 sub sub wind_comp_0/comparator_0/dynamic_pcell$7_0/DRN_NET_CF_GATE_CD sub sg13_lv_nmos ad=63.19999f pd=0.74u as=63.19999f ps=0.74u w=0.26u l=0.5u
+X92 wind_comp_0/comparator_0/dynamic_pcell$2_0/O_DRN analog_bus2 wind_comp_0/comparator_0/dynamic_pcell$7_0/DRN_NET_CF_GATE_CD sub sg13_lv_nmos ad=63.19999f pd=0.74u as=63.19999f ps=0.74u w=0.26u l=3u
+X93 sub sub sub sub sg13_lv_nmos ad=63.19999f pd=0.74u as=0 ps=0 w=0.26u l=0.5u
+X94 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_0/dynamic_pcell$7_0/DRN_NET_BE_GATE_AB wind_comp_0/comparator_0/dynamic_pcell_0/I_GATE wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=66.49999f pd=0.73u as=66.49999f ps=0.73u w=0.35u l=1u
+X95 sub sub sub sub sg13_lv_nmos ad=0.1082p pd=1.34u as=0 ps=0 w=0.26u l=0.5u
+X96 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0.119p pd=1.38u as=0 ps=0 w=0.35u l=0.5u
+X97 wind_comp_0/comparator_0/dynamic_pcell_0/J_GATE wind_comp_0/comparator_0/dynamic_pcell$7_0/DRN_NET_CF_GATE_CD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=66.49999f pd=0.73u as=66.49999f ps=0.73u w=0.35u l=1u
+X98 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_0/dynamic_pcell_0/I_GATE wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=66.49999f pd=0.73u as=66.49999f ps=0.73u w=0.35u l=0.5u
+X99 wind_comp_0/comparator_0/dynamic_pcell$7_0/DRN_NET_BE_GATE_AB s4_an wind_comp_0/comparator_0/dynamic_pcell$2_0/O_DRN sub sg13_lv_nmos ad=63.19999f pd=0.74u as=63.19999f ps=0.74u w=0.26u l=3u
+X100 wind_comp_0/comparator_0/dynamic_pcell_0/I_GATE wind_comp_0/comparator_0/dynamic_pcell$7_0/DRN_NET_BE_GATE_AB wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=66.49999f pd=0.73u as=66.49999f ps=0.73u w=0.35u l=1u
+X101 wind_comp_0/comparator_0/dynamic_pcell$7_0/DRN_NET_BE_GATE_AB wind_comp_0/comparator_0/dynamic_pcell$7_0/DRN_NET_BE_GATE_AB wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0.119p pd=1.38u as=66.49999f ps=0.73u w=0.35u l=1u
+X102 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_0/dynamic_pcell$7_0/DRN_NET_CF_GATE_CD wind_comp_0/comparator_0/dynamic_pcell$7_0/DRN_NET_CF_GATE_CD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=66.49999f pd=0.73u as=0.119p ps=1.38u w=0.35u l=1u
+X103 wind_comp_0/comparator_0/dynamic_pcell$7_0/DRN_NET_CF_GATE_CD sub sub sub sg13_lv_nmos ad=63.19999f pd=0.74u as=63.19999f ps=0.74u w=0.26u l=0.5u
+X104 wind_comp_0/sg13g2_and2_2$1_0/A wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.2128p ps=1.5u w=1.12u l=0.13u
+X105 sub wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/A sub sg13_lv_nmos ad=0.1406p pd=1.12u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X106 wind_comp_0/sg13g2_and2_2$1_0/A wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y sub sub sg13_lv_nmos ad=0.1406p pd=1.12u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X107 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/A wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.2128p ps=1.5u w=1.12u l=0.13u
+X108 wind_comp_0/sg13g2_and2_2$1_0/A wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.2128p ps=1.5u w=1.12u l=0.13u
+X109 sub wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/A sub sg13_lv_nmos ad=0.1406p pd=1.12u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X110 wind_comp_0/sg13g2_and2_2$1_0/A wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y sub sub sg13_lv_nmos ad=0.1406p pd=1.12u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X111 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/A wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.2128p ps=1.5u w=1.12u l=0.13u
+X112 wind_comp_0/sg13g2_and2_2$1_0/A wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.2128p ps=1.5u w=1.12u l=0.13u
+X113 sub wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/A sub sg13_lv_nmos ad=0.1406p pd=1.12u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X114 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/A wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.2128p ps=1.5u w=1.12u l=0.13u
+X115 wind_comp_0/sg13g2_and2_2$1_0/A wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y sub sub sg13_lv_nmos ad=0.1406p pd=1.12u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X116 sub wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/A sub sg13_lv_nmos ad=0.1406p pd=1.12u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X117 wind_comp_0/sg13g2_and2_2$1_0/A wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.2128p ps=1.5u w=1.12u l=0.13u
+X118 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/A wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.2128p ps=1.5u w=1.12u l=0.13u
+X119 wind_comp_0/sg13g2_and2_2$1_0/A wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y sub sub sg13_lv_nmos ad=0.1406p pd=1.12u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X120 wind_comp_0/sg13g2_and2_2$1_0/A wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.2128p ps=1.5u w=1.12u l=0.13u
+X121 sub wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/A sub sg13_lv_nmos ad=0.1406p pd=1.12u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X122 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/A wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.2128p ps=1.5u w=1.12u l=0.13u
+X123 wind_comp_0/sg13g2_and2_2$1_0/A wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y sub sub sg13_lv_nmos ad=0.1406p pd=1.12u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X124 wind_comp_0/sg13g2_and2_2$1_0/A wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.2128p ps=1.5u w=1.12u l=0.13u
+X125 sub wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/A sub sg13_lv_nmos ad=0.2516p pd=2.16u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X126 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/A wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0.4368p pd=3.02u as=0.2128p ps=1.5u w=1.12u l=0.13u
+X127 wind_comp_0/sg13g2_and2_2$1_0/A wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y sub sub sg13_lv_nmos ad=0.1406p pd=1.12u as=0.2516p ps=2.16u w=0.74u l=0.13u
+X128 sub wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/A sub sg13_lv_nmos ad=0.1406p pd=1.12u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X129 wind_comp_0/sg13g2_and2_2$1_0/A wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.3808p ps=2.92u w=1.12u l=0.13u
+X130 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/A wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.2128p ps=1.5u w=1.12u l=0.13u
+X131 wind_comp_0/sg13g2_and2_2$1_0/A wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y sub sub sg13_lv_nmos ad=0.1406p pd=1.12u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X132 sub wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/A sub sg13_lv_nmos ad=0.1406p pd=1.12u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X133 wind_comp_0/sg13g2_and2_2$1_0/A wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.2128p ps=1.5u w=1.12u l=0.13u
+X134 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/A wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.2128p ps=1.5u w=1.12u l=0.13u
+X135 wind_comp_0/sg13g2_and2_2$1_0/A wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y sub sub sg13_lv_nmos ad=0.1406p pd=1.12u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X136 wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/A wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=7.93033p pd=53.665u as=0 ps=0 w=1.12u l=0.13u
+X137 sub wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/A wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X138 wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/A sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X139 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/A wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+X140 wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/A wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+X141 sub wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/A wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X142 wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/A sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X143 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/A wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+X144 wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/A wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+X145 sub wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/A wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X146 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/A wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+X147 wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/A sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X148 sub wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/A wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X149 wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/A wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+X150 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/A wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+X151 wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/A sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X152 wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/A wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+X153 sub wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/A wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X154 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/A wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+X155 wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/A sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X156 wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/A wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+X157 sub wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/A wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X158 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/A wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+X159 wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/A sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X160 sub wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/A wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X161 wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/A wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+X162 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/A wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+X163 wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/A sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X164 sub wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/A wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X165 wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/A wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+X166 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/A wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+X167 wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/A sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X168 enable wind_comp_0/sg13g2_and2_2$1_0/VDD dpantenna l=1.34u w=1.05u
+X169 sub enable dantenna l=0.78u w=0.78u
+X170 wind_comp_0/comparator_0/dynamic_pcell_0/I_GATE wind_comp_0/comparator_0/dynamic_pcell_0/I_GATE sub sub sg13_lv_nmos ad=63.19999f pd=0.74u as=63.19999f ps=0.74u w=0.26u l=10u
+X171 sub sub sub sub sg13_lv_nmos ad=63.19999f pd=0.74u as=0 ps=0 w=0.26u l=0.5u
+X172 wind_comp_0/comparator_0/dynamic_pcell_0/I_GATE sub sub sub sg13_lv_nmos ad=63.19999f pd=0.74u as=63.19999f ps=0.74u w=0.26u l=0.5u
+X173 sub sub wind_comp_0/comparator_0/dynamic_pcell_0/J_GATE sub sg13_lv_nmos ad=63.19999f pd=0.74u as=63.19999f ps=0.74u w=0.26u l=0.5u
+X174 wind_comp_0/comparator_0/dynamic_pcell_0/J_GATE wind_comp_0/comparator_0/dynamic_pcell_0/J_GATE sub sub sg13_lv_nmos ad=63.19999f pd=0.74u as=63.19999f ps=0.74u w=0.26u l=10u
+X175 sub sub sub sub sg13_lv_nmos ad=0.1082p pd=1.34u as=0 ps=0 w=0.26u l=0.5u
+X176 sub wind_comp_0/comparator_0/dynamic_pcell_0/J_GATE wind_comp_0/comparator_0/dynamic_pcell_0/I_GATE sub sg13_lv_nmos ad=63.19999f pd=0.74u as=63.19999f ps=0.74u w=0.26u l=10u
+X177 sub wind_comp_0/comparator_0/dynamic_pcell_0/I_GATE wind_comp_0/comparator_0/dynamic_pcell_0/J_GATE sub sg13_lv_nmos ad=63.19999f pd=0.74u as=63.19999f ps=0.74u w=0.26u l=10u
+X178 sub sub wind_comp_0/comparator_0/dynamic_pcell_0/I_GATE sub sg13_lv_nmos ad=63.19999f pd=0.74u as=63.19999f ps=0.74u w=0.26u l=0.5u
+X179 sub sub wind_comp_0/comparator_0/dynamic_pcell_0/I_GATE sub sg13_lv_nmos ad=63.19999f pd=0.74u as=63.19999f ps=0.74u w=0.26u l=0.5u
+X180 sub sub sub sub sg13_lv_nmos ad=0.1082p pd=1.34u as=0 ps=0 w=0.26u l=0.5u
+X181 wind_comp_0/comparator_0/dynamic_pcell_0/J_GATE wind_comp_0/comparator_0/dynamic_pcell_0/I_GATE sub sub sg13_lv_nmos ad=63.19999f pd=0.74u as=63.19999f ps=0.74u w=0.26u l=10u
+X182 sub wind_comp_0/comparator_0/dynamic_pcell_0/J_GATE wind_comp_0/comparator_0/dynamic_pcell_0/J_GATE sub sg13_lv_nmos ad=63.19999f pd=0.74u as=63.19999f ps=0.74u w=0.26u l=10u
+X183 sub sub sub sub sg13_lv_nmos ad=63.19999f pd=0.74u as=0 ps=0 w=0.26u l=0.5u
+X184 sub sub sub sub sg13_lv_nmos ad=0.1082p pd=1.34u as=0 ps=0 w=0.26u l=0.5u
+X185 wind_comp_0/comparator_0/dynamic_pcell_0/I_GATE wind_comp_0/comparator_0/dynamic_pcell_0/J_GATE sub sub sg13_lv_nmos ad=63.19999f pd=0.74u as=63.19999f ps=0.74u w=0.26u l=10u
+X186 wind_comp_0/comparator_0/dynamic_pcell_0/J_GATE sub sub sub sg13_lv_nmos ad=63.19999f pd=0.74u as=63.19999f ps=0.74u w=0.26u l=0.5u
+X187 sub sub sub sub sg13_lv_nmos ad=63.19999f pd=0.74u as=0 ps=0 w=0.26u l=0.5u
+X188 sub wind_comp_0/comparator_0/dynamic_pcell_0/I_GATE wind_comp_0/comparator_0/dynamic_pcell_0/I_GATE sub sg13_lv_nmos ad=63.19999f pd=0.74u as=63.19999f ps=0.74u w=0.26u l=10u
+X189 sub sub sub sub sg13_lv_nmos ad=63.19999f pd=0.74u as=0 ps=0 w=0.26u l=0.5u
+X190 sub sub sub sub sg13_lv_nmos ad=0.1082p pd=1.34u as=0 ps=0 w=0.26u l=0.5u
+X191 wind_comp_0/comparator_0/dynamic_pcell_0/I_GATE sub sub sub sg13_lv_nmos ad=63.19999f pd=0.74u as=63.19999f ps=0.74u w=0.26u l=0.5u
+X192 wind_comp_0/comparator_0/dynamic_pcell_0/J_GATE sub sub sub sg13_lv_nmos ad=63.19999f pd=0.74u as=63.19999f ps=0.74u w=0.26u l=0.5u
+X193 sub sub wind_comp_0/comparator_0/dynamic_pcell_0/J_GATE sub sg13_lv_nmos ad=63.19999f pd=0.74u as=63.19999f ps=0.74u w=0.26u l=0.5u
+X194 wind_comp_0/sg13g2_and2_2$1_0/VDD enable wind_comp_0/comparator_0/dynamic_pcell$7_0/DRN_NET_CF_GATE_CD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=55.5f pd=0.74u as=0.1005p ps=1.34u w=0.15u l=0.13u
+X195 wind_comp_0/comparator_0/dynamic_pcell$2_0/DRN_NET_LM_GATE_KL enable wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0.1005p pd=1.34u as=55.5f ps=0.74u w=0.15u l=0.13u
+X196 wind_comp_0/sg13g2_and2_2$1_0/VDD enable wind_comp_0/comparator_0/dynamic_pcell$7_0/DRN_NET_BE_GATE_AB wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0.1005p pd=1.34u as=0.1005p ps=1.34u w=0.15u l=0.13u
+X197 wind_comp_0/comparator_0/nmos$2_0/Drain enable ibias sub sg13_lv_nmos ad=0.1005p pd=1.34u as=55.5f ps=0.74u w=0.15u l=0.13u
+X198 wind_comp_0/comparator_0/nmos$2_0/Drain enable ibias sub sg13_lv_nmos ad=55.5f pd=0.74u as=0.1005p ps=1.34u w=0.15u l=0.13u
+X199 ibias enable wind_comp_0/comparator_0/nmos$2_0/Drain sub sg13_lv_nmos ad=55.5f pd=0.74u as=55.5f ps=0.74u w=0.15u l=0.13u
+X200 wind_comp_0/comparator_0/nmos_0/Gate enable wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0.3808p pd=2.92u as=0.3808p ps=2.92u w=1.12u l=0.13u
+X201 wind_comp_0/comparator_0/nmos_0/Gate enable sub sub sg13_lv_nmos ad=0.2516p pd=2.16u as=0.2516p ps=2.16u w=0.74u l=0.13u
+X202 wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/A wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=2.26352p pd=18.805u as=0 ps=0 w=3.12u l=0.5u
+X203 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=3.12u l=0.5u
+X204 wind_comp_0/comparator_1/dynamic_pcell_0/DRN_NET_GJ_GATE_GH wind_comp_0/comparator_1/dynamic_pcell_0/DRN_NET_GJ_GATE_GH sub sub sg13_lv_nmos ad=3.24397p pd=32.065u as=0 ps=0 w=0.15u l=3u
+X205 sub wind_comp_0/comparator_1/dynamic_pcell_0/DRN_NET_GJ_GATE_GH wind_comp_0/comparator_1/dynamic_pcell_0/DRN_NET_GJ_GATE_GH sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.15u l=3u
+X206 wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/A sub sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.15u l=0.5u
+X207 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=3.12u l=0.5u
+X208 sub sub sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.15u l=0.5u
+X209 sub sub sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.15u l=0.5u
+X210 sub sub wind_comp_0/comparator_1/dynamic_pcell_0/DRN_NET_GJ_GATE_GH sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.15u l=0.5u
+X211 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/A wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=3.12u l=0.5u
+X212 wind_comp_0/comparator_1/dynamic_pcell_0/DRN_NET_GJ_GATE_GH wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=3.12u l=0.5u
+X213 wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/A wind_comp_0/comparator_1/dynamic_pcell_0/I_GATE wind_comp_0/comparator_1/dynamic_pcell$2_0/K_DRN wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=1.7045p ps=16.26u w=3.12u l=1u
+X214 wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/A wind_comp_0/comparator_1/dynamic_pcell_0/DRN_NET_GJ_GATE_GH sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.15u l=3u
+X215 wind_comp_0/comparator_1/dynamic_pcell_0/DRN_NET_GJ_GATE_GH sub sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.15u l=0.5u
+X216 wind_comp_0/comparator_1/dynamic_pcell$2_0/K_DRN wind_comp_0/comparator_1/dynamic_pcell_0/J_GATE wind_comp_0/comparator_1/dynamic_pcell_0/DRN_NET_GJ_GATE_GH wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=3.12u l=1u
+X217 sub sub wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/A sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.15u l=0.5u
+X218 wind_comp_0/comparator_1/dynamic_pcell$2_0/K_DRN wind_comp_0/comparator_1/dynamic_pcell_0/I_GATE wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/A wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=3.12u l=1u
+X219 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=3.12u l=0.5u
+X220 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_1/dynamic_pcell_0/DRN_NET_GJ_GATE_GH wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=3.12u l=0.5u
+X221 sub wind_comp_0/comparator_1/dynamic_pcell_0/DRN_NET_GJ_GATE_GH wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/A sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.15u l=3u
+X222 sub sub sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.15u l=0.5u
+X223 sub sub sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.15u l=0.5u
+X224 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=3.12u l=0.5u
+X225 wind_comp_0/comparator_1/dynamic_pcell_0/DRN_NET_GJ_GATE_GH wind_comp_0/comparator_1/dynamic_pcell_0/J_GATE wind_comp_0/comparator_1/dynamic_pcell$2_0/K_DRN wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=3.12u l=1u
+X226 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_1/dynamic_pcell$2_0/DRN_NET_LM_GATE_KL wind_comp_0/comparator_1/dynamic_pcell$2_0/K_DRN wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=0.5u l=3u
+X227 wind_comp_0/comparator_1/dynamic_pcell$2_0/DRN_NET_LM_GATE_KL wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=4.84067p pd=45.955u as=0 ps=0 w=0.5u l=0.5u
+X228 sub sub sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=5u l=0.5u
+X229 sub sub sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=5u l=0.5u
+X230 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=0.5u l=0.5u
+X231 sub wind_comp_0/comparator_1/nmos$2_0/Drain wind_comp_0/comparator_1/dynamic_pcell$2_0/O_DRN sub sg13_lv_nmos ad=0 pd=0 as=2.442p ps=20.56u w=5u l=3u
+X232 wind_comp_0/comparator_1/dynamic_pcell$2_0/DRN_NET_LM_GATE_KL wind_comp_0/comparator_1/nmos$2_0/Drain sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=5u l=3u
+X233 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=0.5u l=0.5u
+X234 sub sub sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=5u l=0.5u
+X235 sub sub sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=5u l=0.5u
+X236 sub sub wind_comp_0/comparator_1/dynamic_pcell$2_0/DRN_NET_LM_GATE_KL sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=5u l=0.5u
+X237 wind_comp_0/comparator_1/dynamic_pcell$2_0/K_DRN wind_comp_0/comparator_1/dynamic_pcell$2_0/DRN_NET_LM_GATE_KL wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=0.5u l=3u
+X238 sub sub sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=5u l=0.5u
+X239 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_1/dynamic_pcell$2_0/DRN_NET_LM_GATE_KL wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=0.5u l=0.5u
+X240 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=0.5u l=0.5u
+X241 wind_comp_0/comparator_1/dynamic_pcell$2_0/DRN_NET_LM_GATE_KL sub sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=5u l=0.5u
+X242 wind_comp_0/comparator_1/dynamic_pcell$2_0/K_DRN wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=0.5u l=0.5u
+X243 wind_comp_0/comparator_1/dynamic_pcell$2_0/DRN_NET_LM_GATE_KL wind_comp_0/comparator_1/dynamic_pcell$2_0/DRN_NET_LM_GATE_KL wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=0.5u l=3u
+X244 wind_comp_0/comparator_1/dynamic_pcell$2_0/K_DRN wind_comp_0/comparator_1/dynamic_pcell$2_0/DRN_NET_LM_GATE_KL wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=0.5u l=3u
+X245 wind_comp_0/comparator_1/dynamic_pcell$2_0/O_DRN wind_comp_0/comparator_1/nmos$2_0/Drain sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=5u l=3u
+X246 sub sub sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=5u l=0.5u
+X247 sub sub sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=5u l=0.5u
+X248 sub wind_comp_0/comparator_1/nmos$2_0/Drain wind_comp_0/comparator_1/nmos$2_0/Drain sub sg13_lv_nmos ad=0 pd=0 as=5.51385p ps=52.835u w=5u l=3u
+X249 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=0.5u l=0.5u
+X250 sub sub sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=5u l=0.5u
+X251 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_1/dynamic_pcell$2_0/DRN_NET_LM_GATE_KL wind_comp_0/comparator_1/dynamic_pcell$2_0/K_DRN wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=0.5u l=3u
+X252 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=0.5u l=0.5u
+X253 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_1/dynamic_pcell$2_0/DRN_NET_LM_GATE_KL wind_comp_0/comparator_1/dynamic_pcell$2_0/DRN_NET_LM_GATE_KL wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=0.5u l=3u
+X254 wind_comp_0/comparator_1/nmos$2_0/Drain wind_comp_0/comparator_1/nmos$2_0/Drain sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=5u l=3u
+X255 sub sub wind_comp_0/comparator_1/nmos$2_0/Drain sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=5u l=0.5u
+X256 sub wind_comp_0/comparator_1/nmos$2_0/Drain wind_comp_0/comparator_1/dynamic_pcell$2_0/O_DRN sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=5u l=3u
+X257 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=0.5u l=0.5u
+X258 sub sub sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=5u l=0.5u
+X259 sub sub sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=5u l=0.5u
+X260 sub sub sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=5u l=0.5u
+X261 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_1/dynamic_pcell$2_0/K_DRN wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=0.5u l=0.5u
+X262 sub wind_comp_0/comparator_1/nmos$2_0/Drain wind_comp_0/comparator_1/dynamic_pcell$2_0/DRN_NET_LM_GATE_KL sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=5u l=3u
+X263 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=0.5u l=0.5u
+X264 sub sub sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=5u l=0.5u
+X265 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=0.5u l=0.5u
+X266 wind_comp_0/comparator_1/dynamic_pcell$2_0/O_DRN wind_comp_0/comparator_1/nmos$2_0/Drain sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=5u l=3u
+X267 wind_comp_0/comparator_1/nmos$2_0/Drain sub sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=5u l=0.5u
+X268 sub wind_comp_0/comparator_1/nmos_0/Gate wind_comp_0/comparator_1/dynamic_pcell_0/DRN_NET_GJ_GATE_GH sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.15u l=0.13u
+X269 wind_comp_0/comparator_1/nmos$2_0/Drain wind_comp_0/comparator_1/nmos_0/Gate sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.15u l=0.13u
+X270 wind_comp_0/comparator_1/dynamic_pcell_0/I_GATE wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=5.80382p pd=60.785u as=0 ps=0 w=0.35u l=0.5u
+X271 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_1/dynamic_pcell$7_0/DRN_NET_BE_GATE_AB wind_comp_0/comparator_1/dynamic_pcell$7_0/DRN_NET_BE_GATE_AB wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=1.37178p ps=15.725u w=0.35u l=1u
+X272 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=0.35u l=0.5u
+X273 sub sub wind_comp_0/comparator_1/dynamic_pcell$7_0/DRN_NET_BE_GATE_AB sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.26u l=0.5u
+X274 wind_comp_0/comparator_1/dynamic_pcell$2_0/O_DRN analog_bus0 wind_comp_0/comparator_1/dynamic_pcell$7_0/DRN_NET_BE_GATE_AB sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.26u l=3u
+X275 sub sub sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.26u l=0.5u
+X276 sub sub sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.26u l=0.5u
+X277 wind_comp_0/comparator_1/dynamic_pcell$7_0/DRN_NET_CF_GATE_CD wind_comp_0/comparator_1/dynamic_pcell$7_0/DRN_NET_CF_GATE_CD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=1.41647p pd=16.175u as=0 ps=0 w=0.35u l=1u
+X278 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=0.35u l=0.5u
+X279 wind_comp_0/comparator_1/dynamic_pcell_0/J_GATE wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=5.80382p pd=60.785u as=0 ps=0 w=0.35u l=0.5u
+X280 wind_comp_0/comparator_1/dynamic_pcell$7_0/DRN_NET_CF_GATE_CD s4_an wind_comp_0/comparator_1/dynamic_pcell$2_0/O_DRN sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.26u l=3u
+X281 wind_comp_0/comparator_1/dynamic_pcell$7_0/DRN_NET_BE_GATE_AB sub sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.26u l=0.5u
+X282 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=0.35u l=0.5u
+X283 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_1/dynamic_pcell$7_0/DRN_NET_CF_GATE_CD wind_comp_0/comparator_1/dynamic_pcell_0/J_GATE wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=0.35u l=1u
+X284 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_1/dynamic_pcell_0/J_GATE wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=0.35u l=0.5u
+X285 sub sub wind_comp_0/comparator_1/dynamic_pcell$7_0/DRN_NET_CF_GATE_CD sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.26u l=0.5u
+X286 wind_comp_0/comparator_1/dynamic_pcell$2_0/O_DRN s4_an wind_comp_0/comparator_1/dynamic_pcell$7_0/DRN_NET_CF_GATE_CD sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.26u l=3u
+X287 sub sub sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.26u l=0.5u
+X288 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_1/dynamic_pcell$7_0/DRN_NET_BE_GATE_AB wind_comp_0/comparator_1/dynamic_pcell_0/I_GATE wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=0.35u l=1u
+X289 sub sub sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.26u l=0.5u
+X290 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=0.35u l=0.5u
+X291 wind_comp_0/comparator_1/dynamic_pcell_0/J_GATE wind_comp_0/comparator_1/dynamic_pcell$7_0/DRN_NET_CF_GATE_CD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=0.35u l=1u
+X292 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_1/dynamic_pcell_0/I_GATE wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=0.35u l=0.5u
+X293 wind_comp_0/comparator_1/dynamic_pcell$7_0/DRN_NET_BE_GATE_AB analog_bus0 wind_comp_0/comparator_1/dynamic_pcell$2_0/O_DRN sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.26u l=3u
+X294 wind_comp_0/comparator_1/dynamic_pcell_0/I_GATE wind_comp_0/comparator_1/dynamic_pcell$7_0/DRN_NET_BE_GATE_AB wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=0.35u l=1u
+X295 wind_comp_0/comparator_1/dynamic_pcell$7_0/DRN_NET_BE_GATE_AB wind_comp_0/comparator_1/dynamic_pcell$7_0/DRN_NET_BE_GATE_AB wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=0.35u l=1u
+X296 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_1/dynamic_pcell$7_0/DRN_NET_CF_GATE_CD wind_comp_0/comparator_1/dynamic_pcell$7_0/DRN_NET_CF_GATE_CD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=0.35u l=1u
+X297 wind_comp_0/comparator_1/dynamic_pcell$7_0/DRN_NET_CF_GATE_CD sub sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.26u l=0.5u
+X298 wind_comp_0/sg13g2_and2_2$1_0/B wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=7.36395p pd=51.39u as=0 ps=0 w=1.12u l=0.13u
+X299 sub wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/B sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X300 wind_comp_0/sg13g2_and2_2$1_0/B wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X301 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/B wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+X302 wind_comp_0/sg13g2_and2_2$1_0/B wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+X303 sub wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/B sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X304 wind_comp_0/sg13g2_and2_2$1_0/B wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X305 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/B wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+X306 wind_comp_0/sg13g2_and2_2$1_0/B wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+X307 sub wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/B sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X308 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/B wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+X309 wind_comp_0/sg13g2_and2_2$1_0/B wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X310 sub wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/B sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X311 wind_comp_0/sg13g2_and2_2$1_0/B wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+X312 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/B wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+X313 wind_comp_0/sg13g2_and2_2$1_0/B wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X314 wind_comp_0/sg13g2_and2_2$1_0/B wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+X315 sub wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/B sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X316 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/B wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+X317 wind_comp_0/sg13g2_and2_2$1_0/B wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X318 wind_comp_0/sg13g2_and2_2$1_0/B wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+X319 sub wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/B sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X320 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/B wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+X321 wind_comp_0/sg13g2_and2_2$1_0/B wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X322 sub wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/B sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X323 wind_comp_0/sg13g2_and2_2$1_0/B wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+X324 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/B wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+X325 wind_comp_0/sg13g2_and2_2$1_0/B wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X326 sub wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/B sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X327 wind_comp_0/sg13g2_and2_2$1_0/B wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+X328 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/B wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+X329 wind_comp_0/sg13g2_and2_2$1_0/B wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X330 wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/A wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=7.93033p pd=53.665u as=0 ps=0 w=1.12u l=0.13u
+X331 sub wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/A wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X332 wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/A sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X333 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/A wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+X334 wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/A wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+X335 sub wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/A wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X336 wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/A sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X337 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/A wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+X338 wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/A wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+X339 sub wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/A wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X340 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/A wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+X341 wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/A sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X342 sub wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/A wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X343 wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/A wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+X344 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/A wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+X345 wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/A sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X346 wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/A wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+X347 sub wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/A wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X348 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/A wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+X349 wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/A sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X350 wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/A wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+X351 sub wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/A wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X352 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/A wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+X353 wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/A sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X354 sub wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/A wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X355 wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/A wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+X356 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/A wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+X357 wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/A sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X358 sub wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/A wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X359 wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/A wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+X360 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/A wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=1.12u l=0.13u
+X361 wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/A sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+X362 enable wind_comp_0/sg13g2_and2_2$1_0/VDD dpantenna l=1.34u w=1.05u
+X363 sub enable dantenna l=0.78u w=0.78u
+X364 wind_comp_0/comparator_1/dynamic_pcell_0/I_GATE wind_comp_0/comparator_1/dynamic_pcell_0/I_GATE sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.26u l=10u
+X365 sub sub sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.26u l=0.5u
+X366 wind_comp_0/comparator_1/dynamic_pcell_0/I_GATE sub sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.26u l=0.5u
+X367 sub sub wind_comp_0/comparator_1/dynamic_pcell_0/J_GATE sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.26u l=0.5u
+X368 wind_comp_0/comparator_1/dynamic_pcell_0/J_GATE wind_comp_0/comparator_1/dynamic_pcell_0/J_GATE sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.26u l=10u
+X369 sub sub sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.26u l=0.5u
+X370 sub wind_comp_0/comparator_1/dynamic_pcell_0/J_GATE wind_comp_0/comparator_1/dynamic_pcell_0/I_GATE sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.26u l=10u
+X371 sub wind_comp_0/comparator_1/dynamic_pcell_0/I_GATE wind_comp_0/comparator_1/dynamic_pcell_0/J_GATE sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.26u l=10u
+X372 sub sub wind_comp_0/comparator_1/dynamic_pcell_0/I_GATE sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.26u l=0.5u
+X373 sub sub wind_comp_0/comparator_1/dynamic_pcell_0/I_GATE sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.26u l=0.5u
+X374 sub sub sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.26u l=0.5u
+X375 wind_comp_0/comparator_1/dynamic_pcell_0/J_GATE wind_comp_0/comparator_1/dynamic_pcell_0/I_GATE sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.26u l=10u
+X376 sub wind_comp_0/comparator_1/dynamic_pcell_0/J_GATE wind_comp_0/comparator_1/dynamic_pcell_0/J_GATE sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.26u l=10u
+X377 sub sub sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.26u l=0.5u
+X378 sub sub sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.26u l=0.5u
+X379 wind_comp_0/comparator_1/dynamic_pcell_0/I_GATE wind_comp_0/comparator_1/dynamic_pcell_0/J_GATE sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.26u l=10u
+X380 wind_comp_0/comparator_1/dynamic_pcell_0/J_GATE sub sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.26u l=0.5u
+X381 sub sub sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.26u l=0.5u
+X382 sub wind_comp_0/comparator_1/dynamic_pcell_0/I_GATE wind_comp_0/comparator_1/dynamic_pcell_0/I_GATE sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.26u l=10u
+X383 sub sub sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.26u l=0.5u
+X384 sub sub sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.26u l=0.5u
+X385 wind_comp_0/comparator_1/dynamic_pcell_0/I_GATE sub sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.26u l=0.5u
+X386 wind_comp_0/comparator_1/dynamic_pcell_0/J_GATE sub sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.26u l=0.5u
+X387 sub sub wind_comp_0/comparator_1/dynamic_pcell_0/J_GATE sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.26u l=0.5u
+X388 wind_comp_0/sg13g2_and2_2$1_0/VDD enable wind_comp_0/comparator_1/dynamic_pcell$7_0/DRN_NET_CF_GATE_CD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=0.15u l=0.13u
+X389 wind_comp_0/comparator_1/dynamic_pcell$2_0/DRN_NET_LM_GATE_KL enable wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=0.15u l=0.13u
+X390 wind_comp_0/sg13g2_and2_2$1_0/VDD enable wind_comp_0/comparator_1/dynamic_pcell$7_0/DRN_NET_BE_GATE_AB wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0 pd=0 as=0 ps=0 w=0.15u l=0.13u
+X391 wind_comp_0/comparator_1/nmos$2_0/Drain enable ibias sub sg13_lv_nmos ad=0 pd=0 as=0.56705p ps=6.33u w=0.15u l=0.13u
+X392 wind_comp_0/comparator_1/nmos$2_0/Drain enable ibias sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.15u l=0.13u
+X393 ibias enable wind_comp_0/comparator_1/nmos$2_0/Drain sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.15u l=0.13u
+X394 wind_comp_0/comparator_1/nmos_0/Gate enable wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/sg13g2_and2_2$1_0/VDD sg13_lv_pmos ad=0.85097p pd=7.935u as=0 ps=0 w=1.12u l=0.13u
+X395 wind_comp_0/comparator_1/nmos_0/Gate enable sub sub sg13_lv_nmos ad=0 pd=0 as=0 ps=0 w=0.74u l=0.13u
+C0 wind_comp_0/comparator_1/dynamic_pcell_0/I_GATE wind_comp_0/comparator_1/dynamic_pcell_0/J_GATE 10.66846f
+C1 wind_comp_0/comparator_1/nmos$2_0/Drain wind_comp_0/comparator_1/dynamic_pcell_0/DRN_NET_GJ_GATE_GH 2.35147f
+C2 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/A 2.80164f
+C3 analog_bus0 ibias 8.43447f
+C4 wind_comp_0/comparator_1/dynamic_pcell$7_0/DRN_NET_CF_GATE_CD wind_comp_0/sg13g2_and2_2$1_0/VDD 3.10043f
+C5 m4_21542_3976# m6_21520_34522# 37.70752f
+C6 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_0/dynamic_pcell$2_0/K_DRN 2.5702f
+C7 wind_comp_0/comparator_1/dynamic_pcell_0/J_GATE wind_comp_0/comparator_1/dynamic_pcell$7_0/DRN_NET_CF_GATE_CD 4.5035f
+C8 wind_comp_0/comparator_0/dynamic_pcell$7_0/DRN_NET_BE_GATE_AB wind_comp_0/comparator_0/dynamic_pcell_0/I_GATE 4.24199f
+C9 wind_comp_0/sg13g2_and2_2$1_0/VDD m6_21520_34522# 63.23073f
+C10 wind_comp_0/comparator_1/dynamic_pcell$7_0/DRN_NET_BE_GATE_AB wind_comp_0/sg13g2_and2_2$1_0/VDD 2.69183f
+C11 wind_comp_0/comparator_1/dynamic_pcell$2_0/K_DRN wind_comp_0/comparator_1/dynamic_pcell$2_0/DRN_NET_LM_GATE_KL 2.90158f
+C12 wind_comp_0/comparator_0/dynamic_pcell$2_0/DRN_NET_LM_GATE_KL wind_comp_0/sg13g2_and2_2$1_0/VDD 9.95746f
+C13 enable m4_21542_3976# 2.26988f
+C14 vdd1v2 m4_21542_3976# 37.67277f
+C15 wind_comp_0/comparator_1/dynamic_pcell$2_0/K_DRN wind_comp_0/sg13g2_and2_2$1_0/VDD 2.57196f
+C16 wind_comp_0/sg13g2_and2_2$1_0/VDD wind_comp_0/comparator_0/dynamic_pcell_0/I_GATE 3.28433f
+C17 enable wind_comp_0/sg13g2_and2_2$1_0/VDD 4.45449f
+C18 wind_comp_0/comparator_0/dynamic_pcell$7_0/DRN_NET_BE_GATE_AB wind_comp_0/sg13g2_and2_2$1_0/VDD 2.69612f
+C19 wind_comp_0/comparator_0/dynamic_pcell_0/J_GATE wind_comp_0/comparator_0/dynamic_pcell_0/I_GATE 10.66846f
+C20 wind_comp_0/comparator_0/dynamic_pcell$7_0/DRN_NET_BE_GATE_AB wind_comp_0/comparator_0/dynamic_pcell$7_0/DRN_NET_CF_GATE_CD 4.46696f
+C21 wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/A wind_comp_0/sg13g2_and2_2$1_0/VDD 2.80726f
+C22 enable analog_bus2 9.09035f
+C23 enable analog_bus1 7.98179f
+C24 vss_1v2_uq0 enable 4.49725f
+C25 wind_comp_0/comparator_1/dynamic_pcell$2_0/DRN_NET_LM_GATE_KL wind_comp_0/sg13g2_and2_2$1_0/VDD 9.95741f
+C26 wind_comp_0/comparator_0/dynamic_pcell_0/J_GATE s4_an 2.8964f
+C27 analog_bus2 m4_21542_3976# 5.05307f
+C28 analog_bus1 m4_21542_3976# 4.69593f
+C29 analog_bus2 s4_an 3.24505f
+C30 enable ibias 3.14961f
+C31 wind_comp_0/comparator_0/dynamic_pcell$7_0/DRN_NET_CF_GATE_CD wind_comp_0/sg13g2_and2_2$1_0/VDD 3.10452f
+C32 wind_comp_0/comparator_1/dynamic_pcell$7_0/DRN_NET_BE_GATE_AB wind_comp_0/comparator_1/dynamic_pcell_0/I_GATE 4.24199f
+C33 wind_comp_0/comparator_0/dynamic_pcell_0/J_GATE wind_comp_0/sg13g2_and2_2$1_0/VDD 4.12084f
+C34 vss_1v2_uq0 m4_21542_3976# 15.1581f
+C35 wind_comp_0/comparator_1/dynamic_pcell_0/J_GATE wind_comp_0/sg13g2_and2_2$1_0/VDD 4.1118f
+C36 wind_comp_0/comparator_0/dynamic_pcell_0/J_GATE wind_comp_0/comparator_0/dynamic_pcell$7_0/DRN_NET_CF_GATE_CD 4.5035f
+C37 ibias m4_21542_3976# 5.39058f
+C38 wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/VDD 2.35685f
+C39 wind_comp_0/comparator_1/dynamic_pcell$7_0/DRN_NET_BE_GATE_AB wind_comp_0/comparator_1/dynamic_pcell$7_0/DRN_NET_CF_GATE_CD 4.46696f
+C40 analog_bus2 analog_bus1 4.20793f
+C41 analog_bus0 m4_21542_3976# 5.06321f
+C42 analog_bus0 s4_an 3.35488f
+C43 wind_comp_0/sg13g2_and2_2$1_0/VDD ibias 3.24848f
+C44 wind_comp_0/comparator_0/nmos$2_0/Drain wind_comp_0/comparator_0/dynamic_pcell$2_0/O_DRN 2.42599f
+C45 wind_comp_0/comparator_0/dynamic_pcell$2_0/DRN_NET_LM_GATE_KL wind_comp_0/comparator_0/dynamic_pcell$2_0/K_DRN 2.90158f
+C46 wind_comp_0/comparator_1/nmos$2_0/Drain wind_comp_0/comparator_1/dynamic_pcell$2_0/O_DRN 2.42599f
+C47 analog_bus1 ibias 8.72712f
+C48 wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y wind_comp_0/sg13g2_and2_2$1_0/VDD 2.35654f
+C49 analog_bus0 wind_comp_0/comparator_1/dynamic_pcell_0/J_GATE 2.8964f
+C50 wind_comp_0/comparator_0/dynamic_pcell_0/DRN_NET_GJ_GATE_GH wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/A 2.10778f
+C51 wind_comp_0/comparator_1/dynamic_pcell_0/DRN_NET_GJ_GATE_GH wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/A 2.10778f
+C52 wind_comp_0/comparator_1/dynamic_pcell_0/I_GATE wind_comp_0/sg13g2_and2_2$1_0/VDD 3.16771f
+C53 wind_comp_0/comparator_0/dynamic_pcell_0/DRN_NET_GJ_GATE_GH wind_comp_0/comparator_0/nmos$2_0/Drain 2.35147f
+C54 vss_1v2_uq0 ibias 2.24024f
+C55 analog_bus0 analog_bus1 4.17345f
+C56 vss_3v3 sub 2.64815f
+C57 vdd_3v3 sub 9.2084f
+C58 analog_bus2 sub 15.96753f
+C59 analog_bus1 sub 7.72454f
+C60 analog_bus0 sub 17.31342f
+C61 vss_1v2 sub 6.4351f
+C62 vdd1v2 sub 30.84763f
+C63 m4_21542_3976# sub 33.9989f
+C64 m6_21520_34522# sub 34.26017f
+C65 vss_1v2_uq0 sub 0.16343p
+C66 wind_comp_0/comparator_1/dynamic_pcell_0/J_GATE sub 17.28302f **FLOATING
+C67 wind_comp_0/comparator_1/dynamic_pcell_0/I_GATE sub 16.99942f **FLOATING
+C68 wind_comp_0/comparator_1/dynamic_pcell$2_0/O_DRN sub 2.64499f **FLOATING
+C69 wind_comp_0/comparator_1/dynamic_pcell_0/DRN_NET_GJ_GATE_GH sub 6.32575f **FLOATING
+C70 wind_comp_0/comparator_1/dynamic_pcell$2_0/DRN_NET_LM_GATE_KL sub 8.19118f **FLOATING
+C71 wind_comp_0/comparator_1/nmos$2_0/Drain sub 28.4612f **FLOATING
+C72 wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/A sub 3.3019f
+C73 wind_comp_0/comparator_1/sg13cmos5l_inv_16_1/Y sub 2.36381f
+C74 s4_an sub 30.06346f
+C75 wind_comp_0/sg13g2_and2_2$1_0/A sub 2.00135f
+C76 wind_comp_0/comparator_0/dynamic_pcell_0/J_GATE sub 17.33094f **FLOATING
+C77 wind_comp_0/comparator_0/dynamic_pcell_0/I_GATE sub 17.1208f **FLOATING
+C78 wind_comp_0/comparator_0/dynamic_pcell$2_0/O_DRN sub 2.64499f **FLOATING
+C79 wind_comp_0/comparator_0/dynamic_pcell_0/DRN_NET_GJ_GATE_GH sub 6.32575f **FLOATING
+C80 wind_comp_0/comparator_0/dynamic_pcell$2_0/DRN_NET_LM_GATE_KL sub 8.22415f **FLOATING
+C81 ibias sub 15.78857f
+C82 wind_comp_0/comparator_0/nmos$2_0/Drain sub 28.46183f **FLOATING
+C83 enable sub 15.85133f
+C84 wind_comp_0/sg13g2_and2_2$1_0/VDD sub 17.08989f
+C85 wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/A sub 3.3019f
+C86 wind_comp_0/comparator_0/sg13cmos5l_inv_16_1/Y sub 2.36381f
+.ends

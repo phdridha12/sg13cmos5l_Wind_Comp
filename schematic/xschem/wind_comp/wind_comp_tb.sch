@@ -14,11 +14,11 @@ N -220 -30 -160 -30 {lab=vh}
 N -200 0 -140 0 {lab=vin}
 N -220 30 -160 30 {lab=vl}
 N -80 -130 -80 -60 {lab=vdd}
+N -60 -90 -60 -50 {lab=en}
 C {code_shown.sym} -1040 -540 0 0 {name=NETLIST only_toplevel=false value="
 VSS VSS 0 0
-VDD VDD VSS 1.2
-VEN EN VSS 0
-Vcm Vcm VSS \{vcm\}
+VDD VDD 0 1.2
+Vcm Vcm 0 \{vcm\}
 Ibias VDD Ibias 1u
 "}
 C {code_shown.sym} -720 -370 0 0 {name=OP_SIM only_toplevel=false
@@ -200,6 +200,7 @@ C {code_shown.sym} -1780 -350 0 0 {name=TRAN_SIM2 only_toplevel=false value="
 Vh vh vss \{vcm+0.3\}
 Vl vl vss \{vcm-0.3\}
 vin vin vss sin(\{vcm\} 0.4 1000)
+ven en vss 1.2
 .control
 tran 100n 1m
 plot vout vh vl vin
@@ -212,3 +213,4 @@ echo results_save_end
 .endc
 "
 }
+C {lab_pin.sym} -60 -90 2 0 {name=p8 lab=en}
