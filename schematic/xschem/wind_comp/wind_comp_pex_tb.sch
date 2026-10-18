@@ -6,7 +6,23 @@ S {}
 F {}
 E {}
 T {SPICE SIMULATION} -420 -300 0 0 0.4 0.4 {}
-T {MONTE CARLO PYTHON} 790 -420 0 0 0.4 0.4 {}
+T {MONTE CARLO PYTHON} 800 -1100 0 0 0.4 0.4 {}
+N 1180 370 1180 400 {lab=ibias
+spice_ignore=true}
+N 1160 380 1160 410 {lab=vss
+spice_ignore=true}
+N 1260 320 1390 320 {lab=vout
+spice_ignore=true}
+N 1020 290 1080 290 {lab=vh
+spice_ignore=true}
+N 1040 320 1100 320 {lab=vin
+spice_ignore=true}
+N 1020 350 1080 350 {lab=vl
+spice_ignore=true}
+N 1160 190 1160 260 {lab=vdd
+spice_ignore=true}
+N 1180 230 1180 270 {lab=en
+spice_ignore=true}
 C {code_shown.sym} -390 -190 0 0 {name=NETLIST only_toplevel=false value="
 VSS VSS 0 0
 VDD VDD 0 1.2
@@ -103,10 +119,10 @@ only_toplevel=true
 format="tcleval( @value )"
 value="
 .include $::PDK_ROOT/ihp-sg13g2/libs.ref/sg13g2_stdcell/spice/sg13g2_stdcell.spice
-
+.include /foss/designs/ic_design/chipaloza/sg13cmos5l_Wind_Comp/pex/wind_comp_pex.spice
 "
 place=header}
-C {code_shown.sym} 790 -350 0 0 {name=MC_SETTINGS
+C {code_shown.sym} 800 -1030 0 0 {name=MC_SETTINGS
 only_toplevel=false
 value="
 **nr_workers=1
@@ -117,7 +133,7 @@ value="
 **results_plot_end
 "
 }
-C {launcher.sym} 860 -75 0 0 {name=h1
+C {launcher.sym} 870 -755 0 0 {name=h1
 descr=SimulatePARALLEL
 tclcommand="
 # Setup the default simulation commands if not already set up
@@ -142,7 +158,7 @@ xschem netlist
 exec python3 $\{PDK_ROOT\}/$\{PDK\}/libs.tech/xschem/sg13g2_tests/ngspice_parallel_mc.py [file tail [xschem get current_name]]
 "
 spice_ignore=true}
-C {simulator_commands_shown.sym} 1080 -380 0 0 {
+C {simulator_commands_shown.sym} 1090 -1060 0 0 {
 name=Libs_Ngspice1
 simulator=ngspice
 only_toplevel=false
@@ -155,13 +171,13 @@ value="
 .lib cornerDIO.lib dio_tt
 "
       spice_ignore=true}
-C {lab_pin.sym} 1610 420 2 1 {name=p1 lab=vdd}
-C {lab_pin.sym} 1610 280 2 1 {name=p2 lab=vh}
-C {lab_pin.sym} 1610 300 2 1 {name=p3 lab=vout}
-C {lab_pin.sym} 1610 -560 2 1 {name=p4 lab=vin}
-C {lab_pin.sym} 1610 380 2 1 {name=p5 lab=vl}
-C {lab_pin.sym} 1610 220 2 1 {name=p6 lab=ibias}
-C {lab_pin.sym} 1610 400 2 1 {name=p7 lab=vss}
+C {lab_pin.sym} 520 620 2 1 {name=p1 lab=vdd}
+C {lab_pin.sym} 520 480 2 1 {name=p2 lab=vh}
+C {lab_pin.sym} 520 500 2 1 {name=p3 lab=vout_pex}
+C {lab_pin.sym} 520 -360 2 1 {name=p4 lab=vin}
+C {lab_pin.sym} 520 580 2 1 {name=p5 lab=vl}
+C {lab_pin.sym} 520 420 2 1 {name=p6 lab=ibias}
+C {lab_pin.sym} 520 600 2 1 {name=p7 lab=vss}
 C {code_shown.sym} -1580 -10 0 0 {name=AC_SIM only_toplevel=false value="
 .control
 ac dec 50 100 100G
@@ -204,5 +220,23 @@ echo results_save_end
 .endc
 "
 }
-C {lab_pin.sym} 1610 320 2 1 {name=p8 lab=en}
-C {/foss/designs/ic_design/chipaloza/sg13cmos5l_Wind_Comp/pex/slot4_wrapper.sym} 1630 -570 0 0 {name=X2}
+C {lab_pin.sym} 520 520 2 1 {name=p8 lab=en}
+C {/foss/designs/ic_design/chipaloza/sg13cmos5l_Wind_Comp/schematic/xschem/wind_comp/wind_comp_pex.sym} 540 -370 0 0 {name=X1}
+C {/foss/designs/ic_design/chipaloza/sg13cmos5l_Wind_Comp/schematic/xschem/wind_comp/wind_comp.sym} 1170 320 0 0 {name=x2
+spice_ignore=true}
+C {lab_pin.sym} 1160 190 2 1 {name=p9 lab=vdd
+spice_ignore=true}
+C {lab_pin.sym} 1020 290 2 1 {name=p10 lab=vh
+spice_ignore=true}
+C {lab_pin.sym} 1390 320 2 0 {name=p11 lab=vout
+spice_ignore=true}
+C {lab_pin.sym} 1040 320 2 1 {name=p12 lab=vin
+spice_ignore=true}
+C {lab_pin.sym} 1020 350 2 1 {name=p13 lab=vl
+spice_ignore=true}
+C {lab_pin.sym} 1180 400 2 0 {name=p14 lab=ibias
+spice_ignore=true}
+C {lab_pin.sym} 1160 410 2 1 {name=p15 lab=vss
+spice_ignore=true}
+C {lab_pin.sym} 1180 230 2 0 {name=p16 lab=en
+spice_ignore=true}
