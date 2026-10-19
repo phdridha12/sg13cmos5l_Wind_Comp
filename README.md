@@ -65,7 +65,13 @@ A window comparator is a dual-threshold voltage detector. It compares a single i
 
 ---
 
-## 7. Verification & Test Plan
+## 7. Layout 
+
+![Layout image](layout/wind_comp.png)
+
+---
+
+## 8. Verification & Test Plan
 The testbench suite covers the following verifications using **ngspice** and **Xschem**:
 * **DC Characterization:** Threshold/offset sweeps across process corners (`SS`, `FF`, `SF`, `FS`, `TT`), temperature range (`-40°C` to `125°C`), and supply margins, alongside Monte Carlo mismatch simulations.
 * **AC/Transient Characterization:** Propagation delays (`t_PLH`/`t_PHL`), rise/fall transition times (`10%–90%`), and dynamic tracking.
@@ -74,7 +80,7 @@ The testbench suite covers the following verifications using **ngspice** and **X
 
 ---
 
-## 8. Repository Structure
+## 9. Repository Structure
 ```text
 ├── xschem/         # Schematic capture files and testbenches
 ├── sim/            # Ngspice simulation scripts and raw output data
