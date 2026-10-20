@@ -67,7 +67,7 @@ A window comparator is a dual-threshold voltage detector. It compares a single i
 
 ## 7. Layout 
 
-![Layout image](layout/wind_comp.png)
+![Layout image](doc/wind_comp.png)
 
 ---
 
