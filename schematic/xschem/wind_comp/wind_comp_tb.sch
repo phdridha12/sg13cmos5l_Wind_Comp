@@ -5,7 +5,7 @@ V {}
 S {}
 F {}
 E {}
-T {SPICE SIMULATION} -1070 -650 0 0 0.4 0.4 {}
+T {SPICE SIMULATION} -1770 -930 0 0 0.4 0.4 {}
 T {MONTE CARLO PYTHON} 140 -770 0 0 0.4 0.4 {}
 N -60 50 -60 80 {lab=ibias}
 N -80 60 -80 90 {lab=vss}
@@ -15,13 +15,13 @@ N -200 0 -140 0 {lab=vin}
 N -220 30 -160 30 {lab=vl}
 N -80 -130 -80 -60 {lab=vdd}
 N -60 -90 -60 -50 {lab=en}
-C {code_shown.sym} -1040 -540 0 0 {name=NETLIST only_toplevel=false value="
+C {code_shown.sym} -1670 -820 0 0 {name=NETLIST only_toplevel=false value="
 VSS VSS 0 0
 VDD VDD 0 1.2
 Vcm Vcm 0 \{vcm\}
 Ibias VDD Ibias 1u
 "}
-C {code_shown.sym} -720 -370 0 0 {name=OP_SIM only_toplevel=false
+C {code_shown.sym} -1920 -820 0 0 {name=OP_SIM only_toplevel=false
 schname="tcleval([file rootname [file tail [xschem get schname]]])"
 format="tcleval( @value )" value="
 .control
@@ -43,17 +43,17 @@ value="
 .lib cornerDIO.lib dio_tt
 "
       }
-C {devices/launcher.sym} -690 230 0 0 {name=h2
+C {devices/launcher.sym} 110 250 0 0 {name=h2
 descr="OP annotate" 
 tclcommand="xschem annotate_op"
 }
-C {code_shown.sym} -850 -540 0 0 {name=PARAMS only_toplevel=false value="
+C {code_shown.sym} -1920 -670 0 0 {name=PARAMS only_toplevel=false value="
 .option rshunt=1e9
 .option method=gear
 .param vcm=0.7 cl=0.1p
 .save all
 "}
-C {code_shown.sym} -630 -550 0 0 {name=LOAD only_toplevel=false value="
+C {code_shown.sym} -1650 -640 0 0 {name=LOAD only_toplevel=false value="
 CL1 Vout 0 \{cl\}
 "
 }
@@ -63,25 +63,7 @@ format="tcleval( @value )"
 value="
 .include @schname\\\\.save
 "}
-C {code_shown.sym} -1280 -350 0 0 {name=TRAN_SIM only_toplevel=false value="
-Vh vh vss \{vcm+0.3\}
-Vl vl vss \{vcm-0.3\}
-vin vin n0 \{vcm\}
-vin1 n0 n1 pulse(0 0.305 100u 1n 1n 1u 500u)
-vin2 n1 vss pulse(0 -0.305 300u 1n 1n 1u 500u)
-.control
-tran 100n 1m
-plot vout vh vl vin
-meas tran fall_time find time when vin=vh fall=1
-meas tran delay find time when vout=\{vcm\} fall=1
-let fall_error = delay-fall_time
-echo results_save_begin
-print fall_error
-echo results_save_end
-.endc
-"
-spice_ignore=true}
-C {launcher.sym} -690 150 0 0 {name=h4
+C {launcher.sym} 110 170 0 0 {name=h4
 descr=SimulateNGSPICE
 tclcommand="
 # Setup the default simulation commands if not already set up
@@ -163,7 +145,7 @@ value="
 .lib cornerDIO.lib dio_tt
 "
       spice_ignore=true}
-C {/foss/designs/ic_design/chipaloza/sg13cmos5l_Wind_Comp/schematic/xschem/wind_comp/wind_comp.sym} -70 0 0 0 {name=x1}
+C {/run/media/frhridha/disc/DISC C/IC_Projects/ic_design/chipaloza/sg13cmos5l_Wind_Comp/schematic/xschem/wind_comp/wind_comp.sym} -70 0 0 0 {name=x1}
 C {lab_pin.sym} -80 -130 2 1 {name=p1 lab=vdd}
 C {lab_pin.sym} -220 -30 2 1 {name=p2 lab=vh}
 C {lab_pin.sym} 150 0 2 0 {name=p3 lab=vout}
@@ -171,32 +153,7 @@ C {lab_pin.sym} -200 0 2 1 {name=p4 lab=vin}
 C {lab_pin.sym} -220 30 2 1 {name=p5 lab=vl}
 C {lab_pin.sym} -60 80 2 0 {name=p6 lab=ibias}
 C {lab_pin.sym} -80 90 2 1 {name=p7 lab=vss}
-C {code_shown.sym} -2230 -360 0 0 {name=AC_SIM only_toplevel=false value="
-.control
-ac dec 50 100 100G
-let op_mag=db(vout)
-let op_ph = 180*cph(vout)/pi
-plot op_mag op_ph
-.endc
-"
-spice_ignore=true}
-C {code_shown.sym} -1430 40 0 0 {name=TRAN_SIM1 only_toplevel=false value="
-Vh vh vss \{vcm+0.3\}
-Vl vl vss \{vcm-0.3\}
-vin vin vss sin(\{vcm\} 0.35 1000)
-.control
-tran 100n 1m
-plot vout vh vl vin
-meas tran fall_time find time when vin=vh fall=1
-meas tran delay find time when vout=\{vcm\} fall=1
-let fall_error = delay-fall_time
-echo results_save_begin
-print fall_error
-echo results_save_end
-.endc
-"
-spice_ignore=true}
-C {code_shown.sym} -1780 -350 0 0 {name=TRAN_SIM2 only_toplevel=false value="
+C {code_shown.sym} -1090 -460 0 0 {name=TRAN_SIM2 only_toplevel=false value="
 Vh vh vss \{vcm+0.3\}
 Vl vl vss \{vcm-0.3\}
 vin vin vss sin(\{vcm\} 0.4 1000)
