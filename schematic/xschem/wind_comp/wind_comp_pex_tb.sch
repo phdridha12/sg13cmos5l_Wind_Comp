@@ -23,6 +23,14 @@ N 1160 190 1160 260 {lab=vdd
 spice_ignore=true}
 N 1180 230 1180 270 {lab=en
 spice_ignore=true}
+N 580 510 630 510 {lab=vdd}
+N 580 370 630 370 {lab=vh}
+N 580 390 630 390 {lab=vout}
+N 580 470 630 470 {lab=vin}
+N 580 410 630 410 {lab=vl}
+N 580 430 630 430 {lab=ibias}
+N 580 490 630 490 {lab=vss}
+N 580 450 630 450 {lab=en}
 C {code_shown.sym} -390 -190 0 0 {name=NETLIST only_toplevel=false value="
 VSS VSS 0 0
 VDD VDD 0 1.2
@@ -119,7 +127,7 @@ only_toplevel=true
 format="tcleval( @value )"
 value="
 .include $::PDK_ROOT/ihp-sg13g2/libs.ref/sg13g2_stdcell/spice/sg13g2_stdcell.spice
-.include /foss/designs/ic_design/chipaloza/sg13cmos5l_Wind_Comp/pex/wind_comp_pex.spice
+.include ../../../pex/slot_4.pex.spice
 "
 place=header}
 C {code_shown.sym} 800 -1030 0 0 {name=MC_SETTINGS
@@ -171,13 +179,13 @@ value="
 .lib cornerDIO.lib dio_tt
 "
       spice_ignore=true}
-C {lab_pin.sym} 520 620 2 1 {name=p1 lab=vdd}
-C {lab_pin.sym} 520 480 2 1 {name=p2 lab=vh}
-C {lab_pin.sym} 520 500 2 1 {name=p3 lab=vout_pex}
-C {lab_pin.sym} 520 -360 2 1 {name=p4 lab=vin}
-C {lab_pin.sym} 520 580 2 1 {name=p5 lab=vl}
-C {lab_pin.sym} 520 420 2 1 {name=p6 lab=ibias}
-C {lab_pin.sym} 520 600 2 1 {name=p7 lab=vss}
+C {lab_pin.sym} 580 510 2 1 {name=p1 lab=vdd}
+C {lab_pin.sym} 580 370 2 1 {name=p2 lab=vh}
+C {lab_pin.sym} 580 390 2 1 {name=p3 lab=vout}
+C {lab_pin.sym} 580 470 2 1 {name=p4 lab=vin}
+C {lab_pin.sym} 580 410 2 1 {name=p5 lab=vl}
+C {lab_pin.sym} 580 430 2 1 {name=p6 lab=ibias}
+C {lab_pin.sym} 580 490 2 1 {name=p7 lab=vss}
 C {code_shown.sym} -1580 -10 0 0 {name=AC_SIM only_toplevel=false value="
 .control
 ac dec 50 100 100G
@@ -220,8 +228,7 @@ echo results_save_end
 .endc
 "
 }
-C {lab_pin.sym} 520 520 2 1 {name=p8 lab=en}
-C {/foss/designs/ic_design/chipaloza/sg13cmos5l_Wind_Comp/schematic/xschem/wind_comp/wind_comp_pex.sym} 540 -370 0 0 {name=X1}
+C {lab_pin.sym} 580 450 2 1 {name=p8 lab=en}
 C {/foss/designs/ic_design/chipaloza/sg13cmos5l_Wind_Comp/schematic/xschem/wind_comp/wind_comp.sym} 1170 320 0 0 {name=x2
 spice_ignore=true}
 C {lab_pin.sym} 1160 190 2 1 {name=p9 lab=vdd
@@ -240,3 +247,4 @@ C {lab_pin.sym} 1160 410 2 1 {name=p15 lab=vss
 spice_ignore=true}
 C {lab_pin.sym} 1180 230 2 0 {name=p16 lab=en
 spice_ignore=true}
+C {wind_comp/slot_4.sym} 650 360 0 0 {name=X1}

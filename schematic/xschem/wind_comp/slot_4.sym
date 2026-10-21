@@ -1,0 +1,34 @@
+v {xschem version=3.4.BRC file_version=1.4}
+S {}
+E {}
+K{type=primitive
+format="@name @pinlist @symname"
+template="name=X1"
+}
+L 4 -20 10 0 10 {}
+T {analog_bus0} 5 5 0 0 0.2 0.2 {}
+L 4 -20 30 0 30 {}
+T {analog_bus1} 5 25 0 0 0.2 0.2 {}
+L 4 -20 50 0 50 {}
+T {analog_bus2} 5 45 0 0 0.2 0.2 {}
+L 4 -20 70 0 70 {}
+T {ibias0} 5 65 0 0 0.2 0.2 {}
+L 4 -20 90 0 90 {}
+T {enable} 5 85 0 0 0.2 0.2 {}
+L 4 -20 110 0 110 {}
+T {s4_an[0]} 5 105 0 0 0.2 0.2 {}
+L 4 -20 130 0 130 {}
+T {vss_1v2} 5 125 0 0 0.2 0.2 {}
+L 4 -20 150 0 150 {}
+T {vdd_1v2} 5 145 0 0 0.2 0.2 {}
+B 5 -22.5 8 -17.5 12 {name=analog_bus0 dir=inout}
+B 5 -22.5 28 -17.5 32 {name=analog_bus1 dir=inout}
+B 5 -22.5 48 -17.5 52 {name=analog_bus2 dir=inout}
+B 5 -22.5 68 -17.5 72 {name=ibias0 dir=inout}
+B 5 -22.5 88 -17.5 92 {name=enable dir=inout}
+B 5 -22.5 108 -17.5 112 {name=s4_an[0] dir=inout}
+B 5 -22.5 128 -17.5 132 {name=vss_1v2 dir=inout}
+B 5 -22.5 148 -17.5 152 {name=vdd_1v2 dir=inout}
+P 4 5 120 0 0 0 0 160 120 160 120 0 {}
+T {@symname} 40 70 0 0 0.3 0.3 {} 
+T {@name} 0 -15 0 0 0.2 0.2 {}

@@ -45,8 +45,6 @@ append_xschem_library_path_unique [file dirname [info script]]
 append_xschem_library_path_unique [file join [file dirname [info script]] ../../testbenches/xschem]
 
 # Source macro xschemrc
-source [file dirname [info script]]/../../macros/inverter/schematic/xschem/xschemrc
-source [file dirname [info script]]/../../macros/counter/schematic/xschem/xschemrc
 
 # Pin the netlist directory to the simulations folder of the loaded schematic
 if {![llength [info commands pin_netlist_dir]]} {
