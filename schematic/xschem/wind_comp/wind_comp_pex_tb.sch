@@ -5,99 +5,21 @@ V {}
 S {}
 F {}
 E {}
-T {SPICE SIMULATION} -420 -300 0 0 0.4 0.4 {}
-T {MONTE CARLO PYTHON} 800 -1100 0 0 0.4 0.4 {}
-N 1180 370 1180 400 {lab=ibias
-spice_ignore=true}
-N 1160 380 1160 410 {lab=vss
-spice_ignore=true}
-N 1260 320 1390 320 {lab=vout
-spice_ignore=true}
-N 1020 290 1080 290 {lab=vh
-spice_ignore=true}
-N 1040 320 1100 320 {lab=vin
-spice_ignore=true}
-N 1020 350 1080 350 {lab=vl
-spice_ignore=true}
-N 1160 190 1160 260 {lab=vdd
-spice_ignore=true}
-N 1180 230 1180 270 {lab=en
-spice_ignore=true}
-N 580 510 630 510 {lab=vdd}
-N 580 370 630 370 {lab=vh}
-N 580 390 630 390 {lab=vout}
-N 580 470 630 470 {lab=vin}
-N 580 410 630 410 {lab=vl}
-N 580 430 630 430 {lab=ibias}
-N 580 490 630 490 {lab=vss}
-N 580 450 630 450 {lab=en}
-C {code_shown.sym} -390 -190 0 0 {name=NETLIST only_toplevel=false value="
-VSS VSS 0 0
-VDD VDD 0 1.2
-Vcm Vcm 0 \{vcm\}
-Ibias VDD Ibias 1u
-"}
-C {code_shown.sym} -70 -20 0 0 {name=OP_SIM only_toplevel=false
-schname="tcleval([file rootname [file tail [xschem get schname]]])"
-format="tcleval( @value )" value="
-.control
-op
-write @schname\\\\.raw
-.endc
-"
-}
-C {simulator_commands_shown.sym} -790 -470 0 0 {
-name=Libs_Ngspice
-simulator=ngspice
-only_toplevel=false
-value="
-.lib cornerMOSlv.lib mos_tt
-.lib cornerMOShv.lib mos_tt
-.lib cornerMOSCAP.lib moscap_tt
-.lib cornerCAP.lib cap_typ
-.lib cornerRES.lib res_typ
-.lib cornerDIO.lib dio_tt
-"
-      }
-C {devices/launcher.sym} -40 580 0 0 {name=h2
+T {MONTE CARLO PYTHON} 640 -370 0 0 0.4 0.4 {}
+T {SPICE SIMULATION} -1410 -450 0 0 0.4 0.4 {}
+N 60 180 110 180 {lab=vdd}
+N 60 40 110 40 {lab=vl}
+N 60 60 110 60 {lab=vout}
+N 60 140 110 140 {lab=vin}
+N 60 80 110 80 {lab=vh}
+N 60 100 110 100 {lab=ibias}
+N 60 160 110 160 {lab=vss}
+N 60 120 110 120 {lab=en}
+C {devices/launcher.sym} 90 370 0 0 {name=h2
 descr="OP annotate" 
 tclcommand="xschem annotate_op"
 }
-C {code_shown.sym} -200 -190 0 0 {name=PARAMS only_toplevel=false value="
-.option rshunt=1e9
-.option method=gear
-.param vcm=0.7 cl=0.1p
-.save all
-"}
-C {code_shown.sym} 20 -200 0 0 {name=LOAD only_toplevel=false value="
-CL1 Vout 0 \{cl\}
-"
-}
-C {devices/code_shown.sym} -460 -490 0 0 {name=SAVE only_toplevel=true
-schname="tcleval([file rootname [file tail [xschem get schname]]])"
-format="tcleval( @value )"
-value="
-.include @schname\\\\.save
-"}
-C {code_shown.sym} -630 0 0 0 {name=TRAN_SIM only_toplevel=false value="
-Vh vh vss \{vcm+0.3\}
-Vl vl vss \{vcm-0.3\}
-vin vin n0 \{vcm\}
-vin1 n0 n1 pulse(0 0.305 100u 1n 1n 1u 500u)
-vin2 n1 vss pulse(0 -0.305 300u 1n 1n 1u 500u)
-.control
-tran 100n 1m
-plot vout vh vl vin
-meas tran fall_time find time when vin=vh fall=1
-meas tran delay find time when vout=\{vcm\} fall=1
-let fall_error = delay-fall_time
-echo results_save_begin
-print fall_error
-echo results_save_end
-.endc
-"
-spice_ignore=true}
-C {launcher.sym} -40 500 0 0 {name=h4
+C {launcher.sym} 90 290 0 0 {name=h4
 descr=SimulateNGSPICE
 tclcommand="
 # Setup the default simulation commands if not already set up
@@ -122,7 +44,7 @@ write_data [save_params] $netlist_dir/[file rootname [file tail [xschem get curr
 xschem netlist
 simulate
 "}
-C {devices/code_shown.sym} -450 -390 0 0 {name=MODEL
+C {devices/code_shown.sym} -740 -260 0 0 {name=MODEL
 only_toplevel=true
 format="tcleval( @value )"
 value="
@@ -130,7 +52,7 @@ value="
 .include ../../../pex/slot_4.pex.spice
 "
 place=header}
-C {code_shown.sym} 800 -1030 0 0 {name=MC_SETTINGS
+C {code_shown.sym} 640 -300 0 0 {name=MC_SETTINGS
 only_toplevel=false
 value="
 **nr_workers=1
@@ -141,7 +63,7 @@ value="
 **results_plot_end
 "
 }
-C {launcher.sym} 870 -755 0 0 {name=h1
+C {launcher.sym} 710 -25 0 0 {name=h1
 descr=SimulatePARALLEL
 tclcommand="
 # Setup the default simulation commands if not already set up
@@ -166,7 +88,7 @@ xschem netlist
 exec python3 $\{PDK_ROOT\}/$\{PDK\}/libs.tech/xschem/sg13g2_tests/ngspice_parallel_mc.py [file tail [xschem get current_name]]
 "
 spice_ignore=true}
-C {simulator_commands_shown.sym} 1090 -1060 0 0 {
+C {simulator_commands_shown.sym} 930 -330 0 0 {
 name=Libs_Ngspice1
 simulator=ngspice
 only_toplevel=false
@@ -179,45 +101,67 @@ value="
 .lib cornerDIO.lib dio_tt
 "
       spice_ignore=true}
-C {lab_pin.sym} 580 510 2 1 {name=p1 lab=vdd}
-C {lab_pin.sym} 580 370 2 1 {name=p2 lab=vh}
-C {lab_pin.sym} 580 390 2 1 {name=p3 lab=vout}
-C {lab_pin.sym} 580 470 2 1 {name=p4 lab=vin}
-C {lab_pin.sym} 580 410 2 1 {name=p5 lab=vl}
-C {lab_pin.sym} 580 430 2 1 {name=p6 lab=ibias}
-C {lab_pin.sym} 580 490 2 1 {name=p7 lab=vss}
-C {code_shown.sym} -1580 -10 0 0 {name=AC_SIM only_toplevel=false value="
+C {lab_pin.sym} 60 180 2 1 {name=p1 lab=vdd}
+C {lab_pin.sym} 60 80 2 1 {name=p2 lab=vh}
+C {lab_pin.sym} 60 60 2 1 {name=p3 lab=vout}
+C {lab_pin.sym} 60 140 2 1 {name=p4 lab=vin}
+C {lab_pin.sym} 60 40 2 1 {name=p5 lab=vl}
+C {lab_pin.sym} 60 100 2 1 {name=p6 lab=ibias}
+C {lab_pin.sym} 60 160 2 1 {name=p7 lab=vss}
+C {lab_pin.sym} 60 120 2 1 {name=p8 lab=en}
+C {wind_comp/slot_4.sym} 130 30 0 0 {name=X1}
+C {code_shown.sym} -1310 -340 0 0 {name=NETLIST1 only_toplevel=false value="
+VSS VSS 0 0
+VDD VDD 0 1.2
+Vcm Vcm 0 \{vcm\}
+Ibias VDD Ibias 1u
+"}
+C {code_shown.sym} -1560 -340 0 0 {name=OP_SIM1 only_toplevel=false
+schname="tcleval([file rootname [file tail [xschem get schname]]])"
+format="tcleval( @value )" value="
 .control
-ac dec 50 100 100G
-let op_mag=db(vout)
-let op_ph = 180*cph(vout)/pi
-plot op_mag op_ph
+op
+write @schname\\\\.raw
 .endc
 "
-spice_ignore=true}
-C {code_shown.sym} -780 390 0 0 {name=TRAN_SIM1 only_toplevel=false value="
-Vh vh vss \{vcm+0.3\}
-Vl vl vss \{vcm-0.3\}
-vin vin vss sin(\{vcm\} 0.35 1000)
-.control
-tran 100n 1m
-plot vout vh vl vin
-meas tran fall_time find time when vin=vh fall=1
-meas tran delay find time when vout=\{vcm\} fall=1
-let fall_error = delay-fall_time
-echo results_save_begin
-print fall_error
-echo results_save_end
-.endc
+}
+C {simulator_commands_shown.sym} -1080 -340 0 0 {
+name=Libs_Ngspice2
+simulator=ngspice
+only_toplevel=false
+value="
+.lib cornerMOSlv.lib mos_tt
+.lib cornerMOShv.lib mos_tt
+.lib cornerMOSCAP.lib moscap_tt
+.lib cornerCAP.lib cap_typ
+.lib cornerRES.lib res_typ
+.lib cornerDIO.lib dio_tt
 "
-spice_ignore=true}
-C {code_shown.sym} -1130 0 0 0 {name=TRAN_SIM2 only_toplevel=false value="
+      }
+C {code_shown.sym} -1560 -190 0 0 {name=PARAMS1 only_toplevel=false value="
+.option rshunt=1e9
+.option method=gear
+.param vcm=0.7 cl=0.1p
+.save all
+"}
+C {code_shown.sym} -1290 -160 0 0 {name=LOAD1 only_toplevel=false value="
+CL1 Vout 0 \{cl\}
+"
+}
+C {devices/code_shown.sym} -750 -360 0 0 {name=SAVE1 only_toplevel=true
+schname="tcleval([file rootname [file tail [xschem get schname]]])"
+format="tcleval( @value )"
+value="
+.include @schname\\\\.save
+"}
+C {code_shown.sym} -700 110 0 0 {name=TRAN_SIM1 only_toplevel=false value="
 Vh vh vss \{vcm+0.3\}
 Vl vl vss \{vcm-0.3\}
 vin vin vss sin(\{vcm\} 0.4 1000)
 ven en vss 1.2
 .control
 tran 100n 1m
+*plot vout vh vl vin vout1 
 plot vout vh vl vin
 meas tran fall_time find time when vin=vh fall=1
 meas tran delay find time when vout=\{vcm\} fall=1
@@ -228,23 +172,3 @@ echo results_save_end
 .endc
 "
 }
-C {lab_pin.sym} 580 450 2 1 {name=p8 lab=en}
-C {/foss/designs/ic_design/chipaloza/sg13cmos5l_Wind_Comp/schematic/xschem/wind_comp/wind_comp.sym} 1170 320 0 0 {name=x2
-spice_ignore=true}
-C {lab_pin.sym} 1160 190 2 1 {name=p9 lab=vdd
-spice_ignore=true}
-C {lab_pin.sym} 1020 290 2 1 {name=p10 lab=vh
-spice_ignore=true}
-C {lab_pin.sym} 1390 320 2 0 {name=p11 lab=vout
-spice_ignore=true}
-C {lab_pin.sym} 1040 320 2 1 {name=p12 lab=vin
-spice_ignore=true}
-C {lab_pin.sym} 1020 350 2 1 {name=p13 lab=vl
-spice_ignore=true}
-C {lab_pin.sym} 1180 400 2 0 {name=p14 lab=ibias
-spice_ignore=true}
-C {lab_pin.sym} 1160 410 2 1 {name=p15 lab=vss
-spice_ignore=true}
-C {lab_pin.sym} 1180 230 2 0 {name=p16 lab=en
-spice_ignore=true}
-C {wind_comp/slot_4.sym} 650 360 0 0 {name=X1}

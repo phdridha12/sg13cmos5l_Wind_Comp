@@ -15,6 +15,22 @@ N -200 0 -140 0 {lab=vin}
 N -220 30 -160 30 {lab=vl}
 N -80 -130 -80 -60 {lab=vdd}
 N -60 -90 -60 -50 {lab=en}
+N 520 80 570 80 {lab=vdd
+spice_ignore=true}
+N 520 -60 570 -60 {lab=vl
+spice_ignore=true}
+N 520 -40 570 -40 {lab=vout1
+spice_ignore=true}
+N 520 40 570 40 {lab=vin
+spice_ignore=true}
+N 520 -20 570 -20 {lab=vh
+spice_ignore=true}
+N 520 0 570 0 {lab=ibias
+spice_ignore=true}
+N 520 60 570 60 {lab=vss
+spice_ignore=true}
+N 520 20 570 20 {lab=en
+spice_ignore=true}
 C {code_shown.sym} -1670 -820 0 0 {name=NETLIST only_toplevel=false value="
 VSS VSS 0 0
 VDD VDD 0 1.2
@@ -95,7 +111,8 @@ value="
 .include $::PDK_ROOT/ihp-sg13g2/libs.ref/sg13g2_stdcell/spice/sg13g2_stdcell.spice
 
 "
-place=header}
+place=header
+}
 C {code_shown.sym} 140 -700 0 0 {name=MC_SETTINGS
 only_toplevel=false
 value="
@@ -145,7 +162,7 @@ value="
 .lib cornerDIO.lib dio_tt
 "
       spice_ignore=true}
-C {/run/media/frhridha/disc/DISC C/IC_Projects/ic_design/chipaloza/sg13cmos5l_Wind_Comp/schematic/xschem/wind_comp/wind_comp.sym} -70 0 0 0 {name=x1}
+C {wind_comp/wind_comp.sym} -70 0 0 0 {name=x1}
 C {lab_pin.sym} -80 -130 2 1 {name=p1 lab=vdd}
 C {lab_pin.sym} -220 -30 2 1 {name=p2 lab=vh}
 C {lab_pin.sym} 150 0 2 0 {name=p3 lab=vout}
@@ -153,13 +170,14 @@ C {lab_pin.sym} -200 0 2 1 {name=p4 lab=vin}
 C {lab_pin.sym} -220 30 2 1 {name=p5 lab=vl}
 C {lab_pin.sym} -60 80 2 0 {name=p6 lab=ibias}
 C {lab_pin.sym} -80 90 2 1 {name=p7 lab=vss}
-C {code_shown.sym} -1090 -460 0 0 {name=TRAN_SIM2 only_toplevel=false value="
+C {code_shown.sym} -1060 -370 0 0 {name=TRAN_SIM2 only_toplevel=false value="
 Vh vh vss \{vcm+0.3\}
 Vl vl vss \{vcm-0.3\}
 vin vin vss sin(\{vcm\} 0.4 1000)
 ven en vss 1.2
 .control
 tran 100n 1m
+*plot vout vh vl vin vout1 
 plot vout vh vl vin
 meas tran fall_time find time when vin=vh fall=1
 meas tran delay find time when vout=\{vcm\} fall=1
@@ -171,3 +189,30 @@ echo results_save_end
 "
 }
 C {lab_pin.sym} -60 -90 2 0 {name=p8 lab=en}
+C {lab_pin.sym} 520 80 2 1 {name=p9 lab=vdd
+spice_ignore=true}
+C {lab_pin.sym} 520 -20 2 1 {name=p10 lab=vh
+spice_ignore=true}
+C {lab_pin.sym} 520 -40 2 1 {name=p11 lab=vout1
+spice_ignore=true}
+C {lab_pin.sym} 520 40 2 1 {name=p12 lab=vin
+spice_ignore=true}
+C {lab_pin.sym} 520 -60 2 1 {name=p13 lab=vl
+spice_ignore=true}
+C {lab_pin.sym} 520 0 2 1 {name=p14 lab=ibias
+spice_ignore=true}
+C {lab_pin.sym} 520 60 2 1 {name=p15 lab=vss
+spice_ignore=true}
+C {lab_pin.sym} 520 20 2 1 {name=p16 lab=en
+spice_ignore=true}
+C {wind_comp/slot_4.sym} 590 -70 0 0 {name=X2
+spice_ignore=true}
+C {devices/code_shown.sym} -1100 -660 0 0 {name=MODEL1
+only_toplevel=true
+format="tcleval( @value )"
+value="
+.include $::PDK_ROOT/ihp-sg13g2/libs.ref/sg13g2_stdcell/spice/sg13g2_stdcell.spice
+.include ../../../pex/slot_4.pex.spice
+"
+place=header
+spice_ignore=true}
