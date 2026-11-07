@@ -1,12 +1,12 @@
 # Window Comparator (WINCOMP)
 
-A high-precision, open-loop 5-transistor (5T) differential window comparator designed in the **IHP SG13CMOS5L (130 nm CMOS)** technology for the **Chipalooza Challenge #2** run.
+A high-precision, ultra low power window comparator designed in the **IHP SG13CMOS5L (130 nm CMOS)** technology for the **Chipalooza Challenge #2** run.
 
 ---
 
 ## 1. Overview
 * **IP Block Name:** Window Comparator
-* **Abbreviation:** WINCOMP
+* **Abbreviation:** WINDCOMP
 * **Category:** Analog IP (Open-source library block)
 * **Target PDK:** IHP SG13CMOS5L (130 nm CMOS, 5 metal layers)
 * **Toolchain/Design Flow:** Xschem, ngspice, Magic, KLayout, Netgen (IIC-OSIC-TOOLS)
