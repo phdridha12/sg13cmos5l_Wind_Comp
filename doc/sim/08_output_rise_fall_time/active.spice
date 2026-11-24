@@ -1,0 +1,12 @@
+Vin vin 0 pulse(0.29 0.31 50n 100p 100p 100n 200n)
+.control
+save all
+tran 50p 250n
+meas tran trise TRIG v(vout) VAL=0.12 RISE=1 TARG v(vout) VAL=1.08 RISE=1
+meas tran tfall TRIG v(vout) VAL=1.08 FALL=1 TARG v(vout) VAL=0.12 FALL=1
+print trise tfall
+write @name\\.raw v(vout)
+plot v(vout) title "08_output_rise_fall_time"
+set hcopydevtype=svg
+hardcopy ../plots/@name\\.svg v(vout) title "08_output_rise_fall_time"
+.endc

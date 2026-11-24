@@ -1,0 +1,20 @@
+Vin vin 0 pulse(0.29 0.31 1u 1n 1n 4u 8u)
+.control
+save all
+foreach ib 0.5u 1u 2u 5u
+  alterparam ibias=$ib
+  reset
+  save all
+  op
+  let pstat = -i(Vdd) * v(vdd)
+  set pstat_val = $&pstat
+  tran 5n 10u
+  meas tran tplh TRIG v(vin) VAL=0.3 RISE=1 TARG v(vout) VAL=0.6 RISE=1
+  meas tran tphl TRIG v(vin) VAL=0.3 FALL=1 TARG v(vout) VAL=0.6 FALL=1
+  echo $ib $pstat_val $&tplh $&tphl >> @name\\.txt
+end
+write @name\\.raw v(vin) v(vout)
+plot v(vin) v(vout) title "25_bias_current_sensitivity_sweep"
+set hcopydevtype=svg
+hardcopy ../plots/@name\\.svg v(vin) v(vout) title "25_bias_current_sensitivity_sweep"
+.endc

@@ -1,0 +1,46 @@
+C {devices/code_shown.sym} -220 -160 0 0 {name=PRINCIPAL_BLOCK
+only_toplevel=true
+format="tcleval( @value )"
+value="
+.param vdd=1.2 vss=0 vcm=0.6 vrise=0.3
+.param vh={vcm+vrise} vl={vcm-vrise}
+.param ibias=1u en=1.2 cload=0.1p rload=1G
+.param fin=10k vamp=0.6 tnom=27
+.param ac_vdd=0 ac_vss=0
+.temp {tnom}
+.option method=gear
+.option savecurrents
+.option filetype=ascii
+.option color0=white
+.option color1=black
+.option hcopydevtype=svg
+Vdd vdd 0 dc {vdd} ac {ac_vdd}
+Vvh vh 0 dc {vh}
+Cload vout 0 {cload}
+Rload vout vss {rload}
+Vvl vl 0 dc {vl}
+Ibias vdd ibias dc {ibias}
+Vss vss 0 dc {vss} ac {ac_vss}
+Ven en 0 dc {en}
+"
+place=header}
+C {devices/code_shown.sym} -220 80 0 0 {name=19_transient_kickback_noise
+only_toplevel=true
+format="tcleval( @value )"
+value="
+Vin vin_src 0 pulse(0.25 0.35 1u 1n 1n 4u 8u)
+Rsrc vin_src vin 10k
+.control
+save all
+tran 500p 10u
+let vkick = v(vin) - v(vin_src)
+meas tran vkick_pos MAX vkick FROM=950n TO=2.5u
+meas tran vkick_neg MIN vkick FROM=4.95u TO=6.5u
+print vkick_pos vkick_neg
+write @name\\.raw vkick v(vout)
+plot vkick v(vout) title \"19_transient_kickback_noise\"
+set hcopydevtype=svg
+hardcopy ../plots/@name\\.svg vkick v(vout) title \"19_transient_kickback_noise\"
+.endc
+"
+place=end}

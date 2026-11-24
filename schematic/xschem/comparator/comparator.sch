@@ -5,114 +5,114 @@ V {}
 S {}
 F {}
 E {}
-L 4 -810 -670 -790 -670 {}
-L 4 -810 -670 -810 -630 {}
-L 4 -810 -630 -790 -630 {}
-L 4 -810 -650 -800 -650 {}
-L 4 -780 -670 -780 -630 {}
-L 4 -780 -670 -760 -630 {}
-L 4 -760 -670 -760 -630 {}
-L 4 -640 -670 -620 -670 {}
-L 4 -640 -670 -640 -630 {}
-L 4 -640 -630 -620 -630 {}
-L 4 -640 -650 -630 -650 {}
-L 4 450 -710 450 -620 {}
-L 4 450 -620 480 -620 {}
-L 4 480 -620 490 -630 {}
-L 4 490 -700 490 -630 {}
-L 4 480 -710 490 -700 {}
-L 4 450 -710 480 -710 {}
-L 4 530 -710 530 -630 {}
-L 4 530 -630 540 -620 {}
-L 4 540 -620 570 -620 {}
-L 4 570 -620 580 -630 {}
-L 4 580 -710 580 -630 {}
-L 4 610 -710 610 -620 {}
-L 4 610 -710 640 -680 {}
-L 4 640 -680 660 -710 {}
-L 4 660 -710 660 -620 {}
-L 4 680 -710 680 -620 {}
-L 4 680 -710 710 -680 {}
-L 4 710 -680 730 -710 {}
-L 4 730 -710 730 -620 {}
-L 4 760 -710 780 -710 {}
-L 4 760 -620 780 -620 {}
-L 4 770 -710 770 -620 {}
-L 4 800 -710 850 -710 {}
-L 4 800 -710 800 -620 {}
-L 4 800 -620 850 -620 {}
-L 4 800 -660 830 -660 {}
-L 4 870 -700 880 -710 {}
-L 4 870 -700 870 -680 {}
-L 4 870 -680 880 -670 {}
-L 4 880 -670 910 -670 {}
-L 4 910 -670 920 -660 {}
-L 4 920 -660 920 -640 {}
-L 4 920 -640 920 -630 {}
-L 4 910 -620 920 -630 {}
-L 4 880 -620 910 -620 {}
-L 4 870 -630 880 -620 {}
-L 4 870 -640 870 -630 {}
-L 4 880 -710 910 -710 {}
-L 4 910 -710 920 -700 {}
-L 4 920 -700 920 -690 {}
-L 4 -740 -660 -740 -630 {}
-L 4 -740 -660 -730 -670 {}
-L 4 -730 -670 -720 -670 {}
-L 4 -720 -670 -710 -660 {}
-L 4 -710 -660 -710 -630 {}
-L 4 -740 -650 -710 -650 {}
-L 4 -690 -670 -690 -630 {}
-L 4 -690 -630 -680 -630 {}
-L 4 -680 -630 -670 -630 {}
-L 4 -670 -630 -660 -640 {}
-L 4 -660 -650 -660 -640 {}
-L 4 -670 -650 -660 -650 {}
-L 4 -680 -650 -670 -650 {}
-L 4 -680 -650 -660 -660 {}
-L 4 -660 -670 -660 -660 {}
-L 4 -690 -670 -660 -670 {}
-L 4 -600 -670 -600 -630 {}
-L 4 -600 -630 -580 -630 {}
-L 4 -550 -630 -520 -630 {}
-L 4 -470 -680 -470 -630 {}
-L 4 -470 -650 -460 -660 {}
-L 4 -460 -660 -450 -680 {}
-L 4 -460 -660 -450 -630 {}
-L 4 -430 -680 -410 -680 {}
-L 4 -430 -680 -430 -630 {}
-L 4 -430 -630 -410 -630 {}
-L 4 -430 -650 -420 -650 {}
-L 4 -390 -680 -370 -660 {}
-L 4 -370 -660 -350 -680 {}
-L 4 -370 -660 -370 -630 {}
-L 4 -300 -680 -290 -670 {}
-L 4 -320 -680 -300 -680 {}
-L 4 -330 -670 -320 -680 {}
-L 4 -330 -670 -320 -660 {}
-L 4 -320 -660 -300 -660 {}
-L 4 -300 -660 -290 -650 {}
-L 4 -290 -650 -290 -640 {}
-L 4 -300 -630 -290 -640 {}
-L 4 -320 -630 -300 -630 {}
-L 4 -330 -640 -320 -630 {}
-L 4 -970 -400 -90 -400 {}
-L 4 -90 -610 -90 -400 {}
-L 4 -970 -610 -90 -610 {}
-L 4 -650 -610 -650 -400 {}
-L 4 -970 -610 -970 -400 {}
-L 4 -1280 -610 -970 -610 {}
-L 4 -1280 -610 -1280 -510 {}
-L 4 -1280 -510 -970 -510 {}
-L 4 90 -400 1350 -400 {}
-L 4 1350 -570 1350 -400 {}
-L 4 1350 -580 1350 -570 {}
-L 4 90 -580 1350 -580 {}
-L 4 90 -580 90 -400 {}
-L 4 370 -580 370 -400 {}
-L 4 -1280 -500 -970 -500 {}
-L 4 -1280 -500 -1280 -400 {}
-L 4 -1280 -400 -970 -400 {}
+L 4 -100 -480 -80 -480 {}
+L 4 -100 -480 -100 -440 {}
+L 4 -100 -440 -80 -440 {}
+L 4 -100 -460 -90 -460 {}
+L 4 -70 -480 -70 -440 {}
+L 4 -70 -480 -50 -440 {}
+L 4 -50 -480 -50 -440 {}
+L 4 70 -480 90 -480 {}
+L 4 70 -480 70 -440 {}
+L 4 70 -440 90 -440 {}
+L 4 70 -460 80 -460 {}
+L 4 -260 -820 -260 -730 {}
+L 4 -260 -730 -230 -730 {}
+L 4 -230 -730 -220 -740 {}
+L 4 -220 -810 -220 -740 {}
+L 4 -230 -820 -220 -810 {}
+L 4 -260 -820 -230 -820 {}
+L 4 -180 -820 -180 -740 {}
+L 4 -180 -740 -170 -730 {}
+L 4 -170 -730 -140 -730 {}
+L 4 -140 -730 -130 -740 {}
+L 4 -130 -820 -130 -740 {}
+L 4 -100 -820 -100 -730 {}
+L 4 -100 -820 -70 -790 {}
+L 4 -70 -790 -50 -820 {}
+L 4 -50 -820 -50 -730 {}
+L 4 -30 -820 -30 -730 {}
+L 4 -30 -820 0 -790 {}
+L 4 0 -790 20 -820 {}
+L 4 20 -820 20 -730 {}
+L 4 50 -820 70 -820 {}
+L 4 50 -730 70 -730 {}
+L 4 60 -820 60 -730 {}
+L 4 90 -820 140 -820 {}
+L 4 90 -820 90 -730 {}
+L 4 90 -730 140 -730 {}
+L 4 90 -770 120 -770 {}
+L 4 160 -810 170 -820 {}
+L 4 160 -810 160 -790 {}
+L 4 160 -790 170 -780 {}
+L 4 170 -780 200 -780 {}
+L 4 200 -780 210 -770 {}
+L 4 210 -770 210 -750 {}
+L 4 210 -750 210 -740 {}
+L 4 200 -730 210 -740 {}
+L 4 170 -730 200 -730 {}
+L 4 160 -740 170 -730 {}
+L 4 160 -750 160 -740 {}
+L 4 170 -820 200 -820 {}
+L 4 200 -820 210 -810 {}
+L 4 210 -810 210 -800 {}
+L 4 -30 -470 -30 -440 {}
+L 4 -30 -470 -20 -480 {}
+L 4 -20 -480 -10 -480 {}
+L 4 -10 -480 0 -470 {}
+L 4 0 -470 0 -440 {}
+L 4 -30 -460 0 -460 {}
+L 4 20 -480 20 -440 {}
+L 4 20 -440 30 -440 {}
+L 4 30 -440 40 -440 {}
+L 4 40 -440 50 -450 {}
+L 4 50 -460 50 -450 {}
+L 4 40 -460 50 -460 {}
+L 4 30 -460 40 -460 {}
+L 4 30 -460 50 -470 {}
+L 4 50 -480 50 -470 {}
+L 4 20 -480 50 -480 {}
+L 4 110 -480 110 -440 {}
+L 4 110 -440 130 -440 {}
+L 4 160 -440 190 -440 {}
+L 4 240 -490 240 -440 {}
+L 4 240 -460 250 -470 {}
+L 4 250 -470 260 -490 {}
+L 4 250 -470 260 -440 {}
+L 4 280 -490 300 -490 {}
+L 4 280 -490 280 -440 {}
+L 4 280 -440 300 -440 {}
+L 4 280 -460 290 -460 {}
+L 4 320 -490 340 -470 {}
+L 4 340 -470 360 -490 {}
+L 4 340 -470 340 -440 {}
+L 4 410 -490 420 -480 {}
+L 4 390 -490 410 -490 {}
+L 4 380 -480 390 -490 {}
+L 4 380 -480 390 -470 {}
+L 4 390 -470 410 -470 {}
+L 4 410 -470 420 -460 {}
+L 4 420 -460 420 -450 {}
+L 4 410 -440 420 -450 {}
+L 4 390 -440 410 -440 {}
+L 4 380 -450 390 -440 {}
+L 4 -260 -210 620 -210 {}
+L 4 620 -420 620 -210 {}
+L 4 -260 -420 620 -420 {}
+L 4 60 -420 60 -210 {}
+L 4 -260 -420 -260 -210 {}
+L 4 -570 -420 -260 -420 {}
+L 4 -570 -420 -570 -320 {}
+L 4 -570 -320 -260 -320 {}
+L 4 -620 -510 640 -510 {}
+L 4 640 -680 640 -510 {}
+L 4 640 -690 640 -680 {}
+L 4 -620 -690 640 -690 {}
+L 4 -620 -690 -620 -510 {}
+L 4 -340 -690 -340 -510 {}
+L 4 -570 -310 -260 -310 {}
+L 4 -570 -310 -570 -210 {}
+L 4 -570 -210 -260 -210 {}
 N -60 100 -60 150 {lab=tail}
 N 40 150 150 150 {lab=tail}
 N 150 100 150 150 {lab=tail}
@@ -146,81 +146,81 @@ N -60 -70 -60 -20 {lab=votap}
 N -130 -100 -130 -20 {lab=votap}
 N -140 -100 -130 -100 {lab=votap}
 N 220 -100 230 -100 {lab=votan}
-N 560 -160 560 -130 {lab=vdd}
-N 630 -60 670 -60 {lab=vom}
-N 460 -80 490 -80 {lab=votan}
-N 460 -30 490 -30 {lab=vop}
-N 580 10 580 40 {lab=vss}
-N 540 10 540 40 {lab=vss}
-N 540 40 580 40 {lab=vss}
-N -500 -160 -500 -130 {lab=vdd}
-N -610 -60 -570 -60 {lab=vop}
-N -430 -80 -400 -80 {lab=votap}
-N -430 -30 -400 -30 {lab=vom}
-N -520 10 -520 40 {lab=vss}
-N -480 10 -480 40 {lab=vss}
-N -520 40 -480 40 {lab=vss}
-N 940 -90 990 -90 {lab=vop}
-N 940 -30 990 -30 {lab=vom}
-N 1070 -160 1070 -120 {lab=vdd}
-N 1090 -10 1090 30 {lab=ibias_en}
-N 1070 0 1070 40 {lab=vss}
-N 1170 -60 1260 -60 {lab=#net1}
-N 1340 -60 1380 -60 {lab=#net2}
-N 1460 -60 1490 -60 {lab=vout}
+N 470 -180 470 -150 {lab=vdd}
+N 540 -80 580 -80 {lab=vom}
+N 370 -100 400 -100 {lab=votan}
+N 370 -50 400 -50 {lab=vop}
+N 490 -10 490 20 {lab=vss}
+N 450 -10 450 20 {lab=vss}
+N 450 20 490 20 {lab=vss}
+N -390 -180 -390 -150 {lab=vdd}
+N -500 -80 -460 -80 {lab=vop}
+N -320 -100 -290 -100 {lab=votap}
+N -320 -50 -290 -50 {lab=vom}
+N -410 -10 -410 20 {lab=vss}
+N -370 -10 -370 20 {lab=vss}
+N -410 20 -370 20 {lab=vss}
+N 260 200 310 200 {lab=vop}
+N 260 260 310 260 {lab=vom}
+N 390 130 390 170 {lab=vdd}
+N 410 280 410 320 {lab=ibias_en}
+N 390 290 390 330 {lab=vss}
+N 490 230 580 230 {lab=#net1}
+N 660 230 700 230 {lab=#net2}
+N 780 230 810 230 {lab=vout}
 N -130 250 0 250 {lab=ibias_en}
 N -290 250 -290 300 {lab=ibias_en}
 N -330 250 -290 250 {lab=ibias_en}
 N -330 250 -330 270 {lab=ibias_en}
 N -330 220 -330 250 {lab=ibias_en}
 N -330 300 -330 380 {lab=vss}
-N -460 -580 -460 -510 {lab=vdd
+N 250 -390 250 -320 {lab=vdd
 }
-N -460 -480 -460 -450 {lab=votap
+N 250 -290 250 -260 {lab=votap
 }
-N -210 -580 -210 -510 {lab=vdd
+N 500 -390 500 -320 {lab=vdd
 }
-N -210 -480 -210 -450 {lab=votan
+N 500 -290 500 -260 {lab=votan
 }
-N -530 -510 -500 -510 {lab=en
+N 180 -320 210 -320 {lab=en
 }
-N -280 -510 -250 -510 {lab=en
+N 430 -320 460 -320 {lab=en
 }
-N 1090 -140 1090 -110 {lab=en_n}
-N -770 -570 -770 -530 {lab=ibias_en
+N 410 150 410 180 {lab=en_n}
+N -60 -380 -60 -340 {lab=ibias_en
 }
-N -840 -500 -810 -500 {lab=en_n
+N -130 -310 -100 -310 {lab=en_n
 }
-N -1220 -450 -1180 -450 {lab=en
+N -510 -260 -470 -260 {lab=en
 }
-N -1100 -450 -1040 -450 {lab=en_n
+N -390 -260 -330 -260 {lab=en_n
 }
-N -770 -500 -770 -440 {lab=vss}
+N -60 -310 -60 -250 {lab=vss}
 N -330 110 -330 160 {lab=ibias}
 N -330 190 -300 190 {lab=vss}
 N -410 190 -370 190 {lab=en}
-N 1110 -130 1110 -100 {lab=en}
-N -1230 -560 -1170 -560 {lab=en}
-N 930 -510 970 -540 {lab=vss}
-N 970 -540 970 -510 {lab=vss}
-N 970 -510 1010 -510 {lab=vss}
-N 970 -480 970 -440 {lab=votan}
-N 690 -510 730 -540 {lab=vss}
-N 730 -540 730 -510 {lab=vss}
-N 730 -510 770 -510 {lab=vss}
-N 730 -480 730 -440 {lab=votap}
-N 480 -510 520 -540 {lab=vss}
-N 520 -540 520 -510 {lab=vss}
-N 520 -510 620 -510 {lab=vss}
-N 520 -480 520 -450 {lab=ibias_en}
-N 1120 -510 1160 -540 {lab=vss}
-N 1160 -540 1160 -510 {lab=vss}
-N 1160 -510 1260 -510 {lab=vss}
-N 1120 -510 1160 -480 {lab=vss}
-N 260 -470 300 -500 {lab=vdd}
-N 260 -530 300 -500 {lab=vdd}
-N 260 -530 260 -500 {lab=vdd}
-N 160 -500 260 -500 {lab=vdd}
+N 430 160 430 190 {lab=en}
+N -520 -370 -460 -370 {lab=en}
+N 220 -620 260 -650 {lab=vss}
+N 260 -650 260 -620 {lab=vss}
+N 260 -620 300 -620 {lab=vss}
+N 260 -590 260 -550 {lab=votan}
+N -20 -620 20 -650 {lab=vss}
+N 20 -650 20 -620 {lab=vss}
+N 20 -620 60 -620 {lab=vss}
+N 20 -590 20 -550 {lab=votap}
+N -230 -620 -190 -650 {lab=vss}
+N -190 -650 -190 -620 {lab=vss}
+N -190 -620 -90 -620 {lab=vss}
+N -190 -590 -190 -560 {lab=ibias_en}
+N 410 -620 450 -650 {lab=vss}
+N 450 -650 450 -620 {lab=vss}
+N 450 -620 550 -620 {lab=vss}
+N 410 -620 450 -590 {lab=vss}
+N -450 -580 -410 -610 {lab=vdd}
+N -450 -640 -410 -610 {lab=vdd}
+N -450 -640 -450 -610 {lab=vdd}
+N -550 -610 -450 -610 {lab=vdd}
 C {sg13g2_pr/sg13_lv_nmos.sym} -80 70 0 0 {name=M6
 l=3u
 w=0.26u
@@ -268,29 +268,29 @@ C {iopin.sym} 260 70 0 0 {name=p5 lab=v-
 C {iopin.sym} -150 70 0 1 {name=p7 lab=v+
 }
 C {iopin.sym} -330 110 0 1 {name=p11 sig_type=std_logic lab=ibias}
-C {decision_circuit/decision_circuit.sym} 560 -60 0 0 {name=x1}
-C {lab_pin.sym} 560 -160 0 1 {name=p2 lab=vdd}
-C {lab_pin.sym} -400 -80 0 1 {name=p3 lab=votap}
-C {lab_pin.sym} 670 -60 0 1 {name=p6 lab=vom}
-C {lab_pin.sym} 540 40 0 0 {name=p10 lab=vss}
-C {decision_circuit/decision_circuit.sym} -500 -60 0 1 {name=x2}
-C {lab_pin.sym} -500 -160 0 0 {name=p12 lab=vdd}
-C {lab_pin.sym} -610 -60 0 0 {name=p14 lab=vop}
-C {lab_pin.sym} 460 -80 0 0 {name=p15 lab=votan}
-C {lab_pin.sym} -480 40 0 1 {name=p16 lab=vss}
+C {decision_circuit/decision_circuit.sym} 470 -80 0 0 {name=x1}
+C {lab_pin.sym} 470 -180 0 1 {name=p2 lab=vdd}
+C {lab_pin.sym} -290 -100 0 1 {name=p3 lab=votap}
+C {lab_pin.sym} 580 -80 0 1 {name=p6 lab=vom}
+C {lab_pin.sym} 450 20 0 0 {name=p10 lab=vss}
+C {decision_circuit/decision_circuit.sym} -390 -80 0 1 {name=x2}
+C {lab_pin.sym} -390 -180 0 0 {name=p12 lab=vdd}
+C {lab_pin.sym} -500 -80 0 0 {name=p14 lab=vop}
+C {lab_pin.sym} 370 -100 0 0 {name=p15 lab=votan}
+C {lab_pin.sym} -370 20 0 1 {name=p16 lab=vss}
 C {lab_pin.sym} -140 -100 0 0 {name=p17 lab=votap}
 C {lab_pin.sym} 230 -100 0 1 {name=p18 lab=votan}
-C {lab_pin.sym} 460 -30 0 0 {name=p19 lab=vop}
-C {lab_pin.sym} -400 -30 0 1 {name=p8 lab=vom}
-C {sg13cmos5l_stdcells/sg13cmos5l_inv_16.sym} 1300 -60 0 0 {name=x3 VDD=VDD VSS=VSS prefix=sg13g2_ }
-C {final_stage_ota/final_stage_ota.sym} 1360 -60 0 0 {name=x4 en=en}
-C {lab_pin.sym} 1070 -160 0 0 {name=p20 lab=vdd}
-C {lab_pin.sym} 940 -90 0 0 {name=p21 lab=vop}
-C {lab_pin.sym} 940 -30 0 0 {name=p22 lab=vom}
-C {iopin.sym} 1490 -60 0 0 {name=p23 lab=vout}
-C {lab_pin.sym} 1070 40 0 0 {name=p24 lab=vss}
-C {lab_pin.sym} 1090 30 0 1 {name=p25 lab=ibias_en}
-C {sg13cmos5l_stdcells/sg13cmos5l_inv_16.sym} 1420 -60 0 0 {name=x5 VDD=VDD VSS=VSS prefix=sg13g2_ }
+C {lab_pin.sym} 370 -50 0 0 {name=p19 lab=vop}
+C {lab_pin.sym} -290 -50 0 1 {name=p8 lab=vom}
+C {sg13cmos5l_stdcells/sg13cmos5l_inv_16.sym} 620 230 0 0 {name=x3 VDD=VDD VSS=VSS prefix=sg13g2_ }
+C {final_stage_ota/final_stage_ota.sym} 680 230 0 0 {name=x4 en=en}
+C {lab_pin.sym} 390 130 0 0 {name=p20 lab=vdd}
+C {lab_pin.sym} 260 200 0 0 {name=p21 lab=vop}
+C {lab_pin.sym} 260 260 0 0 {name=p22 lab=vom}
+C {iopin.sym} 810 230 0 0 {name=p23 lab=vout}
+C {lab_pin.sym} 390 330 0 0 {name=p24 lab=vss}
+C {lab_pin.sym} 410 320 0 1 {name=p25 lab=ibias_en}
+C {sg13cmos5l_stdcells/sg13cmos5l_inv_16.sym} 740 230 0 0 {name=x5 VDD=VDD VSS=VSS prefix=sg13g2_ }
 C {sg13g2_pr/sg13_lv_nmos.sym} -310 300 0 1 {name=M12
 l=3u
 w=5u
@@ -302,7 +302,7 @@ spiceprefix=X
 }
 C {lab_pin.sym} -330 380 0 1 {name=p9 lab=vss}
 C {lab_pin.sym} -130 250 0 0 {name=p13 lab=ibias_en}
-C {sg13g2_pr/sg13_lv_pmos.sym} -480 -510 2 1 {name=MB1
+C {sg13g2_pr/sg13_lv_pmos.sym} 230 -320 2 1 {name=MB1
 l=0.13u
 w=0.15u
 ng=1
@@ -311,13 +311,13 @@ model=sg13_lv_pmos
 spiceprefix=X
 annot_side=1
 }
-C {lab_pin.sym} -460 -450 0 0 {name=p26 lab=votap
+C {lab_pin.sym} 250 -260 0 0 {name=p26 lab=votap
 }
-C {lab_pin.sym} -460 -580 2 1 {name=p27 sig_type=std_logic lab=vdd
+C {lab_pin.sym} 250 -390 2 1 {name=p27 sig_type=std_logic lab=vdd
 }
-C {iopin.sym} -530 -510 2 0 {name=p37 sig_type=std_logic lab=en
+C {iopin.sym} 180 -320 2 0 {name=p37 sig_type=std_logic lab=en
 }
-C {sg13g2_pr/sg13_lv_pmos.sym} -230 -510 2 1 {name=MB2
+C {sg13g2_pr/sg13_lv_pmos.sym} 480 -320 2 1 {name=MB2
 l=0.13u
 w=0.15u
 ng=1
@@ -326,18 +326,18 @@ model=sg13_lv_pmos
 spiceprefix=X
 annot_side=1
 }
-C {lab_pin.sym} -210 -450 0 0 {name=p38 lab=votan
+C {lab_pin.sym} 500 -260 0 0 {name=p38 lab=votan
 }
-C {lab_pin.sym} -280 -510 2 1 {name=p40 sig_type=std_logic lab=en
+C {lab_pin.sym} 430 -320 2 1 {name=p40 sig_type=std_logic lab=en
 }
-C {lab_pin.sym} -210 -580 2 1 {name=p39 sig_type=std_logic lab=vdd
+C {lab_pin.sym} 500 -390 2 1 {name=p39 sig_type=std_logic lab=vdd
 }
-C {lab_pin.sym} 1090 -140 0 1 {name=p28 lab=en_n}
-C {lab_pin.sym} -1040 -450 2 0 {name=p30 sig_type=std_logic lab=en_n
+C {lab_pin.sym} 410 150 0 1 {name=p28 lab=en_n}
+C {lab_pin.sym} -330 -260 2 0 {name=p30 sig_type=std_logic lab=en_n
 }
-C {lab_pin.sym} -1220 -450 2 1 {name=p31 sig_type=std_logic lab=en
+C {lab_pin.sym} -510 -260 2 1 {name=p31 sig_type=std_logic lab=en
 }
-C {sg13g2_pr/sg13_lv_nmos.sym} -790 -500 2 1 {name=MB5
+C {sg13g2_pr/sg13_lv_nmos.sym} -80 -310 2 1 {name=MB5
 l=0.13u
 w=0.15u
 ng=1
@@ -346,13 +346,13 @@ model=sg13_lv_nmos
 spiceprefix=X
 annot_side=1
 }
-C {lab_pin.sym} -840 -500 2 1 {name=p48 sig_type=std_logic lab=en_n
+C {lab_pin.sym} -130 -310 2 1 {name=p48 sig_type=std_logic lab=en_n
 }
-C {lab_pin.sym} -770 -440 2 1 {name=p49 sig_type=std_logic lab=vss
+C {lab_pin.sym} -60 -250 2 1 {name=p49 sig_type=std_logic lab=vss
 }
-C {lab_pin.sym} -770 -570 0 1 {name=p50 lab=ibias_en
+C {lab_pin.sym} -60 -380 0 1 {name=p50 lab=ibias_en
 }
-C {sg13cmos5l_stdcells/sg13cmos5l_inv_1.sym} -1140 -450 0 0 {name=x6 VDD=vdd VSS=vss prefix=sg13g2_ }
+C {sg13cmos5l_stdcells/sg13cmos5l_inv_1.sym} -430 -260 0 0 {name=x6 VDD=vdd VSS=vss prefix=sg13g2_ }
 C {sg13g2_pr/sg13_lv_nmos.sym} -350 190 2 1 {name=MB3
 l=0.13u
 w=0.15u
@@ -366,10 +366,10 @@ C {lab_pin.sym} -300 190 0 1 {name=p29 lab=vss}
 C {lab_pin.sym} -410 190 2 1 {name=p32 sig_type=std_logic lab=en
 }
 C {lab_pin.sym} -290 250 0 1 {name=p33 lab=ibias_en}
-C {lab_pin.sym} 1110 -130 0 1 {name=p34 lab=en}
-C {sg13cmos5l_stdcells/sg13cmos5l_antennanp.sym} -1080 -560 0 0 {name=x7 VDD=VDD VSS=VSS prefix=sg13g2_ }
-C {lab_pin.sym} -1230 -560 0 0 {name=p35 lab=en}
-C {sg13g2_pr/sg13_lv_nmos.sym} 950 -510 0 0 {name=M1
+C {lab_pin.sym} 430 160 0 1 {name=p34 lab=en}
+C {sg13cmos5l_stdcells/sg13cmos5l_antennanp.sym} -370 -370 0 0 {name=x7 VDD=VDD VSS=VSS prefix=sg13g2_ }
+C {lab_pin.sym} -520 -370 0 0 {name=p35 lab=en}
+C {sg13g2_pr/sg13_lv_nmos.sym} 240 -620 0 0 {name=M1
 l=0.5u
 w=0.26u
 ng=1
@@ -377,9 +377,9 @@ m=2
 model=sg13_lv_nmos
 spiceprefix=X
 }
-C {lab_pin.sym} 1010 -510 0 1 {name=p36 lab=vss}
-C {lab_pin.sym} 970 -440 0 1 {name=p42 lab=votan}
-C {sg13g2_pr/sg13_lv_nmos.sym} 710 -510 0 0 {name=M2
+C {lab_pin.sym} 300 -620 0 1 {name=p36 lab=vss}
+C {lab_pin.sym} 260 -550 0 1 {name=p42 lab=votan}
+C {sg13g2_pr/sg13_lv_nmos.sym} 0 -620 0 0 {name=M2
 l=0.5u
 w=0.26u
 ng=1
@@ -387,9 +387,9 @@ m=2
 model=sg13_lv_nmos
 spiceprefix=X
 }
-C {lab_pin.sym} 770 -510 0 1 {name=p41 lab=vss}
-C {lab_pin.sym} 730 -440 0 1 {name=p43 lab=votap}
-C {sg13g2_pr/sg13_lv_nmos.sym} 500 -510 0 0 {name=M3
+C {lab_pin.sym} 60 -620 0 1 {name=p41 lab=vss}
+C {lab_pin.sym} 20 -550 0 1 {name=p43 lab=votap}
+C {sg13g2_pr/sg13_lv_nmos.sym} -210 -620 0 0 {name=M3
 l=0.5u
 w=5u
 ng=1
@@ -398,10 +398,10 @@ annot_side=2
 model=sg13_lv_nmos
 spiceprefix=X
 }
-C {lab_pin.sym} 620 -510 0 1 {name=p44 lab=vss}
-C {lab_pin.sym} 520 -450 0 0 {name=p45 lab=ibias_en}
+C {lab_pin.sym} -90 -620 0 1 {name=p44 lab=vss}
+C {lab_pin.sym} -190 -560 0 0 {name=p45 lab=ibias_en}
 C {lab_pin.sym} 150 150 2 0 {name=p51 lab=tail}
-C {sg13g2_pr/sg13_lv_nmos.sym} 1140 -510 0 0 {name=M5
+C {sg13g2_pr/sg13_lv_nmos.sym} 430 -620 0 0 {name=M5
 l=0.5u
 w=63.72u
 ng=20
@@ -410,8 +410,8 @@ annot_side=2
 model=sg13_lv_nmos
 spiceprefix=X
 }
-C {lab_pin.sym} 1260 -510 0 1 {name=p52 lab=vss}
-C {sg13g2_pr/sg13_lv_pmos.sym} 280 -500 2 0 {name=M4
+C {lab_pin.sym} 550 -620 0 1 {name=p52 lab=vss}
+C {sg13g2_pr/sg13_lv_pmos.sym} -430 -610 2 0 {name=M4
 l=0.5u
 w=17.88u
 ng=20
@@ -419,4 +419,4 @@ m=1
 model=sg13_lv_pmos
 spiceprefix=X
 annot_side=1}
-C {lab_pin.sym} 160 -500 0 0 {name=p46 lab=vdd}
+C {lab_pin.sym} -550 -610 0 0 {name=p46 lab=vdd}

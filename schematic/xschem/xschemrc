@@ -46,6 +46,7 @@ append_xschem_library_path_unique [file join [file dirname [info script]] ../../
 
 # Source macro xschemrc
 
+
 # Pin the netlist directory to the simulations folder of the loaded schematic
 if {![llength [info commands pin_netlist_dir]]} {
   proc pin_netlist_dir {dir} {
@@ -60,3 +61,5 @@ if {![llength [info commands pin_netlist_dir]]} {
 }
 pin_netlist_dir [file dirname [info script]]
 set load_file_postprocess {pin_netlist_dir [xschem get current_dirname]}
+set terminal xfce4-terminal
+

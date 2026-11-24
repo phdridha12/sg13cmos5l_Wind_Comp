@@ -1,0 +1,14 @@
+Vin vin_src 0 pulse(0.25 0.35 1u 1n 1n 4u 8u)
+Rsrc vin_src vin 10k
+.control
+save all
+tran 500p 10u
+let vkick = v(vin) - v(vin_src)
+meas tran vkick_pos MAX vkick FROM=950n TO=2.5u
+meas tran vkick_neg MIN vkick FROM=4.95u TO=6.5u
+print vkick_pos vkick_neg
+write @name\\.raw vkick v(vout)
+plot vkick v(vout) title "19_transient_kickback_noise"
+set hcopydevtype=svg
+hardcopy ../plots/@name\\.svg vkick v(vout) title "19_transient_kickback_noise"
+.endc

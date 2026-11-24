@@ -1,0 +1,46 @@
+C {devices/code_shown.sym} -220 -160 0 0 {name=PRINCIPAL_BLOCK
+only_toplevel=true
+format="tcleval( @value )"
+value="
+.param vdd=1.2 vss=0 vcm=0.6 vrise=0.3
+.param vh={vcm+vrise} vl={vcm-vrise}
+.param ibias=1u en=1.2 cload=0.1p rload=1G
+.param fin=10k vamp=0.6 tnom=27
+.param ac_vdd=0 ac_vss=0
+.temp {tnom}
+.option method=gear
+.option savecurrents
+.option filetype=ascii
+.option color0=white
+.option color1=black
+.option hcopydevtype=svg
+Vdd vdd 0 dc {vdd} ac {ac_vdd}
+Vvh vh 0 dc {vh}
+Cload vout 0 {cload}
+Rload vout vss {rload}
+Vvl vl 0 dc {vl}
+Ibias vdd ibias dc {ibias}
+Vss vss 0 dc {vss} ac {ac_vss}
+Ven en 0 dc {en}
+"
+place=header}
+C {devices/code_shown.sym} -220 80 0 0 {name=24_enable_disable_wakeup_leakage
+only_toplevel=true
+format="tcleval( @value )"
+value="
+Vin vin 0 dc {vcm}
+.control
+save all
+alter @ven[pulse] = [ 0 1.2 500n 1n 1n 2u 4u ]
+tran 1n 4u
+meas tran istby FIND -i(Vdd) AT=400n
+meas tran twake TRIG v(en) VAL=0.6 RISE=1 TARG v(vout) VAL=0.6 RISE=1
+meas tran tdis TRIG v(en) VAL=0.6 FALL=1 TARG v(vout) VAL=0.6 FALL=1
+print istby twake tdis
+write @name\\.raw v(en) v(vout)
+plot v(en) v(vout) title \"24_enable_disable_wakeup_leakage\"
+set hcopydevtype=svg
+hardcopy ../plots/@name\\.svg v(en) v(vout) title \"24_enable_disable_wakeup_leakage\"
+.endc
+"
+place=end}

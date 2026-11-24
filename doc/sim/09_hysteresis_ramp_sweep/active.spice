@@ -1,0 +1,15 @@
+Vin vin 0 pwl(0 0.2 50u 0.4 100u 0.2)
+.control
+save all
+tran 100n 100u
+meas tran t_r WHEN v(vout)=0.6 RISE=1
+meas tran t_f WHEN v(vout)=0.6 FALL=1
+meas tran v_r FIND v(vin) AT=$&t_r
+meas tran v_f FIND v(vin) AT=$&t_f
+let vhys = v_r - v_f
+print v_r v_f vhys
+write @name\\.raw v(vin) v(vout)
+plot v(vout) vs v(vin) title "09_hysteresis_ramp_sweep"
+set hcopydevtype=svg
+hardcopy ../plots/@name\\.svg v(vout) vs v(vin) title "09_hysteresis_ramp_sweep"
+.endc

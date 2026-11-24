@@ -1,0 +1,13 @@
+Vin vin 0 pulse(0.25 0.35 1u 1n 1n 4u 8u)
+.control
+save all
+tran 500p 10u
+let pinst = -i(Vdd) * v(vdd)
+meas tran esw_rise INTEG pinst FROM=950n TO=2.5u
+meas tran esw_fall INTEG pinst FROM=4.95u TO=6.5u
+print esw_rise esw_fall
+write @name\\.raw pinst v(vout)
+plot pinst v(vout) title "11_dynamic_switching_energy"
+set hcopydevtype=svg
+hardcopy ../plots/@name\\.svg pinst v(vout) title "11_dynamic_switching_energy"
+.endc

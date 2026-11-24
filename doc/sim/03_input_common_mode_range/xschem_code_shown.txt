@@ -1,0 +1,54 @@
+C {devices/code_shown.sym} -220 -160 0 0 {name=PRINCIPAL_BLOCK
+only_toplevel=true
+format="tcleval( @value )"
+value="
+.param vdd=1.2 vss=0 vcm=0.6 vrise=0.3
+.param vh={vcm+vrise} vl={vcm-vrise}
+.param ibias=1u en=1.2 cload=0.1p rload=1G
+.param fin=10k vamp=0.6 tnom=27
+.param ac_vdd=0 ac_vss=0
+.temp {tnom}
+.option method=gear
+.option savecurrents
+.option filetype=ascii
+.option color0=white
+.option color1=black
+.option hcopydevtype=svg
+Vdd vdd 0 dc {vdd} ac {ac_vdd}
+Vvh vh 0 dc {vh}
+Cload vout 0 {cload}
+Rload vout vss {rload}
+Vvl vl 0 dc {vl}
+Ibias vdd ibias dc {ibias}
+Vss vss 0 dc {vss} ac {ac_vss}
+Ven en 0 dc {en}
+"
+place=header}
+C {devices/code_shown.sym} -220 80 0 0 {name=03_input_common_mode_range
+only_toplevel=true
+format="tcleval( @value )"
+value="
+Vin vin 0 dc {vcm}
+.control
+save all
+alterparam vrise=0.05
+foreach vv 1.08 1.32
+  alterparam vdd=$vv
+  foreach vcm_val 0.35 0.5 0.6 0.7 0.85
+    alterparam vcm=$vcm_val
+    reset
+    save all
+    dc Vin 0 $vv 1m
+    let vmid = $vv / 2
+    meas dc vth_l WHEN v(vout)=$&vmid RISE=1
+    meas dc vth_h WHEN v(vout)=$&vmid FALL=1
+    echo $vv $vcm_val $&vth_l $&vth_h >> @name\\.txt
+  end
+end
+write @name\\.raw v(vin) v(vout) v(vl) v(vh)
+plot v(vin) v(vout) v(vl) v(vh) title \"03_input_common_mode_range\"
+set hcopydevtype=svg
+hardcopy ../plots/@name\\.svg v(vin) v(vout) v(vl) v(vh) title \"03_input_common_mode_range\"
+.endc
+"
+place=end}

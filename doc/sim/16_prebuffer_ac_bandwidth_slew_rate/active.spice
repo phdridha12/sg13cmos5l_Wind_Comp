@@ -1,0 +1,17 @@
+Vin vin 0 dc {vl} ac 1 pulse(0.25 0.35 20n 100p 100p 100n 200n)
+.control
+save all
+ac dec 50 1 1G
+let av_db = db(v(xcomp1.x2.vop))
+meas ac ugbw WHEN av_db=0 FALL=1
+set p_ac = $curplot
+tran 100p 200n
+let sr_vec = deriv(v(xcomp1.x2.vop))
+meas tran sr_pos MAX sr_vec FROM=15n TO=60n
+meas tran sr_neg MIN sr_vec FROM=115n TO=160n
+print {$p_ac}.ugbw sr_pos sr_neg
+write @name\\.raw v(vin) v(xcomp1.x2.vop)
+plot v(xcomp1.x2.vop) v(vin) title "16_prebuffer_ac_bandwidth_slew_rate"
+set hcopydevtype=svg
+hardcopy ../plots/@name\\.svg v(xcomp1.x2.vop) v(vin) title "16_prebuffer_ac_bandwidth_slew_rate"
+.endc

@@ -1,0 +1,26 @@
+Vin vin 0 dc {vcm}
+.control
+save all
+foreach vv 1.08 1.2 1.32
+  foreach tt -40 27 125
+    alterparam vdd=$vv
+    alterparam tnom=$tt
+    reset
+    save all
+    op
+    let pstat = -i(Vdd) * v(vdd)
+    set pstat_val = $&pstat
+    dc Vin 0 $vv 2m
+    let vmid = $vv / 2
+    meas dc vth_l WHEN v(vout)=$&vmid RISE=1
+    meas dc vth_h WHEN v(vout)=$&vmid FALL=1
+    let vos_l = vth_l - 0.3
+    let vos_h = vth_h - 0.9
+    echo $vv $tt $&vos_l $&vos_h $pstat_val >> @name\\.txt
+  end
+end
+write @name\\.raw v(vin) v(vout) v(vl) v(vh)
+plot v(vin) v(vout) v(vl) v(vh) title "12_pvt_corner_analysis"
+set hcopydevtype=svg
+hardcopy ../plots/@name\\.svg v(vin) v(vout) v(vl) v(vh) title "12_pvt_corner_analysis"
+.endc

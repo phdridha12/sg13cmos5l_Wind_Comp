@@ -1,0 +1,15 @@
+Vin vin 0 dc {vcm}
+.control
+save all
+op
+let iq_tot = -i(Vdd)
+let pstat = iq_tot * v(vdd)
+set p_op = $curplot
+dc Vin 0 1.2 5m
+let pstat_vin = -i(Vdd) * v(vdd)
+print {$p_op}.iq_tot {$p_op}.pstat
+write @name\\.raw v(vin) pstat_vin
+plot pstat_vin title "10_static_power_quiescent_current"
+set hcopydevtype=svg
+hardcopy ../plots/@name\\.svg pstat_vin title "10_static_power_quiescent_current"
+.endc
