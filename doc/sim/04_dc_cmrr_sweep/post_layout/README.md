@@ -252,6 +252,6 @@ place=end}
 
 ## 6. Result Figures
 
-### Figure 1: 04_dc_cmrr_sweep — 4.svg
+### Figure 1: 04_dc_cmrr_sweep — 04_dc_cmrr_sweep.svg
 
-![04_dc_cmrr_sweep — 4.svg](figures/4.svg)
+![04_dc_cmrr_sweep — 04_dc_cmrr_sweep.svg](figures/04_dc_cmrr_sweep.svg)

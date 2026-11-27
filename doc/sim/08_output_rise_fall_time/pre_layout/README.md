@@ -205,6 +205,6 @@ place=end}
 
 ## 6. Result Figures
 
-### Figure 1: 08_output_rise_fall_time — 8.svg
+### Figure 1: 08_output_rise_fall_time — 08_output_rise_fall_time.svg
 
-![08_output_rise_fall_time — 8.svg](pre_layout/figures/08_output_rise_fall_time.svg)
+![08_output_rise_fall_time — 08_output_rise_fall_time.svg](figures/08_output_rise_fall_time.svg)

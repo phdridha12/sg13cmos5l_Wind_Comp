@@ -139,6 +139,6 @@ place=end}
 
 ## 6. Result Figures
 
-### Figure 1: 27_combined_pvt_mc_worst_case_yield — 27.svg
+### Figure 1: 27_combined_pvt_mc_worst_case_yield — 27_combined_pvt_mc_worst_case_yield.svg
 
-![27_combined_pvt_mc_worst_case_yield](pre_layout/figures/27_combined_pvt_mc_worst_case_yield.svg)
+![27_combined_pvt_mc_worst_case_yield](figures/27_combined_pvt_mc_worst_case_yield.svg)

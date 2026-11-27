@@ -205,6 +205,6 @@ place=end}
 
 ## 6. Result Figures
 
-### Figure 1: 07_propagation_delay_overdrive — 7.svg
+### Figure 1: 07_propagation_delay_overdrive — 07_propagation_delay_overdrive.svg
 
-![07_propagation_delay_overdrive — 7.svg](pre_layout/figures/07_propagation_delay_overdrive.svg)
+![07_propagation_delay_overdrive — 07_propagation_delay_overdrive.svg](figures/07_propagation_delay_overdrive.svg)

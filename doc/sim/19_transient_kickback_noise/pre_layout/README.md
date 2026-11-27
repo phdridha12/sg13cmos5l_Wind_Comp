@@ -210,6 +210,6 @@ place=end}
 
 ## 6. Result Figures
 
-### Figure 1: 19_transient_kickback_noise — 19.svg
+### Figure 1: 19_transient_kickback_noise — 19_transient_kickback_noise.svg
 
-![19_transient_kickback_noise — 19.svg](pre_layout/figures/19_transient_kickback_noise.svg)
+![19_transient_kickback_noise — 19_transient_kickback_noise.svg](figures/19_transient_kickback_noise.svg)

@@ -216,6 +216,6 @@ place=end}
 
 ## 6. Result Figures
 
-### Figure 1: 09_hysteresis_ramp_sweep — 9.svg
+### Figure 1: 09_hysteresis_ramp_sweep — 09_hysteresis_ramp_sweep.svg
 
-![09_hysteresis_ramp_sweep — 9.svg](pre_layout/figures/09_hysteresis_ramp_sweep.svg)
+![09_hysteresis_ramp_sweep — 09_hysteresis_ramp_sweep.svg](figures/09_hysteresis_ramp_sweep.svg)

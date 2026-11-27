@@ -204,6 +204,6 @@ place=end}
 
 ## 6. Result Figures
 
-### Figure 1: 23_power_up_supply_ramp_startup — 23.svg
+### Figure 1: 23_power_up_supply_ramp_startup — 23_power_up_supply_ramp_startup.svg
 
-![23_power_up_supply_ramp_startup — 23.svg](pre_layout/figures/23_power_up_supply_ramp_startup.svg)
+![23_power_up_supply_ramp_startup — 23_power_up_supply_ramp_startup.svg](figures/23_power_up_supply_ramp_startup.svg)

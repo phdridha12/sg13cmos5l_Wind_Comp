@@ -168,6 +168,6 @@ place=end}
 
 ## 6. Result Figures
 
-### Figure 1: 26_input_leakage_and_cin — 26.svg
+### Figure 1: 26_input_leakage_and_cin — 26_input_leakage_and_cin.svg
 
-![26_input_leakage_and_cin — 26.svg](pre_layout/figures/26_input_leakage_and_cin.svg)
+![26_input_leakage_and_cin — 26_input_leakage_and_cin.svg](figures/26_input_leakage_and_cin.svg)

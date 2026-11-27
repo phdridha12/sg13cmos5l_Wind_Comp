@@ -1139,6 +1139,6 @@ place=end}
 
 ## 6. Result Figures
 
-### Figure 1: 17_max_toggle_freq_cl_sweep — 17.svg
+### Figure 1: 17_max_toggle_freq_cl_sweep — 17_max_toggle_freq_cl_sweep.svg
 
-![17_max_toggle_freq_cl_sweep — 17.svg](figures/17.svg)
+![17_max_toggle_freq_cl_sweep — 17_max_toggle_freq_cl_sweep.svg](figures/17_max_toggle_freq_cl_sweep.svg)

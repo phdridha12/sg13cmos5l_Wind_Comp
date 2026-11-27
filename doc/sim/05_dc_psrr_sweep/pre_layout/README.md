@@ -157,6 +157,6 @@ place=end}
 
 ## 6. Result Figures
 
-### Figure 1: 05_dc_psrr_sweep — 5.svg
+### Figure 1: 05_dc_psrr_sweep — 05_dc_psrr_sweep.svg
 
-![05_dc_psrr_sweep — 5.svg](pre_layout/figures/05_dc_psrr_sweep.svg)
+![05_dc_psrr_sweep — 05_dc_psrr_sweep.svg](figures/05_dc_psrr_sweep.svg)

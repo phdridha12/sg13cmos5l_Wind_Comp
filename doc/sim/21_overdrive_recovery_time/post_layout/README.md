@@ -1112,6 +1112,6 @@ place=end}
 
 ## 6. Result Figures
 
-### Figure 1: 21_overdrive_recovery_time — 21.svg
+### Figure 1: 21_overdrive_recovery_time — 21_overdrive_recovery_time.svg
 
-![21_overdrive_recovery_time — 21.svg](figures/21.svg)
+![21_overdrive_recovery_time — 21_overdrive_recovery_time.svg](figures/21_overdrive_recovery_time.svg)

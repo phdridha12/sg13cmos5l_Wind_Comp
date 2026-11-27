@@ -160,6 +160,6 @@ place=end}
 
 ## 6. Result Figures
 
-### Figure 1: 01_dc_transfer_vos_sweep — 1.svg
+### Figure 1: 01_dc_transfer_vos_sweep — 01_dc_transfer_vos_sweep.svg
 
-![01_dc_transfer_vos_sweep — 1.svg](pre_layout/figures/01_dc_transfer_vos_sweep.svg)
+![01_dc_transfer_vos_sweep — 01_dc_transfer_vos_sweep.svg](figures/01_dc_transfer_vos_sweep.svg)

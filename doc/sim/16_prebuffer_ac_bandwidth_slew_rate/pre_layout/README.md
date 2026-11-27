@@ -227,6 +227,6 @@ place=end}
 
 ## 6. Result Figures
 
-### Figure 1: 16_prebuffer_ac_bandwidth_slew_rate — 16.svg
+### Figure 1: 16_prebuffer_ac_bandwidth_slew_rate — 16_prebuffer_ac_bandwidth_slew_rate.svg
 
-![16_prebuffer_ac_bandwidth_slew_rate — 16.svg](pre_layout/figures/16_prebuffer_ac_bandwidth_slew_rate.svg)
+![16_prebuffer_ac_bandwidth_slew_rate — 16_prebuffer_ac_bandwidth_slew_rate.svg](figures/16_prebuffer_ac_bandwidth_slew_rate.svg)

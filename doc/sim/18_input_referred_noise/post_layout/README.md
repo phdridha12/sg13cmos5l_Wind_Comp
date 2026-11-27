@@ -194,6 +194,6 @@ place=end}
 
 ## 6. Result Figures
 
-### Figure 1: 18_input_referred_noise — 18.svg
+### Figure 1: 18_input_referred_noise — 18_input_referred_noise.svg
 
-![18_input_referred_noise — 18.svg](figures/18.svg)
+![18_input_referred_noise — 18_input_referred_noise.svg](figures/18_input_referred_noise.svg)

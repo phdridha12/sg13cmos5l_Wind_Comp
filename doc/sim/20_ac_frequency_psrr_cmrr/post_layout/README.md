@@ -282,6 +282,6 @@ place=end}
 
 ## 6. Result Figures
 
-### Figure 1: 20_ac_frequency_psrr_cmrr — 20.svg
+### Figure 1: 20_ac_frequency_psrr_cmrr — 20_ac_frequency_psrr_cmrr.svg
 
-![20_ac_frequency_psrr_cmrr — 20.svg](figures/20.svg)
+![20_ac_frequency_psrr_cmrr — 20_ac_frequency_psrr_cmrr.svg](figures/20_ac_frequency_psrr_cmrr.svg)

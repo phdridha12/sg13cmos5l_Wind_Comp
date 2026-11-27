@@ -1119,6 +1119,6 @@ place=end}
 
 ## 6. Result Figures
 
-### Figure 1: 24_enable_disable_wakeup_leakage — 24.svg
+### Figure 1: 24_enable_disable_wakeup_leakage — 24_enable_disable_wakeup_leakage.svg
 
-![24_enable_disable_wakeup_leakage — 24.svg](figures/24.svg)
+![24_enable_disable_wakeup_leakage — 24_enable_disable_wakeup_leakage.svg](figures/24_enable_disable_wakeup_leakage.svg)

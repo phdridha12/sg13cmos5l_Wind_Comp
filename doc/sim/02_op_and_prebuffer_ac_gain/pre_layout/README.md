@@ -123,6 +123,6 @@ place=end}
 
 ## 6. Result Figures
 
-### Figure 1: 02_op_and_prebuffer_ac_gain — 2.svg
+### Figure 1: 02_op_and_prebuffer_ac_gain — 02_op_and_prebuffer_ac_gain.svg
 
-![02_op_and_prebuffer_ac_gain](pre_layout/figures/02_op_and_prebuffer_ac_gain.svg)
+![02_op_and_prebuffer_ac_gain](figures/02_op_and_prebuffer_ac_gain.svg)

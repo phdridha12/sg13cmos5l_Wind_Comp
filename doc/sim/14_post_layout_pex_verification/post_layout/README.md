@@ -1140,6 +1140,6 @@ place=end}
 
 ## 6. Result Figures
 
-### Figure 1: 14_post_layout_pex_verification — 14.svg
+### Figure 1: 14_post_layout_pex_verification — 14_post_layout_pex_verification.svg
 
-![14_post_layout_pex_verification — 14.svg](figures/14.svg)
+![14_post_layout_pex_verification — 14_post_layout_pex_verification.svg](figures/14_post_layout_pex_verification.svg)

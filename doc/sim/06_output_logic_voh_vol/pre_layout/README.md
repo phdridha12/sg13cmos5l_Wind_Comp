@@ -143,6 +143,6 @@ place=end}
 
 ## 6. Result Figures
 
-### Figure 1: 06_output_logic_voh_vol — 6.svg
+### Figure 1: 06_output_logic_voh_vol — 06_output_logic_voh_vol.svg
 
-![06_output_logic_voh_vol — 6.svg](pre_layout/figures/06_output_logic_voh_vol.svg)
+![06_output_logic_voh_vol — 06_output_logic_voh_vol.svg](figures/06_output_logic_voh_vol.svg)

@@ -151,6 +151,6 @@ place=end}
 
 ## 6. Result Figures
 
-### Figure 1: 03_input_common_mode_range — 3.svg
+### Figure 1: 03_input_common_mode_range — 03_input_common_mode_range.svg
 
-![03_input_common_mode_range — 3.svg](pre_layout/figures/03_input_common_mode_range.svg)
+![03_input_common_mode_range — 03_input_common_mode_range.svg](figures/03_input_common_mode_range.svg)

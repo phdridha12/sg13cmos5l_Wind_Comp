@@ -403,6 +403,6 @@ place=end}
 
 ## 6. Result Figures
 
-### Figure 1: 22_min_window_width_boundary_glitch — 22.svg
+### Figure 1: 22_min_window_width_boundary_glitch — 22_min_window_width_boundary_glitch.svg
 
-![22_min_window_width_boundary_glitch — 22.svg](pre_layout/figures/22_min_window_width_boundary_glitch.svg)
+![22_min_window_width_boundary_glitch — 22_min_window_width_boundary_glitch.svg](figures/22_min_window_width_boundary_glitch.svg)

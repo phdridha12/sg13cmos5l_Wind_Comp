@@ -437,6 +437,6 @@ place=end}
 
 ## 6. Result Figures
 
-### Figure 1: 25_bias_current_sensitivity_sweep — 25.svg
+### Figure 1: 25_bias_current_sensitivity_sweep — 25_bias_current_sensitivity_sweep.svg
 
-![25_bias_current_sensitivity_sweep — 25.svg](pre_layout/figures/25_bias_current_sensitivity_sweep.svg)
+![25_bias_current_sensitivity_sweep — 25_bias_current_sensitivity_sweep.svg](figures/25_bias_current_sensitivity_sweep.svg)

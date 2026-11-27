@@ -230,6 +230,6 @@ place=end}
 
 ## 6. Result Figures
 
-### Figure 1: 10_static_power_quiescent_current — 10.svg
+### Figure 1: 10_static_power_quiescent_current — 10_static_power_quiescent_current.svg
 
-![10_static_power_quiescent_current — 10.svg](figures/10.svg)
+![10_static_power_quiescent_current — 10_static_power_quiescent_current.svg](figures/10_static_power_quiescent_current.svg)

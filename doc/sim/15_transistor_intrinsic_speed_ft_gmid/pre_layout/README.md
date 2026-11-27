@@ -189,6 +189,6 @@ place=end}
 
 ## 6. Result Figures
 
-### Figure 1: 15_transistor_intrinsic_speed_ft_gmid — 15.svg
+### Figure 1: 15_transistor_intrinsic_speed_ft_gmid — 15_transistor_intrinsic_speed_ft_gmid.svg
 
-![15_transistor_intrinsic_speed_ft_gmid — 15.svg](pre_layout/figures/15_transistor_intrinsic_speed_ft_gmid.svg)
+![15_transistor_intrinsic_speed_ft_gmid — 15_transistor_intrinsic_speed_ft_gmid.svg](figures/15_transistor_intrinsic_speed_ft_gmid.svg)

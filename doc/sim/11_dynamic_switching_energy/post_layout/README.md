@@ -1117,6 +1117,6 @@ place=end}
 
 ## 6. Result Figures
 
-### Figure 1: 11_dynamic_switching_energy — 11.svg
+### Figure 1: 11_dynamic_switching_energy — 11_dynamic_switching_energy.svg
 
-![11_dynamic_switching_energy — 11.svg](figures/11.svg)
+![11_dynamic_switching_energy — 11_dynamic_switching_energy.svg](figures/11_dynamic_switching_energy.svg)
