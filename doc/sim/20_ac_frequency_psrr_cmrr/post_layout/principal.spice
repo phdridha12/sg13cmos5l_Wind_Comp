@@ -1,0 +1,20 @@
+.param vdd=1.2 vss=0 vcm=0.6 vrise=0.3
+.param vh={vcm+vrise} vl={vcm-vrise}
+.param ibias=1u en=1.2 cload=0.1p rload=1G
+.param fin=10k vamp=0.6 tnom=27
+.param ac_vdd=0 ac_vss=0
+.temp {tnom}
+.option method=gear
+.option savecurrents
+.option filetype=ascii
+.option color0=white
+.option color1=black
+.option hcopydevtype=svg
+Vdd vdd 0 dc {vdd} ac {ac_vdd}
+Vvh vh 0 dc {vh}
+Cload vout 0 {cload}
+Rload vout vss {rload}
+Vvl vl 0 dc {vl}
+Ibias vdd ibias dc {ibias}
+Vss vss 0 dc {vss} ac {ac_vss}
+Ven en 0 dc {en}

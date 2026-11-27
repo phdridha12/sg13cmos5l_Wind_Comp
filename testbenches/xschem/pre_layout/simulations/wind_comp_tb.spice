@@ -1,0 +1,223 @@
+** sch_path: /foss/designs/skills/sg13cmos5l_Wind_Comp/schematic/xschem/wind_comp/wind_comp_tb.sch
+
+.include /foss/pdks/ihp-sg13g2/libs.ref/sg13g2_stdcell/spice/sg13g2_stdcell.spice
+.include wind_comp_tb.save
+.control
+op
+write wind_comp_tb.raw
+.endc
+
+**.subckt wind_comp_tb
+xcomp1 vdd vh vout vin vl ibias vss en wind_comp
+**** begin user architecture code
+
+
+
+.lib cornerMOSlv.lib mos_tt
+.lib cornerMOShv.lib mos_tt
+.lib cornerMOSCAP.lib moscap_tt
+.lib cornerCAP.lib cap_typ
+.lib cornerRES.lib res_typ
+.lib cornerDIO.lib dio_tt
+
+
+
+
+.param vdd=1.2 vss=0 vcm=0.6 vrise=0.3
+.param vh={vcm+vrise} vl={vcm-vrise}
+.param ibias=1u en=1.2 cload=100f rload=1G
+.param fin=10k vamp=0.6 tnom=27
+.param ac_vdd=0 ac_vss=0
+.temp {tnom}
+.option method=gear
+.option savecurrents
+.option filetype=ascii
+.option color0=white
+.option color1=black
+.option hcopydevtype=svg
+Vdd vdd 0 dc {vdd} ac {ac_vdd}
+Vvh vh 0 dc {vh}
+Cload vout 0 {cload}
+Rload vout vss {rload}
+Vvl vl 0 dc {vl}
+Ibias vdd ibias dc {ibias}
+Vss vss 0 dc {vss} ac {ac_vss}
+Ven en 0 dc {en}
+
+
+
+
+Vin vin 0 dc {vl} ac 1
+.control
+save all
+op
+ac dec 50 1 1G
+let av_db = db(v(xcomp1.x2.vop))
+meas ac avdc_db FIND av_db AT=10
+let av_3db = avdc_db - 3
+meas ac f3db WHEN av_db=$&av_3db FALL=1
+print avdc_db f3db
+write 2.raw av_db
+plot av_db title 02_op_and_prebuffer_ac_gain
+set hcopydevtype=svg
+hardcopy ../plots/2.svg av_db title 02_op_and_prebuffer_ac_gain
+.endc
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  wind_comp/wind_comp.sym # of pins=8
+** sym_path: /foss/designs/skills/sg13cmos5l_Wind_Comp/schematic/xschem/wind_comp/wind_comp.sym
+** sch_path: /foss/designs/skills/sg13cmos5l_Wind_Comp/schematic/xschem/wind_comp/wind_comp.sch
+.subckt wind_comp vdd vh vout vin vl ibias vss en
+*.iopin vdd
+*.iopin vout
+*.iopin vl
+*.iopin vh
+*.iopin ibias
+*.iopin vss
+*.iopin vin
+x1 vdd net1 vh vin ibias vss en comparator
+x2 vdd net2 vin vl ibias vss en comparator
+x3 vout net1 net2 VDD VSS sg13g2_and2_2
+.ends
+
+
+* expanding   symbol:  comparator/comparator.sym # of pins=7
+** sym_path: /foss/designs/skills/sg13cmos5l_Wind_Comp/schematic/xschem/comparator/comparator.sym
+** sch_path: /foss/designs/skills/sg13cmos5l_Wind_Comp/schematic/xschem/comparator/comparator.sch
+.subckt comparator vdd vout v- v+ ibias vss en
+*.iopin vdd
+*.iopin vss
+*.iopin v-
+*.iopin v+
+*.iopin ibias
+*.iopin vout
+*.iopin en
+XM6 votap v+ tail vss sg13_lv_nmos w=0.26u l=3u ng=1 m=2 mm_ok=1
+XM8 vdd votap votap vdd sg13_lv_pmos w=0.35u l=1u ng=1 m=2 mm_ok=1
+XM9 votan v- tail vss sg13_lv_nmos w=0.26u l=3u ng=1 m=2 mm_ok=1
+XM10 vdd votan votan vdd sg13_lv_pmos w=0.35u l=1u ng=1 m=2 mm_ok=1
+XM11 tail ibias_en vss vss sg13_lv_nmos w=5u l=3u ng=1 m=4 mm_ok=1
+x1 vdd votan vom vop vss vss decision_circuit
+x2 vdd votap vop vom vss vss decision_circuit
+x3 net2 net1 VDD VSS sg13g2_inv_16
+x4 vdd ibias_en vop vom net1 vss en_n en final_stage_ota
+x5 vout net2 VDD VSS sg13g2_inv_16
+XM12 ibias_en ibias_en vss vss sg13_lv_nmos w=5u l=3u ng=1 m=2 mm_ok=1
+XMB1 vdd en votap vdd sg13_lv_pmos w=0.15u l=0.13u ng=1 m=1 mm_ok=1
+XMB2 vdd en votan vdd sg13_lv_pmos w=0.15u l=0.13u ng=1 m=1 mm_ok=1
+XMB5 vss en_n ibias_en vss sg13_lv_nmos w=0.15u l=0.13u ng=1 m=1 mm_ok=1
+x6 en_n en vdd vss sg13g2_inv_1
+XMB3 ibias_en en ibias vss sg13_lv_nmos w=0.15u l=0.13u ng=1 m=3 mm_ok=1
+x7 en VDD VSS sg13g2_antennanp
+XM1 vss vss votan vss sg13_lv_nmos w=0.26u l=0.5u ng=1 m=2 mm_ok=1
+XM2 vss vss votap vss sg13_lv_nmos w=0.26u l=0.5u ng=1 m=2 mm_ok=1
+XM3 vss vss ibias_en vss sg13_lv_nmos w=5u l=0.5u ng=1 m=2 mm_ok=1
+XM5 vss vss vss vss sg13_lv_nmos w=63.72u l=0.5u ng=20 m=1 mm_ok=1
+XM4 vdd vdd vdd vdd sg13_lv_pmos w=17.88u l=0.5u ng=20 m=1 mm_ok=1
+.ends
+
+
+* expanding   symbol:  sg13cmos5l_stdcells/sg13cmos5l_and2_2.sym # of pins=3
+** sym_path: /foss/pdks/ihp-sg13cmos5l/libs.tech/xschem/sg13cmos5l_stdcells/sg13cmos5l_and2_2.sym
+** sch_path: /foss/pdks/ihp-sg13cmos5l/libs.ref/sg13cmos5l_stdcell/sch/xschem/sg13cmos5l_and2_2.sch
+.subckt sg13cmos5l_and2_2 X A B VDD VSS
+
+*.ipin A
+*.ipin B
+*.opin X
+XM1 net1 A net2 VSS sg13_lv_nmos w=640.00n l=130.00n ng=1 m=1 mm_ok=1
+XM2 net2 B VSS VSS sg13_lv_nmos w=640.00n l=130.00n ng=1 m=1 mm_ok=1
+XM3 X net1 VSS VSS sg13_lv_nmos w=1.48u l=130.00n ng=2 m=1 mm_ok=1
+XM4 net1 B VDD VDD sg13_lv_pmos w=840.00n l=130.00n ng=1 m=1 mm_ok=1
+XM5 net1 A VDD VDD sg13_lv_pmos w=840.00n l=130.00n ng=1 m=1 mm_ok=1
+XM6 X net1 VDD VDD sg13_lv_pmos w=2.24u l=130.00n ng=2 m=1 mm_ok=1
+.ends
+
+
+* expanding   symbol:  decision_circuit/decision_circuit.sym # of pins=6
+** sym_path: /foss/designs/skills/sg13cmos5l_Wind_Comp/schematic/xschem/decision_circuit/decision_circuit.sym
+** sch_path: /foss/designs/skills/sg13cmos5l_Wind_Comp/schematic/xschem/decision_circuit/decision_circuit.sch
+.subckt decision_circuit vdd vota vout vota_n vss shift
+*.iopin vota
+*.iopin shift
+*.iopin vota_n
+*.iopin vdd
+*.iopin vss
+*.iopin vout
+XM1 vout vota vdd vdd sg13_lv_pmos w=0.7u l=1u ng=1 m=1 mm_ok=1
+XM2 vout vout shift vss sg13_lv_nmos w=0.26u l=10u ng=1 m=2 mm_ok=1
+XM3 vout vota_n shift vss sg13_lv_nmos w=0.26u l=10u ng=1 m=2 mm_ok=1
+XM4 vss vss vout vss sg13_lv_nmos w=0.26u l=0.5u ng=1 m=4 mm_ok=1
+XM5 vdd vdd vout vdd sg13_lv_pmos w=0.35u l=0.5u ng=1 m=2 mm_ok=1
+.ends
+
+
+* expanding   symbol:  sg13cmos5l_stdcells/sg13cmos5l_inv_16.sym # of pins=2
+** sym_path: /foss/pdks/ihp-sg13cmos5l/libs.tech/xschem/sg13cmos5l_stdcells/sg13cmos5l_inv_16.sym
+** sch_path: /foss/pdks/ihp-sg13cmos5l/libs.ref/sg13cmos5l_stdcell/sch/xschem/sg13cmos5l_inv_16.sch
+.subckt sg13cmos5l_inv_16 Y A VDD VSS
+
+*.opin Y
+*.ipin A
+XM1 Y A VSS VSS sg13_lv_nmos w=11.84u l=130.00n ng=16 m=1 mm_ok=1
+XM2 Y A VDD VDD sg13_lv_pmos w=17.92u l=130.00n ng=16 m=1 mm_ok=1
+.ends
+
+
+* expanding   symbol:  final_stage_ota/final_stage_ota.sym # of pins=8
+** sym_path: /foss/designs/skills/sg13cmos5l_Wind_Comp/schematic/xschem/final_stage_ota/final_stage_ota.sym
+** sch_path: /foss/designs/skills/sg13cmos5l_Wind_Comp/schematic/xschem/final_stage_ota/final_stage_ota.sch
+.subckt final_stage_ota vdd iout vop vom vout vss en_n en
+*.iopin vdd
+*.iopin vom
+*.iopin vop
+*.iopin vss
+*.iopin vout
+*.iopin iout
+*.ipin en_n
+*.ipin en
+XM1 vdd ibp vt vdd sg13_lv_pmos w=1u l=3u ng=1 m=2 mm_ok=1
+XM2 n_mrr n_mrr vss vss sg13_lv_nmos w=0.15u l=3u ng=1 m=2 mm_ok=1
+XM3 vt vom n_mrr vdd sg13_lv_pmos w=3.12u l=1u ng=1 m=2 mm_ok=1
+XM4 vout n_mrr vss vss sg13_lv_nmos w=0.15u l=3u ng=1 m=2 mm_ok=1
+XM5 vt vop vout vdd sg13_lv_pmos w=3.12u l=1u ng=1 m=2 mm_ok=1
+XM6 ibp iout vss vss sg13_lv_nmos w=5u l=3u ng=1 m=2 mm_ok=1
+XM7 vdd ibp ibp vdd sg13_lv_pmos w=1u l=3u ng=1 m=1 mm_ok=1
+XMB3 vss en_n n_mrr vss sg13_lv_nmos w=0.15u l=0.13u ng=1 m=1 mm_ok=1
+XMB4 vdd en ibp vdd sg13_lv_pmos w=0.15u l=0.13u ng=1 m=1 mm_ok=1
+XM8 vss vss n_mrr vss sg13_lv_nmos w=0.15u l=0.5u ng=1 m=2 mm_ok=1
+XM9 vss vss vout vss sg13_lv_nmos w=0.15u l=0.5u ng=1 m=2 mm_ok=1
+XM10 vss vss ibp vss sg13_lv_nmos w=5u l=0.5u ng=1 m=2 mm_ok=1
+XM11 vdd vdd vt vdd sg13_lv_pmos w=0.5u l=0.5u ng=1 m=2 mm_ok=1
+XM12 vdd vdd ibp vdd sg13_lv_pmos w=0.5u l=0.5u ng=1 m=2 mm_ok=1
+XM13 vdd vdd vout vdd sg13_lv_pmos w=3.12u l=0.5u ng=1 m=2 mm_ok=1
+XM14 vdd vdd n_mrr vdd sg13_lv_pmos w=3.12u l=0.5u ng=1 m=2 mm_ok=1
+.ends
+
+
+* expanding   symbol:  sg13cmos5l_stdcells/sg13cmos5l_inv_1.sym # of pins=2
+** sym_path: /foss/pdks/ihp-sg13cmos5l/libs.tech/xschem/sg13cmos5l_stdcells/sg13cmos5l_inv_1.sym
+** sch_path: /foss/pdks/ihp-sg13cmos5l/libs.ref/sg13cmos5l_stdcell/sch/xschem/sg13cmos5l_inv_1.sch
+.subckt sg13cmos5l_inv_1 Y A VDD VSS
+
+*.opin Y
+*.ipin A
+XM1 Y A VSS VSS sg13_lv_nmos w=740.00n l=130.00n ng=1 m=1 mm_ok=1
+XM2 Y A VDD VDD sg13_lv_pmos w=1.12u l=130.00n ng=1 m=1 mm_ok=1
+.ends
+
+
+* expanding   symbol:  sg13cmos5l_stdcells/sg13cmos5l_antennanp.sym # of pins=1
+** sym_path: /foss/pdks/ihp-sg13cmos5l/libs.tech/xschem/sg13cmos5l_stdcells/sg13cmos5l_antennanp.sym
+** sch_path: /foss/pdks/ihp-sg13cmos5l/libs.ref/sg13cmos5l_stdcell/sch/xschem/sg13cmos5l_antennanp.sch
+.subckt sg13cmos5l_antennanp A VDD VSS
+
+*.ipin A
+XD1 VSS A dantenna l=0.78u w=0.78u
+XD2 A VDD dpantenna l=1.34u w=1.05u
+.ends
+
+.end

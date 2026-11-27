@@ -111,5 +111,5 @@ v(vin)
 <text stroke="none" fill="black" font-size="16" x="106" y="32">
 v(vout)
 </text>
-<path stroke="blue" d="M50 624l150 0 0 -486M200 144l377 0M577 625l0 -481M577 624l359 0 0 -482M936 144l34 0"/>
+<path stroke="blue" d="M50 624l175 0 1 -399 0 -86M226 144l377 0M603 626l0 -482M603 624l358 0 0 -175 1 -242 0 -68M962 144l8 0"/>
 </svg>

@@ -1,0 +1,13 @@
+Vin vin 0 dc {vcm}
+.control
+save all
+dc Vin 0 1.2 1m
+meas dc vth_l WHEN v(vout)=0.6 RISE=1
+meas dc vth_h WHEN v(vout)=0.6 FALL=1
+let win_w = vth_h - vth_l
+print vth_l vth_h win_w
+write @name\\.raw v(vin) v(vout)
+plot v(vin) v(vout) v(vh) v(vl) title "01_dc_transfer_vos_sweep"
+set hcopydevtype=svg
+hardcopy ../plots/@name\\.svg v(vin) v(vout) v(vh) v(vl) title "01_dc_transfer_vos_sweep"
+.endc

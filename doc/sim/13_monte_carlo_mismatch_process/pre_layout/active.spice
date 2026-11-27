@@ -1,0 +1,21 @@
+Vin vin 0 dc {vcm}
+.control
+save all
+let run = 1
+let runs = 200
+dowhile run <= runs
+  reset
+  save all
+  dc Vin 0 1.2 1m
+  meas dc vth_l WHEN v(vout)=0.6 RISE=1
+  meas dc vth_h WHEN v(vout)=0.6 FALL=1
+  let vos_l = vth_l - 0.3
+  let vos_h = vth_h - 0.9
+  echo $&run $&vos_l $&vos_h >> @name\\.txt
+  let run = run + 1
+end
+write @name\\.raw v(vin) v(vout) v(vl) v(vh)
+plot v(vin) v(vout) v(vl) v(vh) title "13_monte_carlo_mismatch_process"
+set hcopydevtype=svg
+hardcopy ../plots/@name\\.svg v(vin) v(vout) v(vl) v(vh) title "13_monte_carlo_mismatch_process"
+.endc

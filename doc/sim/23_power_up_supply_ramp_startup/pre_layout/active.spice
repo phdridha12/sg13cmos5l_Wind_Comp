@@ -1,0 +1,13 @@
+Vin vin 0 dc {vcm}
+.control
+save all
+alter @vdd[pwl] = [ 0 0 1u 1.2 5u 1.2 ]
+alter @ven[pwl] = [ 0 0 1u 1.2 5u 1.2 ]
+tran 5n 5u
+meas tran t_startup TRIG v(vdd) VAL=0.6 RISE=1 TARG v(vout) VAL=1.08 RISE=1
+print t_startup
+write @name\\.raw v(vdd) v(vout)
+plot v(vdd) v(vout) title "23_power_up_supply_ramp_startup"
+set hcopydevtype=svg
+hardcopy ../plots/@name\\.svg v(vdd) v(vout) title "23_power_up_supply_ramp_startup"
+.endc

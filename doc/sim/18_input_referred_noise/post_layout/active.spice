@@ -1,0 +1,13 @@
+Vin vin 0 dc {vl} ac 1
+.control
+save all
+*noise v(xcomp1.x2.vop) Vin dec 50 1 100Meg
+noise v(x1.wind_comp_0.comparator_1.sg13cmos5l_inv_16_0.a) Vin dec 50 1 100Meg
+setplot noise2
+print inoise_total onoise_total
+setplot noise1
+write @name\\.raw inoise_spectrum
+plot inoise_spectrum title "18_input_referred_noise"
+set hcopydevtype=svg
+hardcopy ../plots/@name\\.svg inoise_spectrum title "18_input_referred_noise"
+.endc

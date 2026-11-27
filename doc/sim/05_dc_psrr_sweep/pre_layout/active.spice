@@ -1,0 +1,24 @@
+Vin vin 0 dc {vcm}
+.control
+save all
+alterparam vdd=1.08
+reset
+save all
+dc Vin 0.25 0.35 100u
+meas dc vt_min WHEN v(vout)=0.54 RISE=1
+set vt_min_val = $&vt_min
+set p_min = $curplot
+alterparam vdd=1.32
+reset
+save all
+dc Vin 0.25 0.35 100u
+meas dc vt_max WHEN v(vout)=0.66 RISE=1
+let vt_min = $vt_min_val
+let psrr_db = 20 * log10(abs(0.24 / (vt_max - vt_min + 1e-15)))
+let vout_min = {$p_min}.vout
+print vt_min vt_max psrr_db
+write @name\\.raw vout_min v(vout)
+plot vout_min v(vout) title "05_dc_psrr_sweep"
+set hcopydevtype=svg
+hardcopy ../plots/@name\\.svg vout_min v(vout) title "05_dc_psrr_sweep"
+.endc

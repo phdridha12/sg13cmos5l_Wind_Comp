@@ -1,0 +1,17 @@
+Vin vin 0 pwl(0 0.4 50u 0.8)
+.control
+save all
+foreach vr 50m 25m 10m 5m
+  alterparam vrise=$vr
+  reset
+  save all
+  tran 50n 50u
+  meas tran vout_pk MAX v(vout)
+  meas tran pw TRIG v(vout) VAL=0.6 RISE=1 TARG v(vout) VAL=0.6 FALL=1
+  echo $vr $&vout_pk $&pw >> @name\\.txt
+end
+write @name\\.raw v(vin) v(vout) v(vl) v(vh)
+plot v(vin) v(vout) v(vl) v(vh) title "22_min_window_width_boundary_glitch"
+set hcopydevtype=svg
+hardcopy ../plots/@name\\.svg v(vin) v(vout) v(vl) v(vh) title "22_min_window_width_boundary_glitch"
+.endc

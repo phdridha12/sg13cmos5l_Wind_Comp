@@ -1,0 +1,24 @@
+Vin vin 0 sin({vl} 0.05 {fin})
+.control
+save all
+foreach cl 50f 100f 500f 1p
+*  foreach fr 100k 500k 1Meg 5Meg 10Meg
+  foreach fr 100k 250k 500k 1Meg
+    alterparam cload=$cl
+    alterparam fin=$fr
+    reset
+    save all
+    let tstop = 4 / $fr
+    let tstep = tstop / 400
+    tran $&tstep $&tstop
+    meas tran vmax_o MAX v(vout)
+    meas tran vmin_o MIN v(vout)
+    let vpp_o = vmax_o - vmin_o
+    echo $cl $fr $&vpp_o >> @name\\.txt
+  end
+end
+write @name\\.raw v(vin) v(vout)
+plot v(vin) v(vout) title "17_max_toggle_freq_cl_sweep"
+set hcopydevtype=svg
+hardcopy ../plots/@name\\.svg v(vin) v(vout) title "17_max_toggle_freq_cl_sweep"
+.endc

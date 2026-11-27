@@ -102,5 +102,5 @@ V
 <text stroke="none" fill="black" font-size="16" x="516" y="32">
 v(vout)
 </text>
-<path stroke="red" d="M50 704l484 0 0 -547M534 158l436 0"/>
+<path stroke="red" d="M50 704l492 0 1 -544 0 -3M543 158l427 0"/>
 </svg>

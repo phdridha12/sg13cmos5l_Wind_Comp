@@ -1,0 +1,25 @@
+Vin vin 0 dc {vcm}
+.control
+save all
+alterparam vrise=0.05
+alterparam vcm=0.35
+reset
+save all
+dc Vin 0.25 0.35 100u
+meas dc vt1 WHEN v(vout)=0.6 RISE=1
+let vos1 = vt1 - 0.3
+set vos1_val = $&vos1
+alterparam vcm=0.85
+reset
+save all
+dc Vin 0.75 0.85 100u
+meas dc vt2 WHEN v(vout)=0.6 RISE=1
+let vos1 = $vos1_val
+let vos2 = vt2 - 0.8
+let cmrr_db = 20 * log10(abs(0.5 / (vos2 - vos1 + 1e-15)))
+print vos1 vos2 cmrr_db
+write @name\\.raw v(vin) v(vout)
+plot v(vin) v(vout) v(vl) title "04_dc_cmrr_sweep"
+set hcopydevtype=svg
+hardcopy ../plots/@name\\.svg v(vin) v(vout) v(vl) title "04_dc_cmrr_sweep"
+.endc

@@ -70,39 +70,39 @@ Hz
 </text>
 <path stroke="black" stroke-dasharray="1,2" d="M60 704l900 0"/>
 <text stroke="none" fill="black" font-size="16" x="8" y="712">
--40.0
+-60.0
 </text>
 <path stroke="black" stroke-dasharray="1,2" d="M60 624l900 0"/>
 <text stroke="none" fill="black" font-size="16" x="8" y="632">
--30.0
+-40.0
 </text>
 <path stroke="black" stroke-dasharray="1,2" d="M60 544l900 0"/>
 <text stroke="none" fill="black" font-size="16" x="8" y="552">
 -20.0
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M60 464l900 0"/>
-<text stroke="none" fill="black" font-size="16" x="8" y="472">
--10.0
+<path stroke="black" d="M60 464l900 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="472">
+-0.0
 </text>
-<path stroke="black" d="M60 384l900 0"/>
-<text stroke="none" fill="black" font-size="16" x="28" y="392">
-0.0
+<path stroke="black" stroke-dasharray="1,2" d="M60 384l900 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="392">
+20.0
 </text>
 <path stroke="black" stroke-dasharray="1,2" d="M60 304l900 0"/>
 <text stroke="none" fill="black" font-size="16" x="18" y="312">
-10.0
+40.0
 </text>
 <path stroke="black" stroke-dasharray="1,2" d="M60 224l900 0"/>
 <text stroke="none" fill="black" font-size="16" x="18" y="232">
-20.0
+60.0
 </text>
 <path stroke="black" stroke-dasharray="1,2" d="M60 144l900 0"/>
 <text stroke="none" fill="black" font-size="16" x="18" y="152">
-30.0
+80.0
 </text>
 <path stroke="black" stroke-dasharray="1,2" d="M60 64l900 0"/>
-<text stroke="none" fill="black" font-size="16" x="18" y="72">
-40.0
+<text stroke="none" fill="black" font-size="16" x="8" y="72">
+100.0
 </text>
 <text stroke="none" fill="black" font-size="16" x="10" y="32">
      
@@ -111,13 +111,14 @@ Hz
 <text stroke="none" fill="black" font-size="16" x="505" y="32">
 psrr_db
 </text>
-<path stroke="red" d="M60 384l566 0 2 1 22 0 2 1 10 0 2 1 6 0 2 1 4 0 2 1 4 0 2 1 2 0 2 1 2 0 4 2 2 0 18 9 2 2 2 1 4 4 2 1 4 4 2 3 4 4 2 3 2 2 14 21 2 4 2 3 2 4 2 3 4 8 2 3 16 32 2 3 6 12 2 3 4 8 2 3 2 4 2 3 2 4 4 6 2 4 26 39 2 4 8 12 2 4 4 6"/>
-<path stroke="red" d="M852 619l2 4 2 3 2 4 2 3"/>
+<path stroke="red" d="M60 207l366 0 2 1 16 0 2 1 8 0 2 1 4 0 2 1 4 0 2 1 4 0 2 1 2 0 4 2 2 0 2 1 2 0 6 3 2 0 18 9 2 2 6 3 2 2 6 3 2 2 2 1 2 2 4 2 2 2 2 1 2 2 2 1 2 2 2 1 2 2 2 1 2 2 2 1 2 2 2 1 2 2 2 1 4 4 2 1 2 2 2 1 4 4 2 1 2 2 2 1 4 4 2 1"/>
+<path stroke="red" d="M592 287l2 2 2 1 4 4 2 1 4 4 2 1 4 4 2 1 4 4 2 1 6 6 2 1 6 6 2 1 30 30 2 3 4 4 2 3 4 4 2 3 2 2 2 3 2 2 4 6 2 2 6 9 2 2 34 51 2 4 8 12 2 4 4 6 2 4 2 3 2 4 4 6 2 4 2 3 4 8 2 3 4 8 2 3 20 40 2 5 6 12 2 5 4 8 2 5 4 8 2 5 4 8"/>
+<path stroke="red" d="M822 616l2 5 14 28 2 3 2 4 4 6 2 4 2 2 4 6 2 2 2 3 2 2"/>
 <path stroke="blue" d="M60 23l45 0"/>
 <text stroke="none" fill="black" font-size="16" x="115" y="32">
 cmrr_f
 </text>
-<path stroke="blue" d="M60 124l348 0 2 1 24 0 2 1 8 0 2 1 6 0 2 1 4 0 2 1 2 0 2 1 2 0 2 1 2 0 2 1 2 0 8 4 2 0 2 1 2 2 8 4 2 2 2 1 4 4 2 1 16 16 2 3 4 4 2 3 2 2 4 6 2 2 6 9 2 2 42 63 2 4 18 27 2 4 28 42 2 2 8 12 2 2 6 9 2 2 4 6 2 2 2 3 2 2 2 3"/>
-<path stroke="blue" d="M670 381l2 2 2 3 2 2 2 3 4 4 2 3 2 2 2 3 2 2 2 3 2 2 2 3 4 4 2 3 2 2 4 6 2 2 2 3 2 2 2 3 2 2 4 6 2 2 4 6 2 2 4 6 2 2 4 6 2 2 2 3 2 2 2 3 2 2 2 3 2 2 2 3 4 4 2 3 16 16 2 1 4 4 4 2 2 2 10 5 2 0 4 2 4 0 2 1 22 0 2 -1 6 0 2 -1"/>
-<path stroke="blue" d="M844 528l4 0 2 -1 4 0 2 -1 4 0"/>
+<path stroke="blue" d="M60 140l386 0 2 1 18 0 2 1 10 0 2 1 6 0 2 1 4 0 2 1 2 0 2 1 2 0 2 1 2 0 2 1 2 0 4 2 2 0 30 15 2 2 4 2 2 2 4 2 2 2 4 2 2 2 2 1 2 2 2 1 2 2 2 1 2 2 2 1 2 2 2 1 2 2 2 1 2 2 2 1 2 2 2 1 4 4 2 1 2 2 2 1 2 2 2 1 4 4 2 1 2 2 2 1"/>
+<path stroke="blue" d="M618 220l4 4 2 1 2 2 2 1 4 4 2 1 4 4 2 1 2 2 2 1 4 4 2 1 4 4 2 1 4 4 2 1 4 4 2 1 6 6 2 1 6 6 2 1 12 12 2 1 12 12 2 3 12 12 2 3 6 6 2 3 6 6 2 3 4 4 2 3 4 4 2 3 4 4 2 3 2 2 2 3 4 4 2 3 4 4 2 3 4 4 2 3 4 4 2 3 4 4 2 3 6 6"/>
+<path stroke="blue" d="M800 403l2 3 18 18 2 1 4 4 2 1 2 2 2 1 2 2 2 1 2 2 2 1 4 4 2 1 12 12 2 1"/>
 </svg>

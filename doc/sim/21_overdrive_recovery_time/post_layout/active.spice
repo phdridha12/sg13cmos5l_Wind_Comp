@@ -1,0 +1,11 @@
+Vin vin 0 pulse(0 0.31 1u 1n 1n 8u 16u)
+.control
+save all
+tran 2n 10u
+meas tran trec_l TRIG v(vin) VAL=0.3 RISE=1 TARG v(vout) VAL=0.6 RISE=1
+print trec_l
+write @name\\.raw v(vin) v(vout)
+plot v(vin) v(vout) title "21_overdrive_recovery_time"
+set hcopydevtype=svg
+hardcopy ../plots/@name\\.svg v(vin) v(vout) title "21_overdrive_recovery_time"
+.endc

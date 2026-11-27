@@ -1,0 +1,23 @@
+Vin vin 0 dc {vcm}
+.control
+save all
+alterparam vdd=1.08
+alterparam tnom=125
+set run = 1
+let runs = 200
+dowhile $run <= runs
+  reset
+  save all
+  dc Vin 0 1.08 1m
+  meas dc vth_l WHEN v(vout)=0.54 RISE=1
+  meas dc vth_h WHEN v(vout)=0.54 FALL=1
+  let vos_l = vth_l - 0.3
+  let vos_h = vth_h - 0.9
+  echo $run $&vos_l $&vos_h >> pvt_mc_yield.txt
+  let run = $run + 1
+end
+wrdata pvt_mc_vtc.txt v(vin) v(vout) v(vl) v(vh)
+plot v(vin) v(vout) v(vl) v(vh) title "@name\\"
+set hcopydevtype=svg
+hardcopy @name\\.svg v(vin) v(vout) v(vl) v(vh) title "@name\\"
+.endc

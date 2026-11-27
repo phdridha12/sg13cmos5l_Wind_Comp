@@ -106,10 +106,10 @@ us
 <text stroke="none" fill="black" font-size="16" x="516" y="32">
 vkick
 </text>
-<path stroke="red" d="M50 624l92 0M142 629l0 -5 368 0 0 -5M510 624l368 0M878 629l0 -5 92 0"/>
+<path stroke="red" d="M50 624l92 0M142 648l0 -24 26 0 0 -1M168 624l434 0 0 -24M602 624l368 0"/>
 <path stroke="blue" d="M50 23l46 0"/>
 <text stroke="none" fill="black" font-size="16" x="106" y="32">
 v(vout)
 </text>
-<path stroke="blue" d="M50 624l108 0M158 625l0 -489M158 144l378 0M536 625l0 -482M536 624l358 0M894 625l0 -489M894 144l76 0"/>
+<path stroke="blue" d="M50 624l118 0 0 -485M168 144l472 0M640 626l0 -482M640 624l330 0"/>
 </svg>

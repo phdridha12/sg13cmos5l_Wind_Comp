@@ -5,97 +5,83 @@ V {}
 S {}
 F {}
 E {}
-L 4 10 -860 150 -860 {}
-L 4 150 -860 290 -860 {}
-L 4 290 -860 430 -860 {}
-L 4 860 -910 860 -670 {}
-L 4 560 -630 870 -630 {}
-L 4 870 -630 870 -390 {}
-L 4 560 -390 870 -390 {}
-L 4 580 -950 580 -910 {}
-L 4 580 -950 840 -950 {}
-L 4 840 -950 840 -910 {}
-L 4 580 -670 580 -630 {}
-L 4 870 -410 1130 -410 {}
-L 4 840 -670 840 -640 {}
-L 4 840 -640 840 -630 {}
-L 4 860 -880 1120 -880 {}
-L 4 1120 -830 1120 -690 {}
-L 4 1120 -880 1120 -830 {}
-L 4 860 -840 860 -790 {}
-L 4 870 -550 870 -410 {}
-L 4 870 -600 1130 -600 {}
-L 4 1130 -550 1130 -410 {}
-L 4 1130 -600 1130 -550 {}
-L 4 870 -600 870 -550 {}
-L 4 560 -910 560 -670 {}
-L 4 560 -670 860 -670 {}
-L 4 560 -910 860 -910 {}
-L 4 560 -630 560 -390 {}
-L 4 10 -780 490 -780 {}
-L 4 10 -700 490 -700 {}
-L 4 10 -620 490 -620 {}
-L 4 10 -540 490 -540 {}
-L 4 10 -860 10 -540 {}
-L 4 70 -860 70 -540 {}
-L 4 130 -860 130 -540 {}
-L 4 190 -860 190 -540 {}
-L 4 250 -860 250 -540 {}
-L 4 310 -860 310 -540 {}
-L 4 370 -860 370 -540 {}
-L 4 430 -860 430 -540 {}
-L 4 490 -860 490 -540 {}
-L 4 860 -690 1120 -690 {}
-L 4 10 -940 10 -860 {}
-L 4 10 -940 490 -940 {}
-L 4 490 -940 490 -860 {}
-L 4 430 -860 490 -860 {}
-L 4 790 -220 790 -80 {}
-L 4 790 -80 1200 -80 {}
-L 7 610 -150 660 -200 {}
-L 7 610 -150 670 -120 {}
-L 7 800 -220 800 -100 {}
-L 7 790 -220 800 -220 {}
-L 7 860 -220 860 -80 {}
-L 7 860 -220 880 -220 {}
-L 7 880 -220 880 -80 {}
-L 7 910 -220 910 -80 {}
-L 7 910 -220 930 -220 {}
-L 7 930 -220 930 -80 {}
-L 7 970 -220 970 -80 {}
-L 7 970 -220 990 -220 {}
-L 7 990 -220 990 -80 {}
-L 7 1010 -220 1010 -80 {}
-L 7 1010 -220 1030 -220 {}
-L 7 1030 -220 1030 -80 {}
-L 7 1070 -220 1070 -80 {}
-L 7 1070 -220 1090 -220 {}
-L 7 1090 -220 1090 -80 {}
-L 7 1120 -220 1120 -80 {}
-L 7 1120 -220 1140 -220 {}
-L 7 800 -80 860 -80 {}
-L 7 880 -80 910 -80 {}
-L 7 930 -80 970 -80 {}
-L 7 990 -80 1010 -80 {}
-L 7 1030 -80 1060 -80 {}
-L 7 1060 -80 1070 -80 {}
-L 7 1090 -80 1120 -80 {}
-L 7 800 -100 800 -80 {}
-L 8 790 -180 1190 -180 {}
-L 10 790 -80 870 -200 {}
-L 10 870 -200 920 -80 {}
-L 10 920 -80 980 -200 {}
-L 10 980 -200 1020 -80 {}
-L 10 1020 -80 1080 -200 {}
-L 10 1080 -200 1130 -80 {}
-L 12 790 -100 1190 -100 {}
-A 7 615.2702702702703 -153.7837837837838 64.31708453466086 45.93640038566023 282.3772319264831 {}
-A 7 665 -155 7.071067811865476 315 360 {}
-A 7 695 -155 7.071067811865476 315 360 {}
-A 7 725 -155 7.071067811865476 315 360 {}
-A 7 615 -185 7.071067811865476 315 360 {}
-T {pre_layout} 640 -940 0 0 0.4 0.4 {}
-T {post_layout} 660 -660 0 0 0.4 0.4 {}
+L 4 10 -830 150 -830 {}
+L 4 150 -830 290 -830 {}
+L 4 290 -830 430 -830 {}
+L 4 830 -740 830 -500 {}
+L 4 550 -780 550 -740 {}
+L 4 550 -780 810 -780 {}
+L 4 810 -780 810 -740 {}
+L 4 830 -710 1090 -710 {}
+L 4 1090 -660 1090 -520 {}
+L 4 1090 -710 1090 -660 {}
+L 4 830 -670 830 -620 {}
+L 4 530 -740 530 -500 {}
+L 4 530 -500 830 -500 {}
+L 4 530 -740 830 -740 {}
+L 4 10 -750 490 -750 {}
+L 4 10 -670 490 -670 {}
+L 4 10 -590 490 -590 {}
+L 4 10 -510 490 -510 {}
+L 4 10 -830 10 -510 {}
+L 4 70 -830 70 -510 {}
+L 4 130 -830 130 -510 {}
+L 4 190 -830 190 -510 {}
+L 4 250 -830 250 -510 {}
+L 4 310 -830 310 -510 {}
+L 4 370 -830 370 -510 {}
+L 4 430 -830 430 -510 {}
+L 4 490 -830 490 -510 {}
+L 4 830 -520 1090 -520 {}
+L 4 10 -910 10 -830 {}
+L 4 10 -910 490 -910 {}
+L 4 490 -910 490 -830 {}
+L 4 430 -830 490 -830 {}
+L 4 790 -240 790 -100 {}
+L 4 790 -100 1200 -100 {}
+L 7 610 -170 660 -220 {}
+L 7 610 -170 670 -140 {}
+L 7 800 -240 800 -120 {}
+L 7 790 -240 800 -240 {}
+L 7 860 -240 860 -100 {}
+L 7 860 -240 880 -240 {}
+L 7 880 -240 880 -100 {}
+L 7 910 -240 910 -100 {}
+L 7 910 -240 930 -240 {}
+L 7 930 -240 930 -100 {}
+L 7 970 -240 970 -100 {}
+L 7 970 -240 990 -240 {}
+L 7 990 -240 990 -100 {}
+L 7 1010 -240 1010 -100 {}
+L 7 1010 -240 1030 -240 {}
+L 7 1030 -240 1030 -100 {}
+L 7 1070 -240 1070 -100 {}
+L 7 1070 -240 1090 -240 {}
+L 7 1090 -240 1090 -100 {}
+L 7 1120 -240 1120 -100 {}
+L 7 1120 -240 1140 -240 {}
+L 7 800 -100 860 -100 {}
+L 7 880 -100 910 -100 {}
+L 7 930 -100 970 -100 {}
+L 7 990 -100 1010 -100 {}
+L 7 1030 -100 1060 -100 {}
+L 7 1060 -100 1070 -100 {}
+L 7 1090 -100 1120 -100 {}
+L 7 800 -120 800 -100 {}
+L 8 790 -200 1190 -200 {}
+L 10 790 -100 870 -220 {}
+L 10 870 -220 920 -100 {}
+L 10 920 -100 980 -220 {}
+L 10 980 -220 1020 -100 {}
+L 10 1020 -100 1080 -220 {}
+L 10 1080 -220 1130 -100 {}
+L 12 790 -120 1190 -120 {}
+A 7 615.2702702702703 -173.7837837837838 64.31708453466086 45.93640038566023 282.3772319264831 {}
+A 7 665 -175 7.071067811865476 315 360 {}
+A 7 695 -175 7.071067811865476 315 360 {}
+A 7 725 -175 7.071067811865476 315 360 {}
+A 7 615 -215 7.071067811865476 315 360 {}
+T {pre_layout} 610 -770 0 0 0.4 0.4 {}
 T {01_dc_transfer_vos_sweep
 
 02_op_and_prebuffer_ac_gain
@@ -124,7 +110,7 @@ T {01_dc_transfer_vos_sweep
 
 14_post_layout_pex_verification
 
-} 10 -530 0 0 0.25 0.25 {}
+} 10 -500 0 0 0.25 0.25 {}
 T {15_transistor_intrinsic_speed_ft_gmid
 
 16_prebuffer_ac_bandwidth_slew_rate
@@ -149,44 +135,28 @@ T {15_transistor_intrinsic_speed_ft_gmid
 
 26_input_leakage_and_cin
 
-27_combined_pvt_mc_worst_case_yield} 250 -530 0 0 0.25 0.25 {}
-N 720 -450 720 -420 {lab=ibias
-spice_ignore=true}
-N 600 -530 620 -530 {lab=vh
-spice_ignore=true}
-N 620 -500 640 -500 {lab=vin
-spice_ignore=true}
-N 600 -470 620 -470 {lab=vl
-spice_ignore=true}
-N 700 -590 700 -560 {lab=vdd
-spice_ignore=true}
-N 720 -580 720 -550 {lab=en
-spice_ignore=true}
-N 800 -500 810 -500 {lab=vout
-spice_ignore=true}
-N 700 -440 700 -410 {lab=vss
-spice_ignore=true}
-N 720 -730 720 -700 {lab=ibias
+27_combined_pvt_mc_worst_case_yield} 250 -500 0 0 0.25 0.25 {}
+N 690 -560 690 -530 {lab=ibias
 }
-N 600 -810 620 -810 {lab=vh
+N 570 -640 590 -640 {lab=vh
 }
-N 620 -780 640 -780 {lab=vin
+N 590 -610 610 -610 {lab=vin
 }
-N 600 -750 620 -750 {lab=vl
+N 570 -580 590 -580 {lab=vl
 }
-N 700 -870 700 -840 {lab=vdd
+N 670 -700 670 -670 {lab=vdd
 }
-N 720 -860 720 -830 {lab=en
+N 690 -690 690 -660 {lab=en
 }
-N 800 -780 810 -780 {lab=vout
+N 770 -610 780 -610 {lab=vout
 }
-N 700 -720 700 -690 {lab=vss
+N 670 -550 670 -520 {lab=vss
 }
-C {devices/launcher.sym} 920 -340 0 0 {name=h2
+C {devices/launcher.sym} 920 -360 0 0 {name=h2
 descr="OP annotate" 
 tclcommand="xschem annotate_op"
 }
-C {launcher.sym} 620 -340 0 0 {name=h4
+C {launcher.sym} 620 -360 0 0 {name=h4
 descr=SimulateNGSPICE
 tclcommand="
 # Setup the default simulation commands if not already set up
@@ -211,7 +181,7 @@ write_data [save_params] $netlist_dir/[file rootname [file tail [xschem get curr
 xschem netlist
 simulate
 "}
-C {devices/code.sym} 970 -740 0 0 {name=MODEL_pre_layout
+C {devices/code.sym} 940 -570 0 0 {name=MODEL_pre_layout
 only_toplevel=false
 schname="tcleval([file rootname [file tail [xschem get schname]]])"
 format="tcleval( @value )"
@@ -226,7 +196,7 @@ write @schname\\\\.raw
 
 place=header
 }
-C {code.sym} 10 -830 0 0 {name=1 name=01_DC_Transfer_Characteristic_(VTC_Thresholds) only_toplevel=false value="
+C {code.sym} 10 -800 0 0 {name=1 name=01_DC_Transfer_Characteristic_(VTC_Thresholds) only_toplevel=false value="
 Vin vin 0 dc \{vcm\}
 .control
 save all
@@ -242,7 +212,7 @@ hardcopy ../plots/@name\\\\.svg v(vin) v(vout) v(vh) v(vl) title "01_dc_transfer
 .endc
 "
 spice_ignore=true}
-C {simulator_commands.sym} 860 -810 0 0 {
+C {simulator_commands.sym} 830 -640 0 0 {
 name=Libs_Ngspice_pre_layout
 simulator=ngspice
 only_toplevel=false
@@ -255,7 +225,7 @@ value="
 .lib cornerDIO.lib dio_tt
 "
       }
-C {code.sym} 220 -910 0 0 {name=params only_toplevel=false value="
+C {code.sym} 220 -880 0 0 {name=params only_toplevel=false value="
 .param vdd=1.2 vss=0 vcm=0.6 vrise=0.3
 .param vh=\{vcm+vrise\} vl=\{vcm-vrise\}
 .param ibias=1u en=1.2 cload=100f rload=1G
@@ -279,72 +249,25 @@ Ven en 0 dc \{en\}
 "
 
 }
-C {lab_wire.sym} 700 -590 0 0 {name=p1 lab=vdd
-spice_ignore=true}
-C {lab_wire.sym} 600 -530 0 0 {name=p2 lab=vh
-spice_ignore=true}
-C {lab_wire.sym} 810 -500 0 1 {name=p3 lab=vout
-spice_ignore=true}
-C {lab_wire.sym} 620 -500 0 0 {name=p4 lab=vin
-spice_ignore=true}
-C {lab_wire.sym} 600 -470 0 0 {name=p5 lab=vl
-spice_ignore=true}
-C {lab_wire.sym} 720 -420 0 1 {name=p6 lab=ibias
-spice_ignore=true}
-C {lab_wire.sym} 720 -580 0 1 {name=p8 lab=en
-spice_ignore=true}
-C {devices/code.sym} 980 -460 0 0 {name=MODEL_post_layout
-only_toplevel=false
-schname="tcleval([file rootname [file tail [xschem get schname]]])"
-format="tcleval( @value )"
-value="
-.include $::PDK_ROOT/ihp-sg13g2/libs.ref/sg13g2_stdcell/spice/sg13g2_stdcell.spice
-.include ../../../pex/slot_4.pex.spice
-.include @schname\\\\.save
-.control
-op
-write @schname\\\\.raw
-.endc
-"
-
-place=header
-spice_ignore=true}
-C {simulator_commands.sym} 870 -530 0 0 {
-name=Libs_Ngspice_post_layout
-simulator=ngspice
-only_toplevel=false
-value="
-.lib cornerMOSlv.lib mos_tt_mismatch
-.lib cornerMOShv.lib mos_tt_mismatch
-.lib cornerMOSCAP.lib moscap_tt
-.lib cornerCAP.lib cap_typ
-.lib cornerRES.lib res_typ
-.lib cornerDIO.lib dio_tt
-"
-      spice_ignore=true}
-C {wind_comp/slot_4.sym} 700 -500 0 0 {name=X1
-spice_ignore=true}
-C {lab_wire.sym} 700 -410 0 0 {name=p7 lab=vss
-spice_ignore=true}
-C {wind_comp/wind_comp.sym} 710 -780 0 0 {name=xcomp1
+C {wind_comp/wind_comp.sym} 680 -610 0 0 {name=xcomp1
 }
-C {lab_wire.sym} 700 -870 0 0 {name=p9 lab=vdd
+C {lab_wire.sym} 670 -700 0 0 {name=p9 lab=vdd
 }
-C {lab_wire.sym} 600 -810 0 0 {name=p10 lab=vh
+C {lab_wire.sym} 570 -640 0 0 {name=p10 lab=vh
 }
-C {lab_wire.sym} 810 -780 0 1 {name=p11 lab=vout
+C {lab_wire.sym} 780 -610 0 1 {name=p11 lab=vout
 }
-C {lab_wire.sym} 620 -780 0 0 {name=p12 lab=vin
+C {lab_wire.sym} 590 -610 0 0 {name=p12 lab=vin
 }
-C {lab_wire.sym} 600 -750 0 0 {name=p13 lab=vl
+C {lab_wire.sym} 570 -580 0 0 {name=p13 lab=vl
 }
-C {lab_wire.sym} 720 -700 0 1 {name=p14 lab=ibias
+C {lab_wire.sym} 690 -530 0 1 {name=p14 lab=ibias
 }
-C {lab_wire.sym} 720 -860 0 1 {name=p15 lab=en
+C {lab_wire.sym} 690 -690 0 1 {name=p15 lab=en
 }
-C {lab_wire.sym} 700 -690 0 0 {name=p16 lab=vss
+C {lab_wire.sym} 670 -520 0 0 {name=p16 lab=vss
 }
-C {launcher.sym} 920 -295 0 0 {name=h1
+C {launcher.sym} 920 -315 0 0 {name=h1
 descr=SimulatePARALLEL
 tclcommand="
 # Setup the default simulation commands if not already set up
@@ -370,7 +293,7 @@ exec python3 $\{PDK_ROOT\}/$\{PDK\}/libs.tech/xschem/sg13g2_tests/ngspice_parall
 "
 spice_ignore=true}
 C {devices/title.sym} 160 -30 0 0 {name=l5 author="Copyright 2025 IHP PDK Authors"}
-C {code.sym} 70 -830 0 0 {name=2 only_toplevel=false value="
+C {code.sym} 70 -800 0 0 {name=2 only_toplevel=false value="
 Vin vin 0 dc \{vl\} ac 1
 .control
 save all
@@ -387,8 +310,8 @@ set hcopydevtype=svg
 hardcopy ../plots/@name\\\\.svg av_db title "02_op_and_prebuffer_ac_gain"
 .endc
 "
-}
-C {code.sym} 130 -830 0 0 {name=3 only_toplevel=false value="
+spice_ignore=true}
+C {code.sym} 130 -800 0 0 {name=3 only_toplevel=false value="
 Vin vin 0 dc \{vcm\}
 .control
 save all
@@ -413,7 +336,7 @@ hardcopy ../plots/@name\\\\.svg v(vin) v(vout) v(vl) v(vh) title "03_input_commo
 .endc
 "
 spice_ignore=true}
-C {code.sym} 190 -830 0 0 {name=4 only_toplevel=false value="
+C {code.sym} 190 -800 0 0 {name=4 only_toplevel=false value="
 Vin vin 0 dc \{vcm\}
 .control
 save all
@@ -442,7 +365,7 @@ hardcopy ../plots/@name\\\\.svg v(vin) v(vout) v(vl) title "04_dc_cmrr_sweep"
 
 "
 spice_ignore=true}
-C {code.sym} 250 -830 0 0 {name=5 only_toplevel=false value="
+C {code.sym} 250 -800 0 0 {name=5 only_toplevel=false value="
 
 Vin vin 0 dc \{vcm\}
 .control
@@ -471,7 +394,7 @@ hardcopy ../plots/@name\\\\.svg vout_min v(vout) title "05_dc_psrr_sweep"
 
 "
 spice_ignore=true}
-C {code.sym} 310 -830 0 0 {name=6 only_toplevel=false value="
+C {code.sym} 310 -800 0 0 {name=6 only_toplevel=false value="
 Vin vin 0 dc \{vcm\}
 .control
 save all
@@ -487,7 +410,7 @@ hardcopy ../plots/@name\\\\.svg v(vin) v(vout) title "06_output_logic_voh_vol"
 
 "
 spice_ignore=true}
-C {code.sym} 370 -830 0 0 {name=7 only_toplevel=false value="
+C {code.sym} 370 -800 0 0 {name=7 only_toplevel=false value="
 Vin vin 0 pulse(0.29 0.31 2u 1n 1n 20u 40u)
 .control
 save all
@@ -503,7 +426,7 @@ hardcopy ../plots/@name\\\\.svg v(vin) v(vout) title "07_propagation_delay_overd
 
 "
 spice_ignore=true}
-C {code.sym} 430 -830 0 0 {name=8 only_toplevel=false value="
+C {code.sym} 430 -800 0 0 {name=8 only_toplevel=false value="
 
 Vin vin 0 pulse(0.29 0.31 2u 1n 1n 5u 10u)
 .control
@@ -520,7 +443,7 @@ hardcopy ../plots/@name\\\\.svg v(vout) title "08_output_rise_fall_time"
 
 "
 spice_ignore=true}
-C {code.sym} 10 -750 0 0 {name=9 only_toplevel=false value="
+C {code.sym} 10 -720 0 0 {name=9 only_toplevel=false value="
 
 Vin vin 0 pwl(0 0.2 50u 0.4 100u 0.2)
 .control
@@ -540,7 +463,7 @@ hardcopy ../plots/@name\\\\.svg v(vout) vs v(vin) title "09_hysteresis_ramp_swee
 
 "
 spice_ignore=true}
-C {code.sym} 70 -750 0 0 {name=10 only_toplevel=false value="
+C {code.sym} 70 -720 0 0 {name=10 only_toplevel=false value="
 
 Vin vin 0 dc \{vcm\}
 .control
@@ -559,7 +482,7 @@ hardcopy ../plots/@name\\\\.svg pstat_vin title "10_static_power_quiescent_curre
 .endc
 "
 spice_ignore=true}
-C {code.sym} 130 -750 0 0 {name=11 only_toplevel=false value="
+C {code.sym} 130 -720 0 0 {name=11 only_toplevel=false value="
 
 Vin vin 0 pulse(0.25 0.35 1u 1n 1n 4u 8u)
 .control
@@ -576,7 +499,7 @@ hardcopy ../plots/@name\\\\.svg pinst v(vout) title "11_dynamic_switching_energy
 .endc
 "
 spice_ignore=true}
-C {code.sym} 190 -750 0 0 {name=12 only_toplevel=false value="
+C {code.sym} 190 -720 0 0 {name=12 only_toplevel=false value="
 Vin vin 0 dc \{vcm\}
 .control
 save all
@@ -606,17 +529,17 @@ hardcopy ../plots/@name\\\\.svg v(vin) v(vout) v(vl) v(vh) title "12_pvt_corner_
 
 "
 spice_ignore=true}
-C {code.sym} 250 -750 0 0 {name=13 only_toplevel=false value="
+C {code.sym} 250 -720 0 0 {name=13 only_toplevel=false value="
 
 
 "
 spice_ignore=true}
-C {code.sym} 310 -750 0 0 {name=14 only_toplevel=false value="
+C {code.sym} 310 -720 0 0 {name=14 only_toplevel=false value="
 
 
 "
 spice_ignore=true}
-C {code.sym} 370 -750 0 0 {name=15 only_toplevel=false value="
+C {code.sym} 370 -720 0 0 {name=15 only_toplevel=false value="
 
 Vin vin 0 dc \{vl\}
 .control
@@ -644,7 +567,7 @@ hardcopy ../plots/@name\\\\.svg ft_sw title "15_transistor_intrinsic_speed_ft_gm
 .endc
 "
 spice_ignore=true}
-C {code.sym} 430 -750 0 0 {name=16 only_toplevel=false value="
+C {code.sym} 430 -720 0 0 {name=16 only_toplevel=false value="
 
 Vin vin 0 dc \{vl\} ac 1 pulse(0.25 0.35 20n 100p 100p 100n 200n)
 .control
@@ -665,7 +588,7 @@ hardcopy ../plots/@name\\\\.svg v(xcomp1.x2.vop) v(vin) title "16_prebuffer_ac_b
 .endc
 "
 spice_ignore=true}
-C {code.sym} 10 -670 0 0 {name=17 only_toplevel=false value="
+C {code.sym} 10 -640 0 0 {name=17 only_toplevel=false value="
 Vin vin 0 sin(\{vl\} 0.05 \{fin\})
 .control
 save all
@@ -692,7 +615,7 @@ hardcopy ../plots/@name\\\\.svg v(vin) v(vout) title "17_max_toggle_freq_cl_swee
 
 "
 spice_ignore=true}
-C {code.sym} 70 -670 0 0 {name=18 only_toplevel=false value="
+C {code.sym} 70 -640 0 0 {name=18 only_toplevel=false value="
 
 Vin vin 0 dc \{vl\} ac 1
 .control
@@ -708,7 +631,7 @@ hardcopy ../plots/@name\\\\.svg inoise_spectrum title "18_input_referred_noise"
 .endc
 "
 spice_ignore=true}
-C {code.sym} 130 -670 0 0 {name=19 only_toplevel=false value="
+C {code.sym} 130 -640 0 0 {name=19 only_toplevel=false value="
 
 Vin vin_src 0 pulse(0.25 0.35 1u 1n 1n 4u 8u)
 Rsrc vin_src vin 10k
@@ -726,7 +649,7 @@ hardcopy ../plots/@name\\\\.svg vkick v(vout) title "19_transient_kickback_noise
 .endc
 "
 spice_ignore=true}
-C {code.sym} 190 -670 0 0 {name=20 only_toplevel=false value="
+C {code.sym} 190 -640 0 0 {name=20 only_toplevel=false value="
 
 Vin vin 0 dc \{vl\} ac 1
 .control
@@ -765,7 +688,7 @@ hardcopy ../plots/@name\\\\.svg psrr_db cmrr_f title "20_ac_frequency_psrr_cmrr"
 .endc
 "
 spice_ignore=true}
-C {code.sym} 250 -670 0 0 {name=21 only_toplevel=false value="
+C {code.sym} 250 -640 0 0 {name=21 only_toplevel=false value="
 
 Vin vin 0 pulse(0 0.31 100n 100p 100p 200n 400n)
 .control
@@ -780,7 +703,7 @@ hardcopy ../plots/@name\\\\.svg v(vin) v(vout) title "21_overdrive_recovery_time
 .endc
 "
 spice_ignore=true}
-C {code.sym} 310 -670 0 0 {name=22 only_toplevel=false value="
+C {code.sym} 310 -640 0 0 {name=22 only_toplevel=false value="
 
 Vin vin 0 pwl(0 0.4 50u 0.8)
 .control
@@ -801,7 +724,7 @@ hardcopy ../plots/@name\\\\.svg v(vin) v(vout) v(vl) v(vh) title "22_min_window_
 .endc
 "
 spice_ignore=true}
-C {code.sym} 370 -670 0 0 {name=23 only_toplevel=false value="
+C {code.sym} 370 -640 0 0 {name=23 only_toplevel=false value="
 
 Vin vin 0 dc \{vcm\}
 .control
@@ -818,7 +741,7 @@ hardcopy ../plots/@name\\\\.svg v(vdd) v(vout) title "23_power_up_supply_ramp_st
 .endc
 "
 spice_ignore=true}
-C {code.sym} 430 -670 0 0 {name=24 only_toplevel=false value="
+C {code.sym} 430 -640 0 0 {name=24 only_toplevel=false value="
 
 Vin vin 0 dc \{vcm\}
 .control
@@ -836,7 +759,7 @@ hardcopy ../plots/@name\\\\.svg v(en) v(vout) title "24_enable_disable_wakeup_le
 .endc
 "
 spice_ignore=true}
-C {code.sym} 10 -590 0 0 {name=25 only_toplevel=false value="
+C {code.sym} 10 -560 0 0 {name=25 only_toplevel=false value="
 
 Vin vin 0 pulse(0.29 0.31 1u 1n 1n 4u 8u)
 .control
@@ -860,7 +783,7 @@ hardcopy ../plots/@name\\\\.svg v(vin) v(vout) title "25_bias_current_sensitivit
 .endc
 "
 spice_ignore=true}
-C {code.sym} 70 -590 0 0 {name=26 only_toplevel=false value="
+C {code.sym} 70 -560 0 0 {name=26 only_toplevel=false value="
 
 Vin vin 0 dc \{vcm\} ac 1
 .control
@@ -879,7 +802,7 @@ hardcopy ../plots/@name\\\\.svg cin title "26_input_leakage_and_cin"
 .endc
 "
 spice_ignore=true}
-C {code.sym} 130 -590 0 0 {name=27 only_toplevel=false value="
+C {code.sym} 130 -560 0 0 {name=27 only_toplevel=false value="
 Vin vin 0 dc \{vcm\}
 .control
 save all
@@ -905,3 +828,16 @@ hardcopy @name\\.svg v(vin) v(vout) v(vl) v(vh) title "@name\\"
 .endc
 "
 spice_ignore=true}
+C {simulator_commands.sym} 1090 -650 0 0 {
+name=Libs_Ngspice_post_layout1
+simulator=ngspice
+only_toplevel=false
+value="
+.lib cornerMOSlv.lib mos_tt_mismatch
+.lib cornerMOShv.lib mos_tt_mismatch
+.lib cornerMOSCAP.lib moscap_tt
+.lib cornerCAP.lib cap_typ
+.lib cornerRES.lib res_typ
+.lib cornerDIO.lib dio_tt
+"
+      spice_ignore=true}

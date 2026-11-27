@@ -16,55 +16,55 @@ v-sweep
 <text stroke="none" fill="black" font-size="16" x="10" y="16">
 dc2: 10_static_power_quiescent_current
 </text>
-<path stroke="black" d="M60 704l0 -639"/>
+<path stroke="black" d="M60 704l0 -640"/>
 <text stroke="none" fill="black" font-size="16" x="45" y="728">
 0.0
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M135 704l0 -639"/>
+<path stroke="black" stroke-dasharray="1,2" d="M135 704l0 -640"/>
 <text stroke="none" fill="black" font-size="16" x="120" y="728">
 0.1
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M210 704l0 -639"/>
+<path stroke="black" stroke-dasharray="1,2" d="M210 704l0 -640"/>
 <text stroke="none" fill="black" font-size="16" x="195" y="728">
 0.2
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M285 704l0 -639"/>
+<path stroke="black" stroke-dasharray="1,2" d="M285 704l0 -640"/>
 <text stroke="none" fill="black" font-size="16" x="270" y="728">
 0.3
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M360 704l0 -639"/>
+<path stroke="black" stroke-dasharray="1,2" d="M360 704l0 -640"/>
 <text stroke="none" fill="black" font-size="16" x="345" y="728">
 0.4
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M435 704l0 -639"/>
+<path stroke="black" stroke-dasharray="1,2" d="M435 704l0 -640"/>
 <text stroke="none" fill="black" font-size="16" x="420" y="728">
 0.5
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M510 704l0 -639"/>
+<path stroke="black" stroke-dasharray="1,2" d="M510 704l0 -640"/>
 <text stroke="none" fill="black" font-size="16" x="495" y="728">
 0.6
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M585 704l0 -639"/>
+<path stroke="black" stroke-dasharray="1,2" d="M585 704l0 -640"/>
 <text stroke="none" fill="black" font-size="16" x="570" y="728">
 0.7
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M660 704l0 -639"/>
+<path stroke="black" stroke-dasharray="1,2" d="M660 704l0 -640"/>
 <text stroke="none" fill="black" font-size="16" x="645" y="728">
 0.8
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M735 704l0 -639"/>
+<path stroke="black" stroke-dasharray="1,2" d="M735 704l0 -640"/>
 <text stroke="none" fill="black" font-size="16" x="720" y="728">
 0.9
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M810 704l0 -639"/>
+<path stroke="black" stroke-dasharray="1,2" d="M810 704l0 -640"/>
 <text stroke="none" fill="black" font-size="16" x="795" y="728">
 1.0
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M885 704l0 -639"/>
+<path stroke="black" stroke-dasharray="1,2" d="M885 704l0 -640"/>
 <text stroke="none" fill="black" font-size="16" x="870" y="728">
 1.1
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M960 704l0 -639"/>
+<path stroke="black" stroke-dasharray="1,2" d="M960 704l0 -640"/>
 <text stroke="none" fill="black" font-size="16" x="945" y="728">
 1.2
 </text>
@@ -75,41 +75,37 @@ V
 <text stroke="none" fill="black" font-size="16" x="18" y="712">
 10.0
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M60 633l900 0"/>
-<text stroke="none" fill="black" font-size="16" x="18" y="641">
+<path stroke="black" stroke-dasharray="1,2" d="M60 624l900 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="632">
 15.0
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M60 562l900 0"/>
-<text stroke="none" fill="black" font-size="16" x="18" y="570">
+<path stroke="black" stroke-dasharray="1,2" d="M60 544l900 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="552">
 20.0
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M60 491l900 0"/>
-<text stroke="none" fill="black" font-size="16" x="18" y="499">
+<path stroke="black" stroke-dasharray="1,2" d="M60 464l900 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="472">
 25.0
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M60 420l900 0"/>
-<text stroke="none" fill="black" font-size="16" x="18" y="428">
+<path stroke="black" stroke-dasharray="1,2" d="M60 384l900 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="392">
 30.0
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M60 349l900 0"/>
-<text stroke="none" fill="black" font-size="16" x="18" y="357">
+<path stroke="black" stroke-dasharray="1,2" d="M60 304l900 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="312">
 35.0
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M60 278l900 0"/>
-<text stroke="none" fill="black" font-size="16" x="18" y="286">
+<path stroke="black" stroke-dasharray="1,2" d="M60 224l900 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="232">
 40.0
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M60 207l900 0"/>
-<text stroke="none" fill="black" font-size="16" x="18" y="215">
+<path stroke="black" stroke-dasharray="1,2" d="M60 144l900 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="152">
 45.0
 </text>
-<path stroke="black" stroke-dasharray="1,2" d="M60 136l900 0"/>
-<text stroke="none" fill="black" font-size="16" x="18" y="144">
+<path stroke="black" stroke-dasharray="1,2" d="M60 64l900 0"/>
+<text stroke="none" fill="black" font-size="16" x="18" y="72">
 50.0
-</text>
-<path stroke="black" stroke-dasharray="1,2" d="M60 65l900 0"/>
-<text stroke="none" fill="black" font-size="16" x="18" y="73">
-55.0
 </text>
 <text stroke="none" fill="black" font-size="16" x="10" y="32">
 uW
@@ -118,7 +114,7 @@ uW
 <text stroke="none" fill="black" font-size="16" x="505" y="32">
 pstat_vin
 </text>
-<path stroke="red" d="M60 702l120 0 4 -1 34 0 3 -1 15 0 4 -1 11 0 4 -1 8 0 3 -1 8 0 4 -1 3 0 4 -241 4 -346 4 74 3 54 4 46 4 42 4 36 3 33 4 30 4 26 4 24 3 21 4 19 4 17 4 15 3 13 4 12 8 20 3 8 8 14 4 5 3 5 4 5 4 4 4 3 3 3 4 3 8 4 3 2 4 2 4 1 4 2"/>
-<path stroke="red" d="M413 652l3 1 12 3 3 0 8 2 4 0 3 1 8 0 4 1 11 0 4 1 15 0 3 1 42 0 3 1 15 0 4 -1 30 0 4 -1 11 0 4 -1 7 0 4 -1 4 0 4 -1 3 0 4 -1 4 0 4 -1 3 -1 4 -1 4 0 4 -1 3 -1 4 -1 4 -2 4 -1 3 -1 4 -2 4 -1 4 -2 3 -2 4 -2 4 -3 4 -2 3 -3 8 -6"/>
-<path stroke="red" d="M709 624l4 -4 3 -5 4 -5 4 -6 4 -8 3 -18 4 -147 4 239 7 0 4 -1 45 0 4 -1 48 0 4 -1 75 0 4 -1 30 0"/>
+<path stroke="red" d="M60 702l105 0 4 -1 41 0 4 -1 19 0 3 -1 8 0 4 -1 7 0 4 -1 7 0 4 -1 4 0 4 -1 3 0 4 -287 4 -331 4 80 3 59 4 50 4 45 4 39 3 36 4 31 4 28 4 25 3 23 4 19 4 18 4 15 3 14 4 12 4 11 4 9 3 8 4 8 4 6 4 5 3 5 4 5 4 4 4 3 3 3 4 2 4 3"/>
+<path stroke="red" d="M394 643l4 2 3 1 4 2 4 1 4 2 3 1 4 1 4 0 4 1 3 1 4 0 4 1 4 0 3 1 8 0 4 1 11 0 4 1 26 0 4 1 63 0 4 -1 19 0 4 -1 7 0 4 -1 7 0 4 -1 4 0 4 -1 3 0 4 -1 4 0 4 -1 3 -1 4 0 8 -2 3 -1 8 -2 4 -2 3 -1 4 -1 8 -4 3 -2 8 -4 4 -3 3 -2"/>
+<path stroke="red" d="M701 628l4 -3 4 -4 4 -3 3 -5 4 -5 4 -6 4 -8 3 -17 4 -219 4 307 4 -1 26 0 4 -1 33 0 4 -1 34 0 3 -1 49 0 4 -1 60 0"/>
 </svg>

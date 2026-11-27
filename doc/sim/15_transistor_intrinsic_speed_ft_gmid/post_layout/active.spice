@@ -1,0 +1,25 @@
+Vin vin 0 dc {vl}
+.control
+save all @n.x1.x58.nsg13_lv_nmos[gm] @n.x1.x58.nsg13_lv_nmos[ids] @n.x1.x58.nsg13_lv_nmos[cgg] @n.x1.x58.nsg13_lv_nmos[vds] @n.x1.x58.nsg13_lv_nmos[vth] @n.x1.x58.nsg13_lv_nmos[gds]
+op
+let gm_m1 = @n.x1.x58.nsg13_lv_nmos[gm]
+let id_m1 = @n.x1.x58.nsg13_lv_nmos[ids]
+let cgg_m1 = @n.x1.x58.nsg13_lv_nmos[cgg]
+let gds_m1 = @n.x1.x58.nsg13_lv_nmos[gds]
+let gmid_m1 = gm_m1 / id_m1
+let ft_m1 = gm_m1 / (2 * pi * cgg_m1)
+let av0_m1 = gm_m1 / gds_m1
+set p_op = $curplot
+dc Vin 0.2 1.0 10m
+let gm_sw = @n.x1.x58.nsg13_lv_nmos[gm]
+let id_sw = @n.x1.x58.nsg13_lv_nmos[ids]
+let cgg_sw = @n.x1.x58.nsg13_lv_nmos[cgg]
+let gmid_sw = gm_sw / id_sw
+let ft_sw = gm_sw / (2 * pi * cgg_sw)
+print {$p_op}.gm_m1 {$p_op}.id_m1 {$p_op}.gmid_m1 {$p_op}.ft_m1 {$p_op}.av0_m1
+set filetype=ascii
+write 15.raw v(vin) ft_sw gmid_sw
+plot ft_sw title "15_transistor_intrinsic_speed_ft_gmid"
+set hcopydevtype=svg
+hardcopy ../plots/15.svg ft_sw title "15_transistor_intrinsic_speed_ft_gmid"
+.endc

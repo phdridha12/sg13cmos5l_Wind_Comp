@@ -111,5 +111,5 @@ pinst
 <text stroke="none" fill="black" font-size="16" x="106" y="32">
 v(vout)
 </text>
-<path stroke="blue" d="M50 624l108 0 0 -485M158 144l378 0M536 625l0 -481M536 624l358 0 0 -485M894 144l76 0"/>
+<path stroke="blue" d="M50 624l118 0M168 625l0 -488M168 144l380 0M548 625l0 -481M548 624l356 0M904 625l0 -488M904 144l66 0"/>
 </svg>
