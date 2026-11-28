@@ -175,6 +175,8 @@ T {15_transistor_intrinsic_speed_ft_gmid
 
 27_combined_pvt_mc_worst_case_yield} 1030 -500 0 0 0.25 0.25 {}
 T {post_layout} 620 -860 0 0 0.4 0.4 {}
+T {Please enable those 
+just in Sim 12;13;27} 670 -340 0 0 0.5 0.5 {}
 N 690 -650 690 -620 {lab=ibias
 }
 N 570 -730 590 -730 {lab=vh
@@ -191,7 +193,7 @@ N 770 -700 780 -700 {lab=vout
 }
 N 670 -640 670 -610 {lab=vss
 }
-C {/foss/designs/skills/sg13cmos5l_Wind_Comp/schematic/code.sym} -10 -920 0 0 {name=1 name=01_DC_Transfer_Characteristic_(VTC_Thresholds) only_toplevel=false value="
+C {code.sym} -10 -920 0 0 {name=1 only_toplevel=false value="
 Vin vin 0 dc \{vcm\}
 .control
 save all
@@ -206,7 +208,7 @@ set hcopydevtype=svg
 hardcopy ../plots/@name\\\\.svg v(vin) v(vout) v(vh) v(vl) title "01_dc_transfer_vos_sweep"
 .endc
 "
-}
+spice_ignore=true}
 C {code.sym} 320 -1080 0 0 {name=params only_toplevel=false value="
 .param vdd=1.2 vss=0 vcm=0.6 vrise=0.3
 .param vh=\{vcm+vrise\} vl=\{vcm-vrise\}
@@ -248,7 +250,7 @@ set hcopydevtype=svg
 hardcopy ../plots/@name\\\\.svg av_db title "02_op_and_prebuffer_ac_gain"
 .endc
 "
-}
+spice_ignore=true}
 C {code.sym} 190 -920 0 0 {name=3 only_toplevel=false value="
 Vin vin 0 dc \{vcm\}
 .control
@@ -273,7 +275,7 @@ set hcopydevtype=svg
 hardcopy ../plots/@name\\\\.svg v(vin) v(vout) v(vl) v(vh) title "03_input_common_mode_range"
 .endc
 "
-}
+spice_ignore=true}
 C {code.sym} 290 -920 0 0 {name=4 only_toplevel=false value="
 Vin vin 0 dc \{vcm\}
 .control
@@ -302,7 +304,7 @@ hardcopy ../plots/@name\\\\.svg v(vin) v(vout) v(vl) title "04_dc_cmrr_sweep"
 .endc
 
 "
-}
+spice_ignore=true}
 C {code.sym} 390 -920 0 0 {name=5 only_toplevel=false value="
 
 Vin vin 0 dc \{vcm\}
@@ -331,7 +333,7 @@ hardcopy ../plots/@name\\\\.svg vout_min v(vout) title "05_dc_psrr_sweep"
 .endc
 
 "
-}
+spice_ignore=true}
 C {code.sym} -10 -780 0 0 {name=6 only_toplevel=false value="
 Vin vin 0 dc \{vcm\}
 .control
@@ -347,7 +349,7 @@ hardcopy ../plots/@name\\\\.svg v(vin) v(vout) title "06_output_logic_voh_vol"
 .endc
 
 "
-}
+spice_ignore=true}
 C {code.sym} 90 -780 0 0 {name=7 only_toplevel=false value="
 Vin vin 0 pulse(0.29 0.31 2u 1n 1n 20u 40u)
 .control
@@ -363,7 +365,7 @@ hardcopy ../plots/@name\\\\.svg v(vin) v(vout) title "07_propagation_delay_overd
 .endc
 
 "
-}
+spice_ignore=true}
 C {code.sym} 190 -780 0 0 {name=8 only_toplevel=false value="
 
 Vin vin 0 pulse(0.29 0.31 2u 1n 1n 5u 10u)
@@ -380,7 +382,7 @@ hardcopy ../plots/@name\\\\.svg v(vout) title "08_output_rise_fall_time"
 .endc
 
 "
-}
+spice_ignore=true}
 C {code.sym} 290 -780 0 0 {name=9 only_toplevel=false value="
 
 Vin vin 0 pwl(0 0.2 50u 0.4 100u 0.2)
@@ -400,7 +402,7 @@ hardcopy ../plots/@name\\\\.svg v(vout) vs v(vin) title "09_hysteresis_ramp_swee
 .endc
 
 "
-}
+spice_ignore=true}
 C {code.sym} 390 -780 0 0 {name=10 only_toplevel=false value="
 
 Vin vin 0 dc \{vcm\}
@@ -419,7 +421,7 @@ set hcopydevtype=svg
 hardcopy ../plots/@name\\\\.svg pstat_vin title "10_static_power_quiescent_current"
 .endc
 "
-}
+spice_ignore=true}
 C {code.sym} -10 -640 0 0 {name=11 only_toplevel=false value="
 
 Vin vin 0 pulse(0.25 0.35 1u 1n 1n 4u 8u)
@@ -436,62 +438,7 @@ set hcopydevtype=svg
 hardcopy ../plots/@name\\\\.svg pinst v(vout) title "11_dynamic_switching_energy"
 .endc
 "
-}
-C {code.sym} 90 -640 0 0 {name=12 only_toplevel=false value="
-Vin vin 0 dc \{vcm\}
-.control
-save all
-foreach vv 1.08 1.2 1.32
-  foreach tt -40 27 125
-    alterparam vdd=$vv
-    alterparam tnom=$tt
-    reset
-    save all
-    op
-    let pstat = -i(Vdd) * v(vdd)
-    set pstat_val = $&pstat
-    dc Vin 0 $vv 2m
-    let vmid = $vv / 2
-    meas dc vth_l WHEN v(vout)=$&vmid RISE=1
-    meas dc vth_h WHEN v(vout)=$&vmid FALL=1
-    let vos_l = vth_l - 0.3
-    let vos_h = vth_h - 0.9
-    echo $vv $tt $&vos_l $&vos_h $pstat_val >> @name\\\\.txt
-  end
-end
-write @name\\\\.raw v(vin) v(vout) v(vl) v(vh)
-plot v(vin) v(vout) v(vl) v(vh) title "12_pvt_corner_analysis"
-set hcopydevtype=svg
-hardcopy ../plots/@name\\\\.svg v(vin) v(vout) v(vl) v(vh) title "12_pvt_corner_analysis"
-.endc
-
-"
-}
-C {code.sym} 190 -640 0 0 {name=13 only_toplevel=false value="
-Vin vin 0 dc \{vcm\}
-.control
-save all
-let run = run + 1
-let runs = 200
-dowhile run <= runs
-  reset
-  save all
-  dc Vin 0 1.2 1m
-  meas dc vth_l WHEN v(vout)=0.6 RISE=1
-  meas dc vth_h WHEN v(vout)=0.6 FALL=1
-  let vos_l = vth_l - 0.3
-  let vos_h = vth_h - 0.9
-  echo $&run $&vos_l $&vos_h >> @name\\\\.txt
-  let run = run + 1
-end
-write @name\\\\.raw v(vin) v(vout) v(vl) v(vh)
-plot v(vin) v(vout) v(vl) v(vh) title "13_monte_carlo_mismatch_process"
-set hcopydevtype=svg
-hardcopy ../plots/@name\\\\.svg v(vin) v(vout) v(vl) v(vh) title "13_monte_carlo_mismatch_process"
-.endc
-
-"
-}
+spice_ignore=true}
 C {code.sym} 290 -640 0 0 {name=14 only_toplevel=false value="
 
 Vin vin 0 pulse(0.29 0.31 1u 1n 1n 5u 10u)
@@ -517,7 +464,7 @@ print pstat_pex vth_l_pex vth_h_pex \{$p_tr\}.tplh_pex \{$p_tr\}.tphl_pex \{$p_t
 .endc
 
 "
-}
+spice_ignore=true}
 C {code.sym} 840 -920 0 0 {name=15 only_toplevel=false value="
 Vin vin 0 dc \{vl\}
 .control
@@ -545,7 +492,7 @@ set hcopydevtype=svg
 hardcopy ../plots/15.svg ft_sw title "15_transistor_intrinsic_speed_ft_gmid"
 .endc
 "
-}
+spice_ignore=true}
 C {code.sym} 940 -920.9842734775889 0 0 {name=16 only_toplevel=false value="
 
 *Vin vin 0 dc \{vl\} ac 1 pulse(0.25 0.35 20n 100p 100p 100n 200n)
@@ -575,7 +522,7 @@ set hcopydevtype=svg
 hardcopy ../plots/@name\\\\.svg v(x1.wind_comp_0.comparator_1.sg13cmos5l_inv_16_0.a) v(vin) title "16_prebuffer_ac_bandwidth_slew_rate"
 .endc
 "
-}
+spice_ignore=true}
 C {code.sym} 1040 -920 0 0 {name=17 only_toplevel=false value="
 Vin vin 0 sin(\{vl\} 0.05 \{fin\})
 .control
@@ -603,7 +550,7 @@ hardcopy ../plots/@name\\\\.svg v(vin) v(vout) title "17_max_toggle_freq_cl_swee
 .endc
 
 "
-}
+spice_ignore=true}
 C {code.sym} 1140 -920 0 0 {name=18 only_toplevel=false value="
 
 Vin vin 0 dc \{vl\} ac 1
@@ -620,7 +567,7 @@ set hcopydevtype=svg
 hardcopy ../plots/@name\\\\.svg inoise_spectrum title "18_input_referred_noise"
 .endc
 "
-}
+spice_ignore=true}
 C {code.sym} 1240 -920 0 0 {name=19 only_toplevel=false value="
 
 Vin vin_src 0 pulse(0.25 0.35 1u 1n 1n 5u 10u)
@@ -638,7 +585,7 @@ set hcopydevtype=svg
 hardcopy ../plots/@name\\\\.svg vkick v(vout) title "19_transient_kickback_noise"
 .endc
 "
-}
+spice_ignore=true}
 C {code.sym} 840 -780 0 0 {name=20 only_toplevel=false value="
 Vin vin 0 dc \{vl\} ac 1
 .control
@@ -671,7 +618,7 @@ set hcopydevtype=svg
 hardcopy ../plots/@name\\\\.svg psrr_db cmrr_f title "20_ac_frequency_psrr_cmrr"
 .endc
 "
-}
+spice_ignore=true}
 C {code.sym} 940 -780 0 0 {name=21 only_toplevel=false value="
 Vin vin 0 pulse(0 0.31 1u 1n 1n 8u 16u)
 .control
@@ -685,7 +632,7 @@ set hcopydevtype=svg
 hardcopy ../plots/@name\\\\.svg v(vin) v(vout) title "21_overdrive_recovery_time"
 .endc
 "
-}
+spice_ignore=true}
 C {code.sym} 1040 -780 0 0 {name=22 only_toplevel=false value="
 
 Vin vin 0 pwl(0 0.4 50u 0.8)
@@ -706,7 +653,7 @@ set hcopydevtype=svg
 hardcopy ../plots/@name\\\\.svg v(vin) v(vout) v(vl) v(vh) title "22_min_window_width_boundary_glitch"
 .endc
 "
-}
+spice_ignore=true}
 C {code.sym} 1140 -780 0 0 {name=23 only_toplevel=false value="
 
 Vin vin 0 dc \{vcm\}
@@ -723,7 +670,7 @@ set hcopydevtype=svg
 hardcopy ../plots/@name\\\\.svg v(vdd) v(vout) title "23_power_up_supply_ramp_startup"
 .endc
 "
-}
+spice_ignore=true}
 C {code.sym} 1240 -780 0 0 {name=24 only_toplevel=false value="
 Vin vin 0 dc \{vcm\}
 .control
@@ -743,7 +690,7 @@ set hcopydevtype=svg
 hardcopy ../plots/24.svg v(en) v(vout) title "24_enable_disable_wakeup_leakage"
 .endc
 "
-}
+spice_ignore=true}
 C {code.sym} 840 -640 0 0 {name=25 only_toplevel=false value="
 
 Vin vin 0 pulse(0.29 0.31 1u 1n 1n 4u 8u)
@@ -767,7 +714,7 @@ set hcopydevtype=svg
 hardcopy ../plots/@name\\\\.svg v(vin) v(vout) title "25_bias_current_sensitivity_sweep"
 .endc
 "
-}
+spice_ignore=true}
 C {code.sym} 940 -640 0 0 {name=26 only_toplevel=false value="
 
 Vin vin 0 dc \{vcm\} ac 1
@@ -786,39 +733,13 @@ set hcopydevtype=svg
 hardcopy ../plots/@name\\\\.svg cin title "26_input_leakage_and_cin"
 .endc
 "
-}
-C {code.sym} 1040 -640 0 0 {name=27 only_toplevel=false value="
-Vin vin 0 dc \{vcm\}
-.control
-save all
-alterparam vdd=1.08
-alterparam tnom=125
-set run = 1
-set runs = 200
-dowhile $run <=$runs
-reset
-save all
-dc Vin 0 1.08 1m
-meas dc vth_l WHEN v(vout)=0.54 RISE=1
-meas dc vth_h WHEN v(vout)=0.54 FALL=1
-let vos_l = vth_l - 0.3
-let vos_h = vth_h - 0.9
-echo $run $&vos_l $&vos_h >> pvt_mc_yield.txt
-let run = $run + 1
-end
-wrdata pvt_mc_vtc.txt v(vin) v(vout) v(vl) v(vh)
-plot v(vin) v(vout) v(vl) v(vh) title "@name\\"
-set hcopydevtype=svg
-hardcopy @name\\.svg v(vin) v(vout) v(vl) v(vh) title "@name\\"
-.endc
-"
-}
+spice_ignore=true}
 C {devices/title.sym} 160 -30 0 0 {name=l1 author="Copyright 2025 IHP PDK Authors"}
-C {devices/launcher.sym} 620 -480 0 0 {name=h3
+C {devices/launcher.sym} 590 -510 0 0 {name=h3
 descr="OP annotate" 
 tclcommand="xschem annotate_op"
 }
-C {launcher.sym} 620 -540 0 0 {name=h5
+C {launcher.sym} 590 -540 0 0 {name=h5
 descr=SimulateNGSPICE
 tclcommand="
 # Setup the default simulation commands if not already set up
@@ -843,32 +764,7 @@ write_data [save_params] $netlist_dir/[file rootname [file tail [xschem get curr
 xschem netlist
 simulate
 "}
-C {launcher.sym} 620 -425 0 0 {name=h6
-descr=SimulatePARALLEL
-tclcommand="
-# Setup the default simulation commands if not already set up
-# for example by already launched simulations.
-set_sim_defaults
-puts $sim(spice,1,cmd) 
-
-# Change the Xyce command. In the spice category there are currently
-# 5 commands (0, 1, 2, 3, 4). Command 3 is the Xyce batch
-# you can get the number by querying $sim(spice,n)
-set sim(spice,1,cmd) \{ngspice  \\"$N\\" -a\}
-
-# change the simulator to be used (Xyce)
-set sim(spice,default) 0
-
-# Create FET and BIP .save file
-exec mkdir -p $netlist_dir
-write_data [save_params] $netlist_dir/[file rootname [file tail [xschem get current_name]]].save
-
-# run netlist and simulation
-xschem netlist
-exec python3 $\{PDK_ROOT\}/$\{PDK\}/libs.tech/xschem/sg13g2_tests/ngspice_parallel_mc.py [file tail [xschem get current_name]]
-"
-spice_ignore=true}
-C {simulator_commands.sym} 790 -1080 0 0 {
+C {simulator_commands.sym} 930 -1080 0 0 {
 name=Libs_Ngspice
 simulator=ngspice
 only_toplevel=false
@@ -880,7 +776,7 @@ value="
 .lib cornerRES.lib res_typ
 .lib cornerDIO.lib dio_tt
 "
-      }
+      spice_ignore=true}
 C {lab_wire.sym} 670 -790 0 0 {name=p1 lab=vdd
 }
 C {lab_wire.sym} 570 -730 0 0 {name=p2 lab=vh
@@ -911,19 +807,128 @@ write @schname\\\\.raw
 
 place=header
 }
-C {simulator_commands.sym} 910 -1080 0 0 {name=Libs_Ngspice_Mismatch
+C {wind_comp/slot_4.sym} 670 -700 0 0 {name=X1
+}
+C {lab_wire.sym} 670 -610 0 0 {name=p7 lab=vss
+}
+C {launcher.sym} 590 -475 0 0 {name=h1
+descr=SimulatePARALLEL
+tclcommand="
+set_sim_defaults
+set sim(spice,1,cmd) \{ngspice \\"$N\\" -a\}
+set sim(spice,default) 0
+
+exec mkdir -p $netlist_dir
+write_data [save_params] $netlist_dir/[file rootname [file tail [xschem get current_name]]].save
+
+xschem netlist
+set tb_path $netlist_dir/[file tail [xschem get current_name]]
+exec python3 /foss/designs/skills/sg13cmos5l_Wind_Comp/testbenches/ngspice_parallel_mc.py $tb_path &
+"
+spice_ignore=true}
+C {code.sym} 80 -640 0 0 {name=12
+only_toplevel=false
+value="
+**nr_workers=8
+**nr_mc_sims=1
+**pvt_process = mos_tt, mos_ss, mos_ff, mos_sf, mos_fs
+**pvt_temp = -40, 27, 125
+**pvt_vdd = 1.08, 1.2, 1.32
+
+**results_plot_begin
+**vth_l [V]
+**vth_h [V]
+**vos_l [V], <-20m, >20m
+**vos_h [V], <-20m, >20m
+**win_w [V]
+**pstat [W], >30u
+**results_plot_end
+"
+spice_ignore=true}
+C {code.sym} 180 -640 0 0 {name=13
+only_toplevel=false
+value="
+**nr_workers=8
+**nr_mc_sims=200
+**pvt_process = mos_tt_stat
+**pvt_temp = 27
+**pvt_vdd = 1.2
+
+**results_plot_begin
+**vth_l [V]
+**vth_h [V]
+**vos_l [V], <-20m, >20m
+**vos_h [V], <-20m, >20m
+**win_w [V]
+**pstat [W], >30u
+**results_plot_end
+"
+}
+C {code.sym} 1040 -640 0 0 {name=27 Only_toplevel=false
+value="
+**nr_workers=8
+**nr_mc_sims=50
+**pvt_process = mos_tt_stat
+**pvt_temp = -40, 27, 125
+**pvt_vdd = 1.08, 1.2, 1.32
+
+**results_plot_begin
+**vth_l [V]
+**vth_h [V]
+**vos_l [V], <-20m, >20m
+**vos_h [V], <-20m, >20m
+**win_w [V]
+**pstat [W], >30u
+**results_plot_end
+"
+spice_ignore=true}
+C {simulator_commands.sym} 540 -360 0 0 {
+name=Libs_Ngspice_Mismatch
 simulator=ngspice
 only_toplevel=false
 value="
-.lib cornerMOSlv.lib mos_tt_mismatch
-.lib cornerMOShv.lib mos_tt_mismatch
+.lib cornerMOSlv.lib mos_tt_stat
+.lib cornerMOShv.lib mos_tt_stat
 .lib cornerMOSCAP.lib moscap_tt
 .lib cornerCAP.lib cap_typ
 .lib cornerRES.lib res_typ
 .lib cornerDIO.lib dio_tt
 "
       }
-C {wind_comp/slot_4.sym} 670 -700 0 0 {name=X1
-}
-C {lab_wire.sym} 670 -610 0 0 {name=p7 lab=vss
+C {code.sym} 420 -360 0 0 {name=MC_SETTINGS
+only_toplevel=false
+value="
+Vin vin 0 dc \{vcm\}
+.control
+save v(vin) v(vout) v(vdd) v(vl) v(vh) i(vdd)
+op
+let pstat = -i(Vdd) * v(vdd)
+let vdd_op = v(vdd)
+let vmid_op = v(vdd) / 2
+let vl_op = v(vl)
+let vh_op = v(vh)
+set pstat_val = $&pstat
+set vdd_val = $&vdd_op
+set vmid_val = $&vmid_op
+set vl_val = $&vl_op
+set vh_val = $&vh_op
+
+dc Vin 0 $vdd_val 2m
+meas dc vth_l WHEN v(vout)=$vmid_val RISE=1
+meas dc vth_h WHEN v(vout)=$vmid_val FALL=1
+let vos_l = vth_l - $vl_val
+let vos_h = vth_h - $vh_val
+let win_w = vth_h - vth_l
+
+echo results_save_begin
+echo vth_l = $&vth_l
+echo vth_h = $&vth_h
+echo vos_l = $&vos_l
+echo vos_h = $&vos_h
+echo win_w = $&win_w
+echo pstat = $pstat_val
+echo results_save_end
+.endc
+"
+
 }
